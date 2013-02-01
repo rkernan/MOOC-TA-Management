@@ -1,4 +1,8 @@
 MoocTaManager::Application.routes.draw do
+  get "users/index"
+
+  get "users_controller/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
