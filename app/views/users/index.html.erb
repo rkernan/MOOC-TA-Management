@@ -1,21 +1,21 @@
 <h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
 
 <table>
+  <tr>
+    <th>Username</th>
+    <th>Password</th>
+    <th>Email</th>
+  </tr>
+  <% @users.each do |user| %>
     <tr>
-        <th>Username</th>
-        <th>Password</th>
-        <th>Email</th>
+      <td><%= user.username %></td>
+      <td><%= user.password %></td>
+      <td><%= user.email %></td>
+      <td><%= link_to 'Show', user %></td>
+      <td><%= link_to 'Edit', edit_user_path(user) %></td>
+      <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
-    <% @users.each do |user| %>
-        # We embed ruby code in html files by using <%= [OMGRUBYCODE] %> and <%[OMGMORERUBYCODE]%> 
-        # The difference between using <%= %> and <% %> is that code inside <%= %> gets evaluated and it's output
-        # is embed in the HTML. Note how the loop is in a <% %>, but the user data gets enclosed in <%= %> because
-        # we want it to get printed into the file.
-        <tr>
-            <td><%= user.username %></td>
-            <td><%= user.password %></td>
-            <td><%= user.email %></td>
-        </tr>
-    <% end %>
+  <% end %>
 </table>
+
+<%= link_to 'New User', new_user_path %>
