@@ -7,11 +7,11 @@
         <th>Password</th>
         <th>Email</th>
     </tr>
-    <!-- We embed ruby code in html files by using <%= [OMGRUBYCODE] %> and <%[OMGMORERUBYCODE%> 
-    The difference between using <%= %> and <% %> is that code inside <%= %> gets evaluated and it's output
-    is embed in the HTML. Note how the loop is in a <% %>, but the user data gets enclosed in <%= %> because
-    we want it to get printed into the file. -->
     <% @users.each do |user| %>
+        # We embed ruby code in html files by using <%= [OMGRUBYCODE] %> and <%[OMGMORERUBYCODE]%> 
+        # The difference between using <%= %> and <% %> is that code inside <%= %> gets evaluated and it's output
+        # is embed in the HTML. Note how the loop is in a <% %>, but the user data gets enclosed in <%= %> because
+        # we want it to get printed into the file.
         <tr>
             <td><%= user.username %></td>
             <td><%= user.password %></td>
