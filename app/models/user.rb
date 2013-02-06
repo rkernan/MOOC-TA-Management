@@ -14,13 +14,13 @@ class User < ActiveRecord::Base
 
   # check if passwords match
   def password_matches?(other_password)
-    self.password_hash == _hash_password(other_password)
+    self.password_hash == _hash_secret(other_password, self.password_salt)
   end
 
   # authenticates user based on given email and password
   def self.authenticate(email, password)
     user = find_by_email(email)
-    if user.password_matches?(password)
+    if user && user.password_matches?(password)
       user
     else
       nil
@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
   def hash_password
     if password.present?
       self.password_salt = _generate_salt
-      self.password_hash = _hash_password
+      self.password_hash = _hash_secret(password, self.password_salt)
     end
   end
 
@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
   end
 
   # helper for hashing the password
-  def _hash_password
+  def _hash_secret(password, password_salt)
     BCrypt::Engine.hash_secret(password, password_salt)
   end
 end
