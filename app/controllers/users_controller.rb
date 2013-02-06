@@ -13,8 +13,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/#
-  # GET /users/#.json
   def show
     @user = User.find(params[:id])
     respond_to do |format|
@@ -23,8 +21,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/new
-  # GET /users/new.json
   def new
     @user = User.new
     respond_to do |format|
@@ -37,8 +33,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  # POST /users
-  # POST /users.json
   def create
     @user = User.new(params[:user])
     respond_to do |format|
@@ -52,8 +46,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # PUT /users/#
-  # PUT /users/#.json
   def update
     @user = User.find(params[:id])
     respond_to do |format|
@@ -67,8 +59,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # DELETE /users/#
-  # DELETE /users/#.json
   def destroy
     @user = User.find(params[:id])
     @user.destroy

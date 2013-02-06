@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130203182324) do
+ActiveRecord::Schema.define(:version => 20130206160757) do
 
   create_table "courses", :force => true do |t|
     t.string   "name"
@@ -43,11 +43,11 @@ ActiveRecord::Schema.define(:version => 20130203182324) do
   add_index "ta_tests", ["course_id"], :name => "index_ta_tests_on_course_id"
 
   create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "password"
-    t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "email",         :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "password_hash", :null => false
+    t.string   "password_salt", :null => false
   end
 
 end

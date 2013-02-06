@@ -1,17 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Username:</b>
-  <%= @user.username %>
-</p>
-<p>
-  <b>Password:</b>
-  <%= @user.password %>
-</p>
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
+<p><b>Email:</b> <%= @user.email %></p>
+<p><b>ID:</b> <%= @user.id %></p>
+<p><b>Password:</b> (should be blank) <%= @user.password %></p>
+<p><b>Password Salt:</b> <%= @user.password_salt %></p>
+<p><b>Password Hash:</b> <%= @user.password_hash %></p>
+<p><b>Created At:</b> <%= @user.created_at %></p>
+<p><b>Updated At:</b> <%= @user.updated_at %></p>
 
 <%= link_to 'Edit', edit_user_path(@user) %>
 <%= link_to 'Back', users_path %>
