@@ -13,14 +13,14 @@ class User < ActiveRecord::Base
     :length => 6..20
 
   # check if passwords match
-  def has_password?(other_password)
+  def password_matches?(other_password)
     self.password_hash == _hash_password(other_password)
   end
 
   # authenticates user based on given email and password
   def self.authenticate(email, password)
     user = find_by_email(email)
-    if user.has_password?(password)
+    if user.password_matches?(password)
       user
     else
       nil
