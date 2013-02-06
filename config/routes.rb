@@ -1,8 +1,10 @@
 MoocTaManager::Application.routes.draw do
-  resources :users
-  # get "users/index"
 
-  # get "users_controller/index"
+  root :to => 'users#new'
+
+  get 'tests_controller/new'
+
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
