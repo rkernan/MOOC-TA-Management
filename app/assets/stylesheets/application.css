@@ -11,3 +11,87 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  margin-top: -32px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  font-family: Trebuchet MS; 
+  background: #f7f7f7;
+  color: #444;
+  text-shadow: 0 0.13em #fff;
+  width: 100%:
+  font-size: 1.2em;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+#top {
+  margin: 0;
+  text-align: center;
+  border-bottom: 3px solid black;
+  background: #d31306;
+  height: 10em;
+  line-height: 10em;
+  text-shadow: 0 0.13em #f34426;
+}
+
+#top h1 {
+  font-size: 3em;
+  color: #a30306;
+}
+
+#container {
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #d31306;
+}
+
+form input {
+  margin-top: 1em;
+  font-size: 1.5em;
+  padding: 0.7em;
+}
+
+.actions {
+  margin-top: 1em;
+}
+
+.actions input {
+  padding: 1em;
+  font-size: 0.9em;
+  background: #139306;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0.13em #111;
+  font-weight: 800;
+}
+
+#cancel_button {
+  background: #d31306;
+  color: #fff;
+}
+
+table {
+  font-size: 1.3em;
+}
+
+table th {
+  font-size: 1.6em;
+}
+
+table tr:nth-child(odd) {
+  background: #eaeaea;
+}
