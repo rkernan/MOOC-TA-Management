@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
   # attr_accessible sets ups getters and setters for each variable.
   # it IS possible to check for valid assignment to these fields 
   # we'll get into that later.
-  attr_accessible :email, :password_hash, :password, :password_confirmation
-  attr_accessor :password
+  attr_accessible :email, :password_hash, :password_salt, :password, :password_confirmation
+  attr_accessor :password, :password_salt, :password_hash
 
   before_save :hash_password
 

@@ -83,3 +83,15 @@ form input {
   background: #d31306;
   color: #fff;
 }
+
+table {
+  font-size: 1.3em;
+}
+
+table th {
+  font-size: 1.6em;
+}
+
+table tr:nth-child(odd) {
+  background: #eaeaea;
+}
