@@ -12,20 +12,19 @@
     </div>
   <% end %>
   <div class='field'>
-    <%= f.label :email %><br/>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :placeholder => "Email" %>
   </div>
   <div class='field'>
-    <%= f.label :password %><br/>
-    <%= f.password_field :password %><br/>
+    <%= f.password_field :password, :placeholder => "Password" %><br/>
   </div>
   <div class='field'>
-    <%= f.label :password_confirmation %><br/>
-    <%= f.password_field :password_confirmation %><br/>
+    <%= f.password_field :password_confirmation, :placeholder => "Confirm Password" %><br/>
   </div>
   <div class='actions'>
     <%= f.submit %>
   </div>
 <% end %>
 
-<%= link_to 'Back', users_path %>
+<div class='actions'>
+  <%= button_to "Cancel", users_path, :id => "cancel_button", :method => :get %>
+</div>

@@ -65,11 +65,21 @@ form input {
   padding: 0.7em;
 }
 
+.actions {
+  margin-top: 1em;
+}
+
 .actions input {
+  padding: 1em;
   font-size: 0.9em;
-  width: auto;
   background: #139306;
   color: #fff;
   text-transform: uppercase;
+  text-shadow: 0 0.13em #111;
   font-weight: 800;
+}
+
+#cancel_button {
+  background: #d31306;
+  color: #fff;
 }
