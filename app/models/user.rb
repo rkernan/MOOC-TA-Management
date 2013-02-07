@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :password_hash, :password_salt, :password, :password_confirmation
+  attr_accessible :email, :password_hash, :password_salt, :password, :password_confirmation, :first_login_at, :last_login_at
   attr_accessor :password
 
   before_save :hash_password
