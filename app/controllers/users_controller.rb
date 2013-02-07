@@ -48,7 +48,7 @@ class UsersController < ApplicationController
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @user.errors, status: :unprofessable_entity }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end

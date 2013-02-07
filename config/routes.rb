@@ -1,8 +1,16 @@
 MoocTaManager::Application.routes.draw do
   root :to => 'users#index'
   get 'register' => 'users#new', :as => 'register'
-  get 'login' => 'sessions#new', :as => 'login'
-  get 'logout' => 'sessions#destroy', :as => 'logout'
-  resources :users # for all the other random user methods
-  resources :sessions
+  get 'login' => 'sessions#login', :as => 'login'
+  get 'logout' => 'sessions#logout'
+
+  post 'sessions/authenticate' => 'sessions#authenticate'
+
+  get 'users' => 'users#index'
+  post 'users' => 'users#create'
+  get 'users/new' => 'users#new'
+  get 'users/:id' => 'users#show'
+  get 'users/:id/edit' => 'users#edit'
+  put 'users/:id' => 'users#update'
+  delete 'users/:id' => 'users#destroy'
 end
