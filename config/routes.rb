@@ -6,11 +6,5 @@ MoocTaManager::Application.routes.draw do
 
   post 'sessions/authenticate' => 'sessions#authenticate'
 
-  get 'users' => 'users#index'
-  post 'users' => 'users#create'
-  get 'users/new' => 'users#new'
-  get 'users/:id' => 'users#show'
-  get 'users/:id/edit' => 'users#edit'
-  put 'users/:id' => 'users#update'
-  delete 'users/:id' => 'users#destroy'
+  resources :users
 end
