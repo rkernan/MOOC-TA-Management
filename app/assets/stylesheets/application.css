@@ -37,14 +37,28 @@ input {
   text-align: center;
   border-bottom: 3px solid black;
   background: #d31306;
-  height: 10em;
-  line-height: 10em;
+  height: 8em;
+  line-height: 8em;
   text-shadow: 0 0.13em #f34426;
 }
 
-#top h1 {
-  font-size: 3em;
+#auth {
+  text-transform: uppercase;
+  line-height: 1em;
+  float: right;
+  font-size: 1.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+#auth a {
+  text-decoration: none;
   color: #a30306;
+}
+
+#top h1 {
+  color: #a30306;
+  font-size: 3em;
 }
 
 #container {
@@ -67,6 +81,7 @@ form input {
 
 .actions {
   margin-top: 1em;
+  float: left;
 }
 
 .actions input {

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MoocTaManager</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="top">
-    <h1>MOOC TA Manager</h1> 
-  </div>
-  <div>
-    <% if current_user %>
-      logged in as <%= current_user.email %>
-      <%= link_to 'logout', logout_path %>
-    <% else %>
-      <%= link_to 'login', login_path %>
-      <%= link_to 'register', register_path %>
-    <% end %>
+  <head>
+    <title>MoocTaManager</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="top">
+      <div id="auth">
+        <% if current_user%>
+          <%= link_to 'logout', logout_path %>
+        <% else %>
+          <%= link_to 'login', login_path %>
+        <% end %>
+      </div>
+      <h1>MOOC TA Manager</h1> 
+    </div>
+    <div>
   </div>
   <!-- this entire file is a wrapper for the rest of our app. Whatever page
   we're on gets rendered by the following "yield" call. -->
   <div id="container">
-  <%= yield %>
+    <%= yield %>
   </div>
 </body>
 </html>

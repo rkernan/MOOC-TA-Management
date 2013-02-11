@@ -6,9 +6,12 @@
     <%= password_field_tag :password, nil, :placeholder => 'Password' %>
   </div>
   <!-- <div class='field'> -->
-  <!--   <%= check_box_tag :remember_me %> -->
-  <!-- </div> -->
-  <div class='action'>
-    <%= submit_tag 'Log In' %>
-  </div<
+    <!--   <%= check_box_tag :remember_me %> -->
+    <!-- </div> -->
+  <div class='actions'>
+    <%= submit_tag 'Log In', :class => "green" %>
+  </div>
 <% end %>
+<div class='actions'>
+  <%= button_to 'Register', register_path, :method => :get %>
+</div>
