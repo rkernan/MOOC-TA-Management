@@ -12,6 +12,14 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 end
 
+group :development do
+  # better rails console output
+  # gem 'pry'
+  # gem 'pry-doc'
+  # gem 'pry-rails'
+  gem 'hirb'
+end
+
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
 
