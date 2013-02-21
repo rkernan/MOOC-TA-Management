@@ -1,0 +1,17 @@
+<h1>Listing posts</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+ 
+<% @ta_tests.each do |ta_test| %>
+  <tr>
+    <td><%= ta_test.name %></td>
+  </tr>
+<% end %>
+</table>
+ 
+<br />
+ 
+<%= link_to 'New TA Test', 'new' %>

@@ -1,0 +1,12 @@
+<%= form_for(@ta_test) do |f| %>
+  <div class="field">
+    <%= f.text_field :name, :placeholder => "Name" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<div class="actions">
+  <%= button_to 'Cancel', 'ta_tests', :method => :get %>
+</div>
+
