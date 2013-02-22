@@ -18,6 +18,9 @@
   <div class='field'>
     <%= f.password_field :password_confirmation, :placeholder => "Confirm Password" %><br/>
   </div>
+  <div class='field'>
+    <%= f.select :type, [["Teaching Assistant", "TeachingAssistant"], ["Professor", "Professor"]] %><br/>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

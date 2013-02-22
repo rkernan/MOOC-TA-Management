@@ -14,7 +14,8 @@ class SessionsController < ApplicationController
       end
       user.update_column(:last_login_at, current_datetime)
       # log user in
-      session[:userid] = user.id
+      session[:user_id] = user.id
+      session[:user_type] = user.type
       redirect_to :action => 'index', :controller => 'users'
     else
       render 'login'
@@ -22,7 +23,8 @@ class SessionsController < ApplicationController
   end
 
   def logout
-    session[:userid] = nil
+    session[:user_id] = nil
+    session[:user_type] = nil
     redirect_to :action => 'login', :controller => 'sessions'
   end
 end

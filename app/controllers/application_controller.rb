@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
 
   # helper method for getting the currently logged in user
   def current_user
-    if session[:userid]
-      @current_user ||= session[:userid] && User.find(session[:userid])
+    if session[:user_id]
+      @current_user ||= session[:user_id] && User.find(session[:user_id])
     end
   end
 end

@@ -1,9 +1,11 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :password_hash, :password_salt, :password, :password_confirmation, :first_login_at, :last_login_at
+  attr_accessible :email, :password_hash, :password_salt, :password, :password_confirmation, :first_login_at, :last_login_at, :type
   attr_accessor :password
 
   before_save :hash_password
 
+  # type validation, can't create a User ony subclasses
+  validates :type, :presence => true
   # email validation
   validates :email, :presence => true,
     :uniqueness => { :case_sensitive => true },
@@ -47,3 +49,4 @@ class User < ActiveRecord::Base
     BCrypt::Engine.hash_secret(password, password_salt)
   end
 end
+
