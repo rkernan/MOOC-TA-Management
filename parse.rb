@@ -15,31 +15,48 @@ SIGNIN_URL = 'https://www.coursera.org/account/signin'
 FORUM_HOME_URL = "https://class.coursera.org/#{CLASS_PATH}/forum/index"
 AUTH_URL = "https://class.coursera.org/#{CLASS_PATH}/auth/auth_redirector?type=login&subtype=normal"
 
-def get_forum_links(url)
-  
-  b = Watir::Browser.new :chrome
-  b.goto SIGNIN_URL
+def signin()
+  # Open a browser to log user in  
+  browser = Watir::Browser.new(:chrome)
 
-  sleep BROWSER_SLEEP
-  b.text_field(:id => 'signin-email').value = USER
-  b.text_field(:id => 'signin-password').value = PWD
-  b.button(:text => 'Sign In').click
-  sleep BROWSER_SLEEP
-  b.goto AUTH_URL
-  sleep BROWSER_SLEEP
+  # Navigate to Sign In page
+  browser.goto(SIGNIN_URL)
+  sleep(BROWSER_SLEEP)
 
-  b.goto FORUM_HOME_URL
-  
-  section_links = []
-  b.links.each do |link|
-    if link.href.include? 'forum_id'
-      section_links << link.href
-    end
-  end
-  puts section_links.inspect
-  section_links.each do |link|
-    puts link
-  end 
+  # Fill in user info
+  browser.text_field(:id => 'signin-email').value = USER
+  browser.text_field(:id => 'signin-password').value = PWD
+  browser.button(:text => 'Sign In').click
+
+  sleep(BROWSER_SLEEP)
+
+  # Navigate to auth page
+  browser.goto(AUTH_URL)
+  sleep(BROWSER_SLEEP)
+
+  return browser
 end
 
-get_forum_links 'https://class.coursera.org/proglang-2012-001/forum/index'
+def get_threads(browser)
+
+  # Get links of each sub forum
+  forum_links = get_links_from_page(browser, FORUM_HOME_URL, 'forum_id')
+
+  # Get links of every thread
+  threads = []
+  forum_links.each do |link|
+    threads << get_links_from_page(browser, link, 'thread_id') 
+  end
+
+  return threads
+end
+
+def get_links_from_page(browser, page, link_frag)
+  browser.goto(page)
+  
+  matching_links = browser.links.select{|link| link.href.include? link_frag}.collect{|link| link.href}
+end
+
+browser = signin()
+threads = get_threads(browser)
+puts threads
