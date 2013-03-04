@@ -1,11 +1,13 @@
+
+# Must have these gems installed:
 require 'nokogiri'
 require 'net/https'
 require 'open-uri'
 require 'openssl'
 require 'watir-webdriver'
 
-USER = 'YOUR_COURSERA_EMAIL'
-PWD = 'YOUR_COURSERA_PASSWORD'
+USER = 'YOUR_USERNAME_HERE'
+PWD = 'YOUR_PASSWORD_HERE'
 
 BROWSER_SLEEP = 4
 
@@ -57,6 +59,31 @@ def get_links_from_page(browser, page, link_frag)
   matching_links = browser.links.select{|link| link.href.include? link_frag}.collect{|link| link.href}
 end
 
+def rank_users(browser, threads)
+  users = {}
+  threads.flatten!
+  puts threads.inspect
+  threads.each do |thread|
+    puts "Getting " << thread.to_s
+    browser.goto(thread)
+    students = browser.spans.select{|span| span.attribute_value("data-user-title") == "Student"}
+    students.each do |student|
+      user = student.text
+      if users.has_key?(user)
+        users[user] = users[user] + 1
+      else
+        users[user] = 0
+      end
+    end
+    sleep(BROWSER_SLEEP / 2)
+  end
+
+  users = users.sort_by {|_key, value| value}
+  puts users.inspect
+
+end
+
 browser = signin()
 threads = get_threads(browser)
 puts threads
+rank_users(browser, threads)
