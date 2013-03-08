@@ -2,7 +2,6 @@ class Professor < User
   # has many courses they are Teaching
   has_many :courses
 
-  # TODO FIX, remove
   def self.model_name
     User.model_name
   end
