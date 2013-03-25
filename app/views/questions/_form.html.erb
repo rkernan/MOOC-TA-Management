@@ -1,0 +1,32 @@
+<%= form.fields_for :questions do |question_form| %>
+
+<%= form_for(@question) do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explaination">
+      <h2><%= pluralize(@question.error.count, "error") %> prohibited this question from being saved:</h2>
+      <ul>
+        <% @question.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= question_form.radio_button :type, 'mult_choice', :checked => true %> 
+    <%= label :type_mult_choice, 'Multiple Choice' %>
+  </div>
+  <div class="field">
+    <%= question_form.label :question, 'Question:' %>
+    <%= question_form.text_field :question %>
+  </div>
+  <div class="field">
+    <%= question_form.label :answer, 'Answer:' %>
+    <%= question_form.text_field :answer %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <div class="actions">
+    <%= button_to 'Cancel', questions_path, :method => :get %>
+  </div>
+<% end %>

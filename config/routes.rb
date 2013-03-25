@@ -14,7 +14,7 @@ MoocTaManager::Application.routes.draw do
   put 'users/:id' => 'users#update'
   delete 'users/:id' => 'users#destroy'
 
-  get 'ta_tests' => 'ta_tests#index'
-  get 'ta_tests/new' => 'ta_tests#new'
-  post 'ta_tests' => 'ta_tests#create'
+  resources :ta_tests do
+    resources :questions
+  end
 end

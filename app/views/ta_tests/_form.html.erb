@@ -1,9 +1,9 @@
 <%= form_for(@ta_test) do |f| %>
 	<% if @ta_test.errors.any? %>
 		<div id="error_explaination">
-			<h2><%= pluralize(@post.error.count, "error") %> prohibited this ta_test from being saved:</h2>
+			<h2><%= pluralize(@ta_test.error.count, "error") %> prohibited this ta_test from being saved:</h2>
 			<ul>
-				<% @post.errors.full_messages.each do |msg| %>
+				<% @ta_test.errors.full_messages.each do |msg| %>
 					<li><%= msg %></li>
 				<% end %>
 			</ul>
@@ -15,6 +15,9 @@
 	</div>
 	<div class="actions">
 		<%= f.submit %>
+	</div>
+	<div class="actions">
+  		<%= button_to 'Cancel', ta_tests_path, :method => :get %>
 	</div>
 <% end %>
 

@@ -3,7 +3,7 @@ class CreateQuestions < ActiveRecord::Migration
     create_table :questions do |t|
       t.references :ta_test
       t.text :question
-      t.string :type
+      t.string :question_type
       t.text :answer
 
       t.timestamps
