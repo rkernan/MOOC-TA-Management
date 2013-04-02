@@ -8,6 +8,8 @@
 <% @ta_tests.each do |ta_test| %>
   <tr>
     <td><%= ta_test.name %></td>
+    <td><%= link_to 'Show', ta_test %></td>
+    <td><%= link_to 'Destroy', ta_test_path(ta_test), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

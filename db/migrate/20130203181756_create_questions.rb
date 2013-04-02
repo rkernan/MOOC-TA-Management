@@ -5,6 +5,9 @@ class CreateQuestions < ActiveRecord::Migration
       t.text :question
       t.string :question_type
       t.text :answer
+      t.text :wrong1
+      t.text :wrong2
+      t.text :wrong3
 
       t.timestamps
     end

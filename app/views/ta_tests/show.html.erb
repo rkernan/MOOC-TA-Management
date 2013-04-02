@@ -18,9 +18,17 @@
   </p>
  
   <p>
-    <b>Answer:</b>
+    <b>Correct Answer:</b>
     <%= question.answer %>
   </p>
+
+  <p>
+    <b>Wrong Answers:</b>
+    1. <%= question.wrong1 %>
+    2. <%= question.wrong2 %>
+    3. <%= question.wrong3 %>
+  </p>
+  
 <% end %>
  
 <h2>Add a question:</h2>
@@ -31,11 +39,23 @@
   </div>
   <div class="field">
     <%= f.label :question %><br />
-    <%= f.text_area :question %>
+    <%= f.text_field :question %>
   </div>
   <div class="field">
     <%= f.label :answer %><br />
-    <%= f.text_area :answer %>
+    <%= f.text_field :answer %>
+  </div>
+  <div class="field">
+    <%= f.label :wrong1 %><br />
+    <%= f.text_field :wrong1 %>
+  </div>
+  <div class="field">
+    <%= f.label :worng2 %><br />
+    <%= f.text_field :wrong2 %>
+  </div>
+  <div class="field">
+    <%= f.label :wrong3 %><br />
+    <%= f.text_field :wrong3 %>
   </div>
   <div class="actions">
     <%= f.submit %>
@@ -43,4 +63,4 @@
 <% end %>
 
 <br /> 
-<%= link_to 'Back', ta_tests_path %>
+<%= link_to 'Done', ta_tests_path %>

@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(:version => 20130221225318) do
     t.text     "question"
     t.string   "question_type"
     t.text     "answer"
+    t.text     "wrong1"
+    t.text     "wrong2"
+    t.text     "wrong3"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
