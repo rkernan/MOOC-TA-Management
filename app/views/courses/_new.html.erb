@@ -1,7 +1,7 @@
 <%= form_for([@professor, @course]) do |f| %>
   <% if @course.errors.any? %>
     <div id="error_explaination">
-      <h2><%= pluralize(@couse.errors.count, "error") %> prohibited this course from being saved: </h2>
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved: </h2>
       <ul>
         <% @course.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -15,8 +15,8 @@
   <div class="actions">
     <%= f.submit %>
   </div>
-  <div class="actions">
-    <%= button_to 'Cancel', professor_courses_path, :method => :get %>
-  </div>
 <% end %>
+<div class="actions">
+  <%= button_to 'Cancel', professor_courses_path, :method => :get %>
+</div>
 
