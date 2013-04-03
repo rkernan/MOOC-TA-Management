@@ -31,10 +31,12 @@ class TaTestsController < ApplicationController
   end
     
   def index
-    @ta_tests = TaTest.all
+    @professor = Professor.find(params[:professor_id])
+    @course = Course.find(params[:course_id])
+    @ta_tests = @course.ta_tests.all
     respond_to do |format|
       format.html
-      format.json { render json: @users }
+      format.json { render json: @ta_tests }
     end
   end
 
