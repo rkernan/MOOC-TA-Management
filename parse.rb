@@ -5,9 +5,13 @@ require 'net/https'
 require 'open-uri'
 require 'openssl'
 require 'watir-webdriver'
+require 'headless'
 
-USER = 'YOUR_USERNAME_HERE'
-PWD = 'YOUR_PASSWORD_HERE'
+headless = Headless.new
+headless.start
+
+USER = 'dougblack@gatech.edu'
+PWD = 'Precisi0n'
 
 BROWSER_SLEEP = 4
 
@@ -19,7 +23,7 @@ AUTH_URL = "https://class.coursera.org/#{CLASS_PATH}/auth/auth_redirector?type=l
 
 def signin()
   # Open a browser to log user in  
-  browser = Watir::Browser.new(:chrome)
+  browser = Watir::Browser.new(:phantomjs)
 
   # Navigate to Sign In page
   browser.goto(SIGNIN_URL)
@@ -87,3 +91,5 @@ browser = signin()
 threads = get_threads(browser)
 puts threads
 rank_users(browser, threads)
+
+browser.close
