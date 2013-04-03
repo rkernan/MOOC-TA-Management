@@ -1,4 +1,4 @@
-<%= form_for(@ta_test) do |f| %>
+<%= form_for([@professor, @course, @ta_test]) do |f| %>
 	<% if @ta_test.errors.any? %>
 		<div id="error_explaination">
 			<h2><%= pluralize(@ta_test.error.count, "error") %> prohibited this ta_test from being saved:</h2>
@@ -17,7 +17,7 @@
 		<%= f.submit %>
 	</div>
 	<div class="actions">
-		<%= button_to 'Cancel', ta_tests_path, :method => :get %>
+		<%= button_to 'Cancel', professor_course_ta_tests_path, :method => :get %>
 	</div>
 <% end %>
 

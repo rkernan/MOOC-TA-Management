@@ -1,6 +1,8 @@
 class TaTestsController < ApplicationController
 
   def new
+    @professor = Professor.find(params[:professor_id])
+    @course = Course.find(params[:course_id])
     @ta_test = TaTest.new
     respond_to do |format|
       format.html
@@ -9,21 +11,15 @@ class TaTestsController < ApplicationController
   end
 
   def create
-    @ta_test = TaTest.new(params[:ta_test])
-    respond_to do |format|
-      if @ta_test.save
-        format.html { redirect_to(@ta_test, notice: 'TA_Test was successfully created.') }
-        format.json { render json: @ta_test, status: created, location: @ta_test }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @ta_test.errors, status: :unprocessable_entity }
-      end
-    end
+    @course = Course.find(params[:course_id])
+    @ta_test = @course.ta_tests.create(params[:ta_test])
+    redirect_to professor_course_ta_tests_path
   end
 
   def show
-    @ta_test = TaTest.find(params[:id])
- 
+    @professor = Professor.find(params[:professor_id])
+    @course = Course.find(params[:course_id])
+    @ta_test = TaTest.find(params[:id]) 
     respond_to do |format|
       format.html  # show.html.erb
       format.json  { render :json => @ta_test }

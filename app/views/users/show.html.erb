@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Courses', professor_courses_path(@user) %>
+
 <p><b>Type:</b> <%= @user.type %></p>
 <p><b>Email:</b> <%= @user.email %></p>
 <p><b>ID:</b> <%= @user.id %></p>

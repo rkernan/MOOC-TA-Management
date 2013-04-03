@@ -9,6 +9,7 @@ class CoursesController < ApplicationController
   end
 
   def show
+    @professor = Professor.find(params[:professor_id])
     @course = Course.find(params[:id])
     respond_to do |format|
       format.html
@@ -35,7 +36,7 @@ class CoursesController < ApplicationController
     @course = Course.find(params[:id])
     @course.destroy
     respond_to do |format|
-      format.html { redirect_to users_courses_url }
+      format.html { redirect_to professor_courses_url }
       format.json { head :no_content }
     end
   end
