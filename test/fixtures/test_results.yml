@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  selected: MyString
+  correctness: MyString
+  teaching_assistant: 
+  ta_test: 
+
+two:
+  selected: MyString
+  correctness: MyString
+  teaching_assistant: 
+  ta_test: 

@@ -14,6 +14,12 @@ MoocTaManager::Application.routes.draw do
   put 'users/:id' => 'users#update'
   delete 'users/:id' => 'users#destroy'
 
+  resources :teaching_assistants, :controller => 'users'
+
+  resources :professors, :controller => 'users' do
+    resources :courses
+  end
+
   resources :ta_tests do
     resources :questions
   end
