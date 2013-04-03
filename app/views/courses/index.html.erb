@@ -1,0 +1,18 @@
+<h1>Courses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Professor</th>
+  </tr>
+  <% @courses.each do |course| %>
+    <tr>
+      <td><%= course.name %></td>
+      <td><%= course.professor %></td>
+    </tr>
+  <% end %>
+</table>
+
+<div class="actions">
+  <%= button_to 'New Course', new_professor_course_path, :method => :get %>
+</div>
