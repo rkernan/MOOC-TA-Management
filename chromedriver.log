@@ -1,0 +1,62 @@
+[0.000][INFO]:      ChromeDriver 26.0.1383.0 /usr/local/bin/chromedriver
+[0.239][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.detach": true,
+   "chromeOptions": {
+      "detach": true
+   },
+   "cssSelectorsEnabled": true,
+   "javascriptEnabled": true,
+   "nativeEvents": false,
+   "platform": "ANY",
+   "rotatable": false,
+   "takesScreenshot": false,
+   "version": ""
+}
+
+[0.240][INFO]:      Using named testing interface
+[0.582][INFO]:      Connected to Chrome successfully. Version: 26.0.1410.43
+[0.593][FINE]:      Command received (/session/fc4cb191a08aecc4564b75c980cc3415)
+[0.593][FINE]:      Command finished (/session/fc4cb191a08aecc4564b75c980cc3415) with response {
+   "sessionId": "fc4cb191a08aecc4564b75c980cc3415",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "26.0.1383.0",
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "mac",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "26.0.1410.43",
+      "webStorageEnabled": true
+   }
+}
+
+[0.595][FINE]:      Command received (/session/fc4cb191a08aecc4564b75c980cc3415/url) with params {
+   "url": "https://www.coursera.org/account/signin"
+}
+
+[0.595][FINER]:     Waiting for all views to stop loading...
+[0.596][FINER]:     Done waiting for all views to stop loading
+[2.353][FINER]:     Waiting for all views to stop loading...
+[2.370][FINER]:     Done waiting for all views to stop loading
+[2.370][FINE]:      Command finished (/session/fc4cb191a08aecc4564b75c980cc3415/url) with response {
+   "sessionId": "fc4cb191a08aecc4564b75c980cc3415",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[2.371][FINE]:      Command received (/session/fc4cb191a08aecc4564b75c980cc3415/url)
+[2.371][FINER]:     Waiting for all views to stop loading...
+[2.381][FINER]:     Done waiting for all views to stop loading
+[2.382][FINER]:     Waiting for all views to stop loading...
