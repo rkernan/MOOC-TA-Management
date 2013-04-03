@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Tests', professor_course_ta_tests_path(@professor, @course) %>
+
 <p><b>Professor:</b> <%= @professor.email %></p>
 <p><b>Name:</b> <%= @course.name %></p>
 
