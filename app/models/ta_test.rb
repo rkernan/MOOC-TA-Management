@@ -8,6 +8,7 @@ class TaTest < ActiveRecord::Base
   # knows to do a query on the 'Question' table for records with a 
   # 'ta_test_id that' matches the calling objects id.
   has_many :questions
+  has_many :test_results
   attr_accessible :name
   belongs_to :course
 end

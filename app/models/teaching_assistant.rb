@@ -2,6 +2,7 @@ class TeachingAssistant < User
   # has many courses they are a TA for
   has_many :courses
   # TODO also has Test Grades
+  has_many :test_results
 
   # TODO FIX, remove
   def self.model_name
