@@ -8,5 +8,12 @@ class TestResultsController < ApplicationController
     redirect_to teaching_assistant_test_result_path(@result)
   end
 
+  def index
+    @test_results = TestResult.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @test_results }
+    end
+  end
 
 end
