@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <% if current_user %>
-          <%= current_user.email %> <%= link_to 'logout', logout_path %>
-        <% else %>
-          <%= link_to 'login', login_path %>
-        <% end %>
+    <% if current_user %>
+      <%= current_user.email %> <%= link_to 'logout', logout_path %>
+    <% else %>
+      <%= link_to 'login', login_path %>
+    <% end %>
     <title>MoocTaManager</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -18,8 +18,8 @@
     <div id="nav">
       <ul>
         <% if current_user %>
-          <li>Candidate Results</li>
-          <li>Courses</li>
+          <li><%= link_to 'Candidate Results'%></li>
+          <li><%= link_to 'Courses', professor_courses_path(:professor_id => current_user.id) %></li>
           <li><%= link_to 'Logout', logout_path %></li>
         <% end %>
         </li>
