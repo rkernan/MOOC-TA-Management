@@ -11,10 +11,10 @@ MoocTaManager::Application.routes.draw do
   resources :teaching_assistants, :controller => 'users'
 
   resources :professors, :controller => 'users' do
-    resources :courses
-  end
-  
-  resources :ta_tests do
-    resources :questions
+    resources :courses do
+      resources :ta_tests do
+        resources :questions
+      end
+    end
   end
 end

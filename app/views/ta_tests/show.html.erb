@@ -32,7 +32,7 @@
 <% end %>
  
 <h2>Add a question:</h2>
-<%= form_for([@ta_test, @ta_test.questions.build]) do |f| %>
+<%= form_for([@professor, @course, @ta_test, @ta_test.questions.build]) do |f| %>
   <div class="field">
     <%= f.radio_button :question_type, 'mult_choice', :checked => true %> 
     <%= label :question_type_mult_choice, 'Multiple Choice' %>
@@ -63,4 +63,4 @@
 <% end %>
 
 <br /> 
-<%= link_to 'Done', ta_tests_path %>
+<%= link_to 'Done', professor_course_ta_tests_path(@professor, @course) %>
