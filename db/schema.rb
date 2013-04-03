@@ -11,16 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130221225318) do
+ActiveRecord::Schema.define(:version => 20130402235814) do
 
   create_table "courses", :force => true do |t|
     t.string   "name"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "professor_id"
   end
-
-  add_index "courses", ["user_id"], :name => "index_courses_on_user_id"
 
   create_table "questions", :force => true do |t|
     t.integer  "ta_test_id"

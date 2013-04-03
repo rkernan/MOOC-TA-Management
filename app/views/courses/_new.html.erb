@@ -1,0 +1,21 @@
+<%= form_for([@professor, @course]) do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explaination">
+      <h2><%= pluralize(@couse.errors.count, "error") %> prohibited this course from being saved: </h2>
+      <ul>
+        <% @course.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.text_field :name, :placeholder => "Name" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+<% end %>
+<div class="actions">
+<%= button_to 'Cancel', ta_tests_path, :method => :get %>
+</div>
+
