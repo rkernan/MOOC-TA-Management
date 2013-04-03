@@ -14,7 +14,7 @@ MoocTaManager::Application.routes.draw do
     resources :courses do
       resources :ta_tests do
         resources :questions
-	resources :test_results
+        resources :test_results
       end
     end
   end

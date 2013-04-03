@@ -13,7 +13,7 @@
  */
 
 body {
-  margin-top: -32px;
+  margin-top: -50px;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
@@ -33,36 +33,41 @@ input {
 }
 
 #top {
-  margin: 0;
-  text-align: center;
-  border-bottom: 3px solid black;
-  background: #d31306;
-  height: 8em;
-  line-height: 8em;
+  background: black;
+  height: 6em;
   text-shadow: 0 0.13em #f34426;
 }
 
-#auth {
-  text-transform: uppercase;
-  line-height: 1em;
-  float: right;
-  font-size: 1.5em;
-  padding: 0.5em;
-  text-align: center;
+#nav {
+  padding: 0;
 }
 
-#auth a {
+#nav ul li {
+  display: inline;
+  background: black;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  font-size: 2em;
+  color: white;
+  text-shadow: none; 
+}
+
+#nav a {
   text-decoration: none;
-  color: #a30306;
+  color: white;
 }
 
 #top h1 {
-  color: #a30306;
-  font-size: 3em;
+  padding-top: 1em;
+  color: white;
+  font-size: 2em;
+  padding-left: 1em;
 }
 
 #container {
-  width: 30em;
+  width: 50em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4em;
@@ -87,11 +92,19 @@ form input {
 .actions input {
   padding: 1em;
   font-size: 0.9em;
-  background: #139306;
+  background: black;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 0 0.13em #111;
   font-weight: 800;
+}
+
+select {
+  margin-top: 1em;
+  height: 2em;
+  text-align: center;
+  width: 50%;
+  font-size: 1.5em;
 }
 
 #cancel_button {
