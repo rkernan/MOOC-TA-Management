@@ -20,7 +20,7 @@ MoocTaManager::Application.routes.draw do
   resources :professors, :controller => 'users' do
     resources :courses
   end
-
+  
   resources :ta_tests do
     resources :questions
     resources :test_results

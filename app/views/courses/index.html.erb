@@ -3,12 +3,13 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Professor</th>
   </tr>
   <% @courses.each do |course| %>
     <tr>
       <td><%= course.name %></td>
-      <td><%= course.professor %></td>
+      <td><%= link_to 'Show', professor_course_path(@professor, course) %></td>
+      <td><%= link_to 'Edit', edit_professor_course_path(@professor, course) %></td>
+      <td><%= link_to 'Destroy', professor_course_path(@professor, course), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
