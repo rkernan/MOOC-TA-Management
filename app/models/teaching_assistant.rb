@@ -1,6 +1,7 @@
 class TeachingAssistant < User
   # has many courses they are a TA for
   has_many :courses
+  has_many :test_results
 
   # def self.model_name
   #   User.model_name

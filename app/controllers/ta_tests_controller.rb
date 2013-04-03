@@ -48,4 +48,8 @@ class TaTestsController < ApplicationController
     end
   end
 
+  def take
+    @ta_test = TaTest.find(params[:id])
+  end
+
 end
