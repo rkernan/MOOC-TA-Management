@@ -1,4 +1,3 @@
-
 # Must have these gems installed:
 require 'nokogiri'
 require 'net/https'
@@ -10,8 +9,8 @@ require 'headless'
 headless = Headless.new
 headless.start
 
-USER = 'dougblack@gatech.edu'
-PWD = 'Precisi0n'
+USER = 'YOUR_EMAIL_HERE'
+PWD = 'YOUR_PASSWORD_HERE'
 
 BROWSER_SLEEP = 4
 
