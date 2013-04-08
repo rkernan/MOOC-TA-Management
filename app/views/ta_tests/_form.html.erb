@@ -1,23 +1,23 @@
 <%= form_for([@professor, @course, @ta_test]) do |f| %>
-	<% if @ta_test.errors.any? %>
-		<div id="error_explaination">
-			<h2><%= pluralize(@ta_test.error.count, "error") %> prohibited this ta_test from being saved:</h2>
-			<ul>
-				<% @ta_test.errors.full_messages.each do |msg| %>
-					<li><%= msg %></li>
-				<% end %>
-			</ul>
-		</div>
-	<% end %>
-	<div class="field">
-		<%= f.label :name %><br/>
-		<%= f.text_field :name %>
-	</div>
-	<div class="actions">
-		<%= f.submit %>
-	</div>
-	<div class="actions">
-		<%= button_to 'Cancel', professor_course_ta_tests_path, :method => :get %>
-	</div>
+  <% if @ta_test.errors.any? %>
+    <div id="error_explaination">
+      <h2><%= pluralize(@ta_test.error.count, "error") %> prohibited this ta_test from being saved:</h2>
+      <ul>
+        <% @ta_test.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <div class="actions">
+    <%= button_to 'Cancel', professor_course_ta_tests_path, :method => :get %>
+  </div>
 <% end %>
 
