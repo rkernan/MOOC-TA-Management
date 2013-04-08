@@ -8,8 +8,6 @@ MoocTaManager::Application.routes.draw do
 
   resources :users
 
-  resources :teaching_assistants, :controller => 'users'
-  
   resources :professors, :controller => 'users' do
     resources :courses do
       resources :ta_tests do
@@ -19,4 +17,12 @@ MoocTaManager::Application.routes.draw do
     end
   end
 
+  resources :teaching_assistants, :controller => 'users' do
+    resources :test_results
+    resources :courses do
+      resources :ta_tests do
+        resources :questions
+      end
+    end
+  end
 end
