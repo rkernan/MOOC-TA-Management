@@ -7,11 +7,11 @@
 <ol>
   <% @ta_test.questions.each do |question| %>
     <li><%= question.content %><br /></li>
-    <ol>
+    <ul>
       <% question.answers.each do |answer| %>
         <li><%= answer.content %> (<%= answer.correct %>)</li>
       <% end %>
-    </ol>
+    </ul>
   <% end %>
 </ol>
 

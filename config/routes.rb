@@ -4,6 +4,7 @@ MoocTaManager::Application.routes.draw do
   get 'login' => 'sessions#login', :as => 'login'
   get 'logout' => 'sessions#logout', :as => 'logout'
   post 'sessions/authenticate' => 'sessions#authenticate'
+  resources :courses, :only => [:index]
   resources :users
   resources :professors, :controller => 'users', :shallow => true do
     resources :courses, :shallow => true do

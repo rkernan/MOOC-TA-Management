@@ -22,4 +22,6 @@
 
 <br />
 
-<%= link_to 'New Course', new_professor_course_path(@professor) %>
+<% if @professor %>
+  <%= link_to 'New Course', new_professor_course_path(@professor) %>
+<% end %>

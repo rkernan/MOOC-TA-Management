@@ -2,8 +2,12 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-    @professor = Professor.find(params[:professor_id])
-    @courses = @professor.courses.all
+    if params[:professor_id]
+      @professor = Professor.find(params[:professor_id])
+      @courses = @professor.courses.all
+    else
+      @courses = Course.all
+    end
 
     respond_to do |format|
       format.html
