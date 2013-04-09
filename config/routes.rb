@@ -10,4 +10,5 @@ MoocTaManager::Application.routes.draw do
       resources :ta_tests, :shallow => true
     end
   end
+  resources :teaching_assistants, :controller => 'users', :shallow => true
 end
