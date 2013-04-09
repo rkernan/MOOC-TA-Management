@@ -1,9 +1,8 @@
 MoocTaManager::Application.routes.draw do
   root :to => 'users#index'
-  get 'register' => 'users#new', :as => 'register'
-  get 'login' => 'sessions#login', :as => 'login'
-  get 'logout' => 'sessions#logout', :as => 'logout'
-  post 'sessions/authenticate' => 'sessions#authenticate'
+  resources :sessions
+  match 'login' => 'sessions#new', :as => :login
+  match 'logout' => 'sessions#destroy', :as => :logout
   resources :courses, :only => [:index]
   resources :users
   resources :professors, :controller => 'users', :shallow => true do

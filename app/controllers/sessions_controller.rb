@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
-  def login
+  def new
     # login form
   end
 
-  def authenticate
+  def create
     @user = User.authenticate(params[:email], params[:password])
     if @user
       # update login times
@@ -22,9 +22,9 @@ class SessionsController < ApplicationController
     end
   end
 
-  def logout
+  def destroy
     session[:user_id] = nil
     session[:user_type] = nil
-    redirect_to :action => 'login', :controller => 'sessions'
+    redirect_to :login
   end
 end
