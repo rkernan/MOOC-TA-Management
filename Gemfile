@@ -10,7 +10,6 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'therubyracer', :platforms => :ruby
-  gem 'nested_form'
 end
 
 group :development do
@@ -23,4 +22,5 @@ end
 
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
+gem 'nested_form'
 
