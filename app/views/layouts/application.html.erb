@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% if current_user %>
-      <%= current_user.email %> <%= link_to 'logout', logout_path %>
-    <% else %>
-      <%= link_to 'login', login_path %>
-    <% end %>
     <title>MoocTaManager</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -21,6 +16,8 @@
           <li><%= link_to 'Candidate Results'%></li>
           <% if current_user.type == 'Professor' %>
             <li><%= link_to 'Courses', professor_courses_path(:professor_id => current_user.id) %></li>
+          <% elsif current_user.type == "TeachingAssistant" %>
+            <!-- TODO: TA pages -->
           <% end %>
           <li><%= link_to 'Logout', logout_path %></li>
         <% else %>

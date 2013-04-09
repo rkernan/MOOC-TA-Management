@@ -1,23 +1,26 @@
-<%= form_for([@professor, @course, @ta_test]) do |f| %>
-	<% if @ta_test.errors.any? %>
-		<div id="error_explaination">
-			<h2><%= pluralize(@ta_test.error.count, "error") %> prohibited this ta_test from being saved:</h2>
-			<ul>
-				<% @ta_test.errors.full_messages.each do |msg| %>
-					<li><%= msg %></li>
-				<% end %>
-			</ul>
-		</div>
-	<% end %>
-	<div class="field">
-		<%= f.label :name %><br/>
-		<%= f.text_field :name %>
-	</div>
-	<div class="actions">
-		<%= f.submit %>
-	</div>
-	<div class="actions">
-		<%= button_to 'Cancel', professor_course_ta_tests_path, :method => :get %>
-	</div>
+<%= nested_form_for([@professor, @course, @ta_test]) do |f| %>
+  <% if @ta_test.errors.any? %>
+    <div id="error_explaination">
+      <h2><%= pluralize(@ta_test.errors.count, "error") %> prohibited this test from being saved:</h2>
+      <ul>
+        <% @ta_test.error.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <%= f.fields_for :questions do |builder| %>
+    <% render "question_fields", :f => builder %>
+  <% end %>
+  <!-- add more questions HERE -->
+  <%= f.link_to_add "Add Question", :questions %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
 

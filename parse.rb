@@ -1,4 +1,3 @@
-
 # Must have these gems installed:
 require 'nokogiri'
 require 'net/https'

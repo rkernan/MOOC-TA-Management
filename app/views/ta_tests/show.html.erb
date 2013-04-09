@@ -1,66 +1,7 @@
 <p id="notice"><%= notice %></p>
+
+<h1>TA Test</h1>
+
+<%= render 'form' %>
  
-<p>
-  <b>Name:</b>
-  <%= @ta_test.name %>
-</p>
-
-<h2>Questions</h2>
-<% @ta_test.questions.each do |question| %>
-  <p>
-    <b>Type:</b>
-    <%= question.question_type %>
-  </p>
-
-  <p>
-    <b>Question:</b>
-    <%= question.question %>
-  </p>
- 
-  <p>
-    <b>Correct Answer:</b>
-    <%= question.answer %>
-  </p>
-
-  <p>
-    <b>Wrong Answers:</b>
-    1. <%= question.wrong1 %>
-    2. <%= question.wrong2 %>
-    3. <%= question.wrong3 %>
-  </p>
-  
-<% end %>
- 
-<h2>Add a question:</h2>
-<%= form_for([@professor, @course, @ta_test, @ta_test.questions.build]) do |f| %>
-  <div class="field">
-    <%= f.radio_button :question_type, 'mult_choice', :checked => true %> 
-    <%= label :question_type_mult_choice, 'Multiple Choice' %>
-  </div>
-  <div class="field">
-    <%= f.label :question %><br />
-    <%= f.text_field :question %>
-  </div>
-  <div class="field">
-    <%= f.label :answer %><br />
-    <%= f.text_field :answer %>
-  </div>
-  <div class="field">
-    <%= f.label :wrong1 %><br />
-    <%= f.text_field :wrong1 %>
-  </div>
-  <div class="field">
-    <%= f.label :worng2 %><br />
-    <%= f.text_field :wrong2 %>
-  </div>
-  <div class="field">
-    <%= f.label :wrong3 %><br />
-    <%= f.text_field :wrong3 %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
-<br /> 
 <%= link_to 'Done', professor_course_ta_tests_path(@professor, @course) %>
