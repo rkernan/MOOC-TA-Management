@@ -4,6 +4,12 @@ class TaTestsController < ApplicationController
     @professor = Professor.find(params[:professor_id])
     @course = Course.find(params[:course_id])
     @ta_test = TaTest.new
+    3.times do
+      question = @ta_test.questions.build
+      4.times do
+        question.answers.build
+      end
+    end
     respond_to do |format|
       format.html
       format.json { render json: @ta_test }
@@ -39,7 +45,6 @@ class TaTestsController < ApplicationController
   def destroy
     @ta_test = TaTest.find(params[:id])
     @ta_test.destroy
- 
     respond_to do |format|
       format.html { redirect_to ta_tests_url }
       format.json { head :no_content }

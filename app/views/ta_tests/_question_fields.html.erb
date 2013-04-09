@@ -1,0 +1,10 @@
+<div class="fields">
+  <p>
+    <%= f.label :content, "Question" %>
+    <%= f.text_area :content, :rows => 3 %>
+  </p>
+  <%= f.fields_for :answers do |builder| %>
+    <%= render "answer_fields", :f => builder %>
+  <% end %>
+  <!-- add more answers HERE -->
+</div>
