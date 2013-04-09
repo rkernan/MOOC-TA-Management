@@ -2,18 +2,24 @@
  
 <table>
   <tr>
+    <th>Course</th>
     <th>Name</th>
+    <td></th>
+    <th></th>
+    <th></th>
   </tr>
  
-<% @ta_tests.each do |ta_test| %>
-  <tr>
-    <td><%= ta_test.name %></td>
-    <td><%= link_to 'Edit', professor_course_ta_test_path(@professor, @course, ta_test) %></td>
-    <td><%= link_to 'Destroy', professor_course_ta_test_path(@professor, @course, ta_test), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <% @ta_tests.each do |ta_test| %>
+    <tr>
+      <td><%= ta_test.course.name %></td>
+      <td><%= ta_test.name %></td>
+      <td><%= link_to 'Show', ta_test %></td>
+      <td><%= link_to 'Edit', edit_ta_test_path(ta_test) %></td>
+      <td><%= link_to 'Destroy', ta_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
 </table>
  
 <br />
  
-<%= link_to 'New TA Test', new_professor_course_ta_test_path %>
+<%= link_to 'New TA Test', new_course_ta_test_path(@course) %>

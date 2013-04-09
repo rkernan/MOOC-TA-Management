@@ -1,4 +1,4 @@
-<%= nested_form_for([@professor, @course, @ta_test]) do |f| %>
+<%= nested_form_for([@course, @ta_test]) do |f| %>
   <% if @ta_test.errors.any? %>
     <div id="error_explaination">
       <h2><%= pluralize(@ta_test.errors.count, "error") %> prohibited this test from being saved:</h2>
@@ -17,7 +17,6 @@
   <%= f.fields_for :questions do |builder| %>
     <% render "question_fields", :f => builder %>
   <% end %>
-  <!-- add more questions HERE -->
   <%= f.link_to_add "Add Question", :questions %>
   <div class="actions">
     <%= f.submit %>

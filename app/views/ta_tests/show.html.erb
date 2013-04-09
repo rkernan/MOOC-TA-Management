@@ -2,6 +2,18 @@
 
 <h1>TA Test</h1>
 
-<%= render 'form' %>
- 
-<%= link_to 'Done', professor_course_ta_tests_path(@professor, @course) %>
+<p><b>Course:</b><%= @ta_test.course.name %></p>
+<p><b>Name:</b><%= @ta_test.name %></p>
+<ol>
+  <% @ta_test.questions.each do |question| %>
+    <li><%= question.content %><br /></li>
+    <ol>
+      <% question.answers.each do |answer| %>
+        <li><%= answer.content %> (<%= answer.correct %>)</li>
+      <% end %>
+    </ol>
+  <% end %>
+</ol>
+
+<%= link_to 'Edit', edit_ta_test_path(@ta_test) %>
+<%= link_to 'Back', course_ta_tests_path(@ta_test.course) %>
