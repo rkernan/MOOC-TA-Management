@@ -2,8 +2,9 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-      @courseSearch = Course.search(params[:search])
-    if params[:professor_id]
+    if params[:search]
+      @courses = Course.search(params[:search])
+    elsif params[:professor_id]
       @professor = Professor.find(params[:professor_id])
       @courses = @professor.courses.all
     else
