@@ -42,6 +42,19 @@ class TaTestsController < ApplicationController
     end
   end
 
+  def update
+    @ta_test = TaTest.find(params[:id])
+    respond_to do |format|
+      if @ta_test.update_attributes(params[:ta_test])
+        format.html { redirect_to @ta_test, notice: 'Test was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.html { render json: @ta_test.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   def destroy
     @ta_test = TaTest.find(params[:id])
     @ta_test.destroy

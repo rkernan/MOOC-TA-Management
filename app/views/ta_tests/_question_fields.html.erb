@@ -2,9 +2,12 @@
   <p>
     <%= f.label :content, "Question" %>
     <%= f.text_area :content, :rows => 3 %>
+    <!-- remove a question HERE -->
+    <%= f.link_to_remove "Remove Question" %>
   </p>
   <%= f.fields_for :answers do |builder| %>
     <%= render "answer_fields", :f => builder %>
   <% end %>
   <!-- add more answers HERE -->
+  <%= f.link_to_add "Add Answer", :answers %>
 </div>

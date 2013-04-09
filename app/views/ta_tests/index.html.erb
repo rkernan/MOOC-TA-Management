@@ -8,7 +8,7 @@
 <% @ta_tests.each do |ta_test| %>
   <tr>
     <td><%= ta_test.name %></td>
-    <td><%= link_to 'Show', professor_course_ta_test_path(@professor, @course, ta_test) %></td>
+    <td><%= link_to 'Edit', professor_course_ta_test_path(@professor, @course, ta_test) %></td>
     <td><%= link_to 'Destroy', professor_course_ta_test_path(@professor, @course, ta_test), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
