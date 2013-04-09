@@ -10,8 +10,8 @@ require 'headless'
 headless = Headless.new
 headless.start
 
-USER = 'dougblack@gatech.edu'
-PWD = 'Precisi0n'
+USER = 'EMAIL'
+PWD = 'PASSWORD'
 
 BROWSER_SLEEP = 4
 
@@ -26,6 +26,7 @@ def signin()
   browser = Watir::Browser.new(:phantomjs)
 
   # Navigate to Sign In page
+  puts "Signing in."
   browser.goto(SIGNIN_URL)
   sleep(BROWSER_SLEEP)
 
@@ -39,6 +40,7 @@ def signin()
   # Navigate to auth page
   browser.goto(AUTH_URL)
   sleep(BROWSER_SLEEP)
+  puts "Done signing in."
 
   return browser
 end
@@ -58,8 +60,8 @@ def get_threads(browser)
 end
 
 def get_links_from_page(browser, page, link_frag)
+  puts "Getting links from " << page.to_s
   browser.goto(page)
-  
   matching_links = browser.links.select{|link| link.href.include? link_frag}.collect{|link| link.href}
 end
 
@@ -67,10 +69,11 @@ def rank_users(browser, threads)
   users = {}
   threads.flatten!
   puts threads.inspect
-  threads.each do |thread|
-    puts "Getting " << thread.to_s
+  total_threads = threads.size
+  threads.each_with_index do |thread, index|
+    puts "[" << index.to_s << "/" << total_threads.to_s << "] Getting " << thread.to_s
     browser.goto(thread)
-    students = browser.spans.select{|span| span.attribute_value("data-user-title") == "Student"}
+    students = browser.links.select{|link| link.href.include? "user_id"}
     students.each do |student|
       user = student.text
       if users.has_key?(user)
@@ -79,7 +82,7 @@ def rank_users(browser, threads)
         users[user] = 0
       end
     end
-    sleep(BROWSER_SLEEP / 2)
+    sleep(BROWSER_SLEEP / 4)
   end
 
   users = users.sort_by {|_key, value| value}
@@ -89,7 +92,6 @@ end
 
 browser = signin()
 threads = get_threads(browser)
-puts threads
 rank_users(browser, threads)
 
 browser.close
