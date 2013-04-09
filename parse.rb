@@ -5,12 +5,10 @@ require 'open-uri'
 require 'openssl'
 require 'watir-webdriver'
 require 'headless'
+require 'io/console'
 
 headless = Headless.new
 headless.start
-
-USER = 'EMAIL'
-PWD = 'PASSWORD'
 
 BROWSER_SLEEP = 4
 
@@ -20,7 +18,7 @@ SIGNIN_URL = 'https://www.coursera.org/account/signin'
 FORUM_HOME_URL = "https://class.coursera.org/#{CLASS_PATH}/forum/index"
 AUTH_URL = "https://class.coursera.org/#{CLASS_PATH}/auth/auth_redirector?type=login&subtype=normal"
 
-def signin()
+def signin(email, password)
   # Open a browser to log user in  
   browser = Watir::Browser.new(:phantomjs)
 
@@ -30,8 +28,8 @@ def signin()
   sleep(BROWSER_SLEEP)
 
   # Fill in user info
-  browser.text_field(:id => 'signin-email').value = USER
-  browser.text_field(:id => 'signin-password').value = PWD
+  browser.text_field(:id => 'signin-email').value = email
+  browser.text_field(:id => 'signin-password').value = password
   browser.button(:text => 'Sign In').click
 
   sleep(BROWSER_SLEEP)
@@ -89,7 +87,13 @@ def rank_users(browser, threads)
 
 end
 
-browser = signin()
+print "Coursera email: "
+email = gets.chomp
+print "Coursera password: "
+password = STDIN.noecho(&:gets).chomp
+puts
+
+browser = signin(email, password)
 threads = get_threads(browser)
 rank_users(browser, threads)
 
