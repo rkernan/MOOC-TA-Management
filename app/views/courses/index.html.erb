@@ -1,6 +1,6 @@
 <h1>Listing courses</h1>
 
-<% form_tag course_path, :method => 'get' do %>
+<% form_tag professor_course_path(@course.professor), :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
