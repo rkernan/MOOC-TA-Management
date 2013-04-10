@@ -22,7 +22,7 @@ body {
   color: #444;
   text-shadow: 0 0.13em #fff;
   width: 100%:
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 input {
@@ -35,7 +35,6 @@ input {
 #top {
   background: black;
   height: 6em;
-  text-shadow: 0 0.13em #f34426;
 }
 
 #nav {
@@ -49,7 +48,7 @@ input {
   padding-right: 0.5em;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   text-shadow: none; 
 }
@@ -74,14 +73,13 @@ input {
 }
 
 h1 {
-  text-transform: uppercase;
   color: #d31306;
 }
 
 form input {
   margin-top: 1em;
-  font-size: 1.5em;
-  padding: 0.7em;
+  font-size: 1em;
+  padding: 0.3em;
 }
 
 .actions {
@@ -90,21 +88,19 @@ form input {
 }
 
 .actions input {
-  padding: 1em;
+  padding: 0.3em;
   font-size: 0.9em;
   background: black;
   color: #fff;
-  text-transform: uppercase;
   text-shadow: 0 0.13em #111;
   font-weight: 800;
 }
 
 select {
   margin-top: 1em;
-  height: 2em;
-  text-align: center;
-  width: 50%;
-  font-size: 1.5em;
+  height: 1.5em;
+  width: 30%;
+  font-size: 1em;
 }
 
 #cancel_button {
@@ -113,11 +109,11 @@ select {
 }
 
 table {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 table th {
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 table tr:nth-child(odd) {
