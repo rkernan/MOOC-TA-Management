@@ -10,15 +10,19 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.email_field :email, :placeholder => :email %>
+    <%= f.label :email %><br />
+    <%= f.email_field :email %>
   </div>
   <div class="field">
-    <%= f.password_field :password, :placeholder => :password %>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
   </div>
   <div class='field'>
-    <%= f.password_field :password_confirmation, :placeholder => :password_confirmation %><br/>
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
   </div>
   <div class='field'>
+    <%= f.label :type %><br />
     <%= f.select :type, [["Teaching Assistant", "TeachingAssistant"], ["Professor", "Professor"]] %><br/>
   </div>
   <div class="actions">

@@ -12,15 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= f.text_field :email, :placeholder => :email %>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.password_field :password, :placeholder => :password%>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
   </div>
   <div class="field">
     <%= f.check_box :remember_me %><%= f.label :remember_me %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Login' %>
   </div>
 <% end %>
