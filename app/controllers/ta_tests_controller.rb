@@ -41,6 +41,7 @@ class TaTestsController < ApplicationController
   end
 
   # GET /ta_tests/1/edit
+  # GET /ta_tests/1/edit.json
   def edit
     @ta_test = TaTest.find(params[:id])
   end
