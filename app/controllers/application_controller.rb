@@ -24,6 +24,14 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def require_specific_user(user_id)
+    unless current_user && current_user.id == user_id
+      flash[:notice] = "You are not authorized to view this page."
+      redirect_to users_url
+      return false
+    end
+  end
+
   def require_no_user
     if current_user
       store_location
