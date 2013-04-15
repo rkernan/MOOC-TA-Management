@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  ta_test: 
+  question: 
   content: MyString
+  correct: false
 
 two:
-  ta_test: 
+  question: 
   content: MyString
+  correct: false

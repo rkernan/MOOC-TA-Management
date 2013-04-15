@@ -4,14 +4,6 @@
 
 <p><b>Type:</b> <%= @user.type %></p>
 <p><b>Email:</b> <%= @user.email %></p>
-<p><b>ID:</b> <%= @user.id %></p>
-<p><b>Password:</b> (should be blank) <%= @user.password %></p>
-<p><b>Password Salt:</b> <%= @user.password_salt %></p>
-<p><b>Password Hash:</b> <%= @user.password_hash %></p>
-<p><b>Created At:</b> <%= @user.created_at %></p>
-<p><b>Updated At:</b> <%= @user.updated_at %></p>
-<p><b>First Login At:</b> <%= @user.first_login_at %></p>
-<p><b>Last Login At:</b> <%= @user.last_login_at %></p>
 
 <%= link_to 'Edit', edit_user_path(@user) %>
 <%= link_to 'Back', users_path %>

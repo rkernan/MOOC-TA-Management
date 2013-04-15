@@ -11,32 +11,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130403000513) do
+ActiveRecord::Schema.define(:version => 20130410221036) do
+
+  create_table "answers", :force => true do |t|
+    t.integer  "question_id", :null => false
+    t.boolean  "correct",     :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.text     "content",     :null => false
+  end
+
+  add_index "answers", ["question_id"], :name => "index_answers_on_question_id"
 
   create_table "courses", :force => true do |t|
-    t.string   "name"
+    t.string   "name",         :null => false
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
-    t.integer  "professor_id"
+    t.integer  "professor_id", :null => false
   end
 
   create_table "questions", :force => true do |t|
-    t.integer  "ta_test_id"
-    t.text     "question"
-    t.string   "question_type"
-    t.text     "answer"
-    t.text     "wrong1"
-    t.text     "wrong2"
-    t.text     "wrong3"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.integer  "ta_test_id", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.text     "content",    :null => false
   end
 
   add_index "questions", ["ta_test_id"], :name => "index_questions_on_ta_test_id"
 
   create_table "ta_tests", :force => true do |t|
-    t.integer  "course_id"
-    t.string   "name"
+    t.integer  "course_id",  :null => false
+    t.string   "name",       :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -56,14 +61,15 @@ ActiveRecord::Schema.define(:version => 20130403000513) do
   add_index "test_results", ["teaching_assistant_id"], :name => "index_test_results_on_teaching_assistant_id"
 
   create_table "users", :force => true do |t|
-    t.string   "email",          :null => false
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-    t.string   "password_hash",  :null => false
-    t.string   "password_salt",  :null => false
+    t.string   "email",             :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.string   "password_hash",     :null => false
+    t.string   "password_salt",     :null => false
     t.datetime "first_login_at"
     t.datetime "last_login_at"
     t.string   "type"
+    t.string   "persistence_token"
   end
 
 end

@@ -1,8 +1,12 @@
-<h1>Listing ta_tests</h1>
- 
+<h1>Listing tests</h1>
+
 <table>
   <tr>
+    <th>Course</th>
     <th>Name</th>
+    <td></th>
+    <th></th>
+    <th></th>
   </tr>
  
 <% @ta_tests.each do |ta_test| %>
@@ -13,8 +17,9 @@
     <td><%= link_to 'Results', professor_course_ta_test_test_results_path(@professor, @course, ta_test) %>
   </tr>
 <% end %>
+
 </table>
  
 <br />
  
-<%= link_to 'New TA Test', new_professor_course_ta_test_path %>
+<%= link_to 'New TA Test', new_course_ta_test_path(@course) %>
