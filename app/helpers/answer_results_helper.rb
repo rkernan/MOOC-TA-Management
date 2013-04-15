@@ -1,0 +1,2 @@
+module AnswerResultsHelper
+end

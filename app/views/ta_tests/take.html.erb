@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>TA Test</h1>
+
+<p><b>Course:</b><%= @ta_test.course.name %></p>
+<p><b>Name:</b><%= @ta_test.name %></p>
+<ol>
+  <% @ta_test.questions.each do |question| %>
+    <li><%= question.content %><br /></li>
+    <ul>
+      <% question.answers.each do |answer| %>
+        <li><%= answer.content %> (<%= answer.correct %>)</li>
+      <% end %>
+    </ul>
+  <% end %>
+</ol>
+
+<%= nested_form_for([@ta_test, @test_result]) do |f| %>
+  <% if @test_result.errors.any? %>
+    <div id="error_explaination">
+      <h2><%= pluralize(@test_result.errors.count, "error") %> prohibited this test from being saved:</h2>
+      <ul>
+        <% @test_result.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <%= f.fields_for :questions do |builder| %>
+    <% render "question_fields", :f => builder %>
+  <% end %>
+  <%= f.link_to_add "Add Question", :questions %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<div class="actions">
+  <%= button_to 'Cancel', course_ta_tests_path(@ta_test.course), :method => :get %>
+</div>
+

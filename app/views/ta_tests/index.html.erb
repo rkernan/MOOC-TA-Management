@@ -13,13 +13,18 @@
     <tr>
       <td><%= ta_test.course.name %></td>
       <td><%= ta_test.name %></td>
+      <% if current_user.type == "Professor" %>
       <td><%= link_to 'Show', ta_test %></td>
       <td><%= link_to 'Edit', edit_ta_test_path(ta_test) %></td>
       <td><%= link_to 'Destroy', ta_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% else %>
+      <td><%= link_to 'Take', new_ta_test_test_result_path(ta_test) %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>
  
 <br />
- 
+<% if current_user.type == "Professor" %> 
 <%= link_to 'New TA Test', new_course_ta_test_path(@course) %>
+<% end %>

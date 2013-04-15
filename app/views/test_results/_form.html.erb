@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>TA Test</h1>
+
+<p><b>Course:</b><%= @ta_test.course.name %></p>
+<p><b>Name:</b><%= @ta_test.name %></p>
+
+<%= nested_form_for([@ta_test, @test_result]) do |f| %>
+  <% if @test_result.errors.any? %>
+    <div id="error_explaination">
+      <h2><%= pluralize(@test_result.errors.count, "error") %> prohibited this test_result from being saved:</h2>
+      <ul>
+        <% @test_result.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% @ta_test.questions.each do |question| %>
+    <h3><%= question.content %></h3>
+    <% question_result = @test_result.question_results.build %>
+    <% question.answers.each do |answer| %>
+      <% answer_result = question_result.answer_results.build %>
+      <div class="field">
+        <%= f.label :content, answer.content %>
+        <%= f.check_box :selected %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>

@@ -18,4 +18,24 @@ class TestResultsController < ApplicationController
     end
   end
 
+  def new
+    @ta_test = TaTest.find(params[:ta_test_id])
+    @ta = TeachingAssistant.find(current_user.id)
+    @test_result = @ta_test.test_results.new
+
+    #@ta_test.questions.each do |question|
+    #  question_result = @test_result.question_results.build
+    #  question.answers.each do
+    #    question_result.answer_results.build
+    #  end
+    #end
+
+
+    respond_to do |format|
+      format.html
+      format.json { render json: [@ta_test, @test_result] }
+    end
+  end
+
+
 end

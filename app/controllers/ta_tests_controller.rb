@@ -93,7 +93,14 @@ class TaTestsController < ApplicationController
   end
 
   def take
-    @ta_test = TaTest.find(params[:id])
+    @ta_test = TaTest.find(params[:ta_test_id])
+    @test_result = @ta_test.test_results.new
+
+    respond_to do |format|
+      format.html
+      format.json { render json: [@ta_test, @test_result] }
+    end
+
   end
 
 end
