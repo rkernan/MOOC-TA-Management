@@ -5,7 +5,10 @@
 <%= link_to 'View tests for this course', course_ta_tests_path(@course) %>
 
 
+<% if @professor %>
 <%= link_to 'Edit', edit_course_path(@course) %>
+<% end %>
+
 <% if params[:professor_id] %>
   <%= link_to 'Back', professor_courses_path(@course.professor) %>
 <% else %>
