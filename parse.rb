@@ -1,4 +1,5 @@
 # Must have these gems installed:
+require 'lingua'
 require 'nokogiri'
 require 'net/https'
 require 'open-uri'
@@ -6,6 +7,17 @@ require 'openssl'
 require 'watir-webdriver'
 require 'headless'
 require 'io/console'
+require 'activerecord'
+
+ActiveRecord::Base.establish_connection (
+  :adapter => "sqlite3",
+  :database => "db/development.sqlite3"
+)
+
+class ParseResult < ActiveRecord::Base
+  belongs_to :professor
+end
+
 
 headless = Headless.new
 headless.start
@@ -43,9 +55,10 @@ def signin(email, password)
 end
 
 def get_threads(browser)
-
+  puts "Getting threads."
   # Get links of each sub forum
   forum_links = get_links_from_page(browser, FORUM_HOME_URL, 'forum_id')
+  puts "Links " + forum_links.to_s
 
   # Get links of every thread
   threads = []
@@ -59,6 +72,9 @@ end
 def get_links_from_page(browser, page, link_frag)
   puts "Getting links from " << page.to_s
   browser.goto(page)
+  browser.links.each do |link|
+    link.href.to_s
+  end
   matching_links = browser.links.select{|link| link.href.include? link_frag}.collect{|link| link.href}
 end
 

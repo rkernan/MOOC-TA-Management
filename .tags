@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:MoocTaManager
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+BrowsingTest	test/performance/browsing_test.rb	/^class BrowsingTest < ActionDispatch::PerformanceTest$/;"	c
+Course	app/models/course.rb	/^class Course < ActiveRecord::Base$/;"	c
+CourseProfessorId	db/migrate/20130402235814_course_professor_id.rb	/^class CourseProfessorId < ActiveRecord::Migration$/;"	c
+CourseTest	test/unit/course_test.rb	/^class CourseTest < ActiveSupport::TestCase$/;"	c
+CoursesController	app/controllers/courses_controller.rb	/^class CoursesController < ApplicationController$/;"	c
+CoursesControllerTest	test/functional/courses_controller_test.rb	/^class CoursesControllerTest < ActionController::TestCase$/;"	c
+CoursesHelper	app/helpers/courses_helper.rb	/^module CoursesHelper$/;"	m
+CoursesHelperTest	test/unit/helpers/courses_helper_test.rb	/^class CoursesHelperTest < ActionView::TestCase$/;"	c
+CreateCourses	db/migrate/20130203180946_create_courses.rb	/^class CreateCourses < ActiveRecord::Migration$/;"	c
+CreateQuestions	db/migrate/20130203181756_create_questions.rb	/^class CreateQuestions < ActiveRecord::Migration$/;"	c
+CreateTaTests	db/migrate/20130203181420_create_ta_tests.rb	/^class CreateTaTests < ActiveRecord::Migration$/;"	c
+CreateTestResults	db/migrate/20130403000513_create_test_results.rb	/^class CreateTestResults < ActiveRecord::Migration$/;"	c
+CreateUsers	db/migrate/20130201153937_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+MoocTaManager	config/application.rb	/^module MoocTaManager$/;"	m
+Professor	app/models/professor.rb	/^class Professor < User$/;"	c
+Question	app/models/question.rb	/^class Question < ActiveRecord::Base$/;"	c
+QuestionTest	test/unit/question_test.rb	/^class QuestionTest < ActiveSupport::TestCase$/;"	c
+QuestionsController	app/controllers/questions_controller.rb	/^class QuestionsController < ApplicationController$/;"	c
+QuestionsControllerTest	test/functional/questions_controller_test.rb	/^class QuestionsControllerTest < ActionController::TestCase$/;"	c
+QuestionsHelper	app/helpers/questions_helper.rb	/^module QuestionsHelper$/;"	m
+QuestionsHelperTest	test/unit/helpers/questions_helper_test.rb	/^class QuestionsHelperTest < ActionView::TestCase$/;"	c
+SessionsController	app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+SessionsControllerTest	test/functional/sessions_controller_test.rb	/^class SessionsControllerTest < ActionController::TestCase$/;"	c
+SessionsHelper	app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
+SessionsHelperTest	test/unit/helpers/sessions_helper_test.rb	/^class SessionsHelperTest < ActionView::TestCase$/;"	c
+TaTest	app/models/ta_test.rb	/^class TaTest < ActiveRecord::Base$/;"	c
+TaTestTest	test/unit/ta_test_test.rb	/^class TaTestTest < ActiveSupport::TestCase$/;"	c
+TaTestsController	app/controllers/ta_tests_controller.rb	/^class TaTestsController < ApplicationController$/;"	c
+TaTestsControllerTest	test/functional/ta_tests_controller_test.rb	/^class TaTestsControllerTest < ActionController::TestCase$/;"	c
+TaTestsHelper	app/helpers/ta_tests_helper.rb	/^module TaTestsHelper$/;"	m
+TaTestsHelperTest	test/unit/helpers/ta_tests_helper_test.rb	/^class TaTestsHelperTest < ActionView::TestCase$/;"	c
+TeachingAssistant	app/models/teaching_assistant.rb	/^class TeachingAssistant < User$/;"	c
+TestResult	app/models/test_result.rb	/^class TestResult < ActiveRecord::Base$/;"	c
+TestResultTest	test/unit/test_result_test.rb	/^class TestResultTest < ActiveSupport::TestCase$/;"	c
+TestResultsController	app/controllers/test_results_controller.rb	/^class TestResultsController < ApplicationController$/;"	c
+TestResultsControllerTest	test/functional/test_results_controller_test.rb	/^class TestResultsControllerTest < ActionController::TestCase$/;"	c
+TestResultsHelper	app/helpers/test_results_helper.rb	/^module TestResultsHelper$/;"	m
+TestResultsHelperTest	test/unit/helpers/test_results_helper_test.rb	/^class TestResultsHelperTest < ActionView::TestCase$/;"	c
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserLoginTimestamps	db/migrate/20130207055404_user_login_timestamps.rb	/^class UserLoginTimestamps < ActiveRecord::Migration$/;"	c
+UserRolesSti	db/migrate/20130221225318_user_roles_sti.rb	/^class UserRolesSti < ActiveRecord::Migration$/;"	c
+UserTest	test/unit/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+UserUniquenessAndNulls	db/migrate/20130206160757_user_uniqueness_and_nulls.rb	/^class UserUniquenessAndNulls < ActiveRecord::Migration$/;"	c
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersControllerTest	test/functional/users_controller_test.rb	/^class UsersControllerTest < ActionController::TestCase$/;"	c
+UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+UsersHelperTest	test/unit/helpers/users_helper_test.rb	/^class UsersHelperTest < ActionView::TestCase$/;"	c
+_generate_salt	app/models/user.rb	/^  def _generate_salt$/;"	f	class:User
+_hash_secret	app/models/user.rb	/^  def _hash_secret(password, password_salt)$/;"	f	class:User
+authenticate	app/controllers/sessions_controller.rb	/^  def authenticate$/;"	f	class:SessionsController
+authenticate	app/models/user.rb	/^  def self.authenticate(email, password)$/;"	F	class:User
+change	db/migrate/20130201153937_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+change	db/migrate/20130203180946_create_courses.rb	/^  def change$/;"	f	class:CreateCourses
+change	db/migrate/20130203181420_create_ta_tests.rb	/^  def change$/;"	f	class:CreateTaTests
+change	db/migrate/20130203181756_create_questions.rb	/^  def change$/;"	f	class:CreateQuestions
+change	db/migrate/20130403000513_create_test_results.rb	/^  def change$/;"	f	class:CreateTestResults
+create	app/controllers/courses_controller.rb	/^  def create$/;"	f	class:CoursesController
+create	app/controllers/questions_controller.rb	/^  def create$/;"	f	class:QuestionsController
+create	app/controllers/ta_tests_controller.rb	/^  def create$/;"	f	class:TaTestsController
+create	app/controllers/test_results_controller.rb	/^  def create$/;"	f	class:TestResultsController
+create	app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
+current_user	app/controllers/application_controller.rb	/^  def current_user$/;"	f	class:ApplicationController
+destroy	app/controllers/courses_controller.rb	/^  def destroy$/;"	f	class:CoursesController
+destroy	app/controllers/ta_tests_controller.rb	/^  def destroy$/;"	f	class:TaTestsController
+destroy	app/controllers/users_controller.rb	/^  def destroy$/;"	f	class:UsersController
+down	db/migrate/20130206160757_user_uniqueness_and_nulls.rb	/^  def down$/;"	f	class:UserUniquenessAndNulls
+down	db/migrate/20130207055404_user_login_timestamps.rb	/^  def down$/;"	f	class:UserLoginTimestamps
+down	db/migrate/20130221225318_user_roles_sti.rb	/^  def down$/;"	f	class:UserRolesSti
+down	db/migrate/20130402235814_course_professor_id.rb	/^  def down$/;"	f	class:CourseProfessorId
+edit	app/controllers/users_controller.rb	/^  def edit$/;"	f	class:UsersController
+get_links_from_page	parse.rb	/^def get_links_from_page(browser, page, link_frag)$/;"	f
+get_threads	parse.rb	/^def get_threads(browser)$/;"	f
+hash_password	app/models/user.rb	/^  def hash_password$/;"	f	class:User
+index	app/controllers/courses_controller.rb	/^  def index$/;"	f	class:CoursesController
+index	app/controllers/ta_tests_controller.rb	/^  def index$/;"	f	class:TaTestsController
+index	app/controllers/test_results_controller.rb	/^  def index$/;"	f	class:TestResultsController
+index	app/controllers/users_controller.rb	/^  def index$/;"	f	class:UsersController
+login	app/controllers/sessions_controller.rb	/^  def login$/;"	f	class:SessionsController
+logout	app/controllers/sessions_controller.rb	/^  def logout$/;"	f	class:SessionsController
+new	app/controllers/courses_controller.rb	/^  def new$/;"	f	class:CoursesController
+new	app/controllers/ta_tests_controller.rb	/^  def new$/;"	f	class:TaTestsController
+new	app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+password_matches?	app/models/user.rb	/^  def password_matches?(other_password)$/;"	f	class:User
+rank_users	parse.rb	/^def rank_users(browser, threads)$/;"	f
+show	app/controllers/courses_controller.rb	/^  def show$/;"	f	class:CoursesController
+show	app/controllers/ta_tests_controller.rb	/^  def show$/;"	f	class:TaTestsController
+show	app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+signin	parse.rb	/^def signin()$/;"	f
+take	app/controllers/ta_tests_controller.rb	/^  def take$/;"	f	class:TaTestsController
+test_homepage	test/performance/browsing_test.rb	/^  def test_homepage$/;"	f	class:BrowsingTest
+to_partial_path	app/models/professor.rb	/^  def to_partial_path$/;"	f	class:Professor
+to_partial_path	app/models/teaching_assistant.rb	/^  def to_partial_path$/;"	f	class:TeachingAssistant
+up	db/migrate/20130206160757_user_uniqueness_and_nulls.rb	/^  def up$/;"	f	class:UserUniquenessAndNulls
+up	db/migrate/20130207055404_user_login_timestamps.rb	/^  def up$/;"	f	class:UserLoginTimestamps
+up	db/migrate/20130221225318_user_roles_sti.rb	/^  def up$/;"	f	class:UserRolesSti
+up	db/migrate/20130402235814_course_professor_id.rb	/^  def up$/;"	f	class:CourseProfessorId
+update	app/controllers/users_controller.rb	/^  def update$/;"	f	class:UsersController
