@@ -68,6 +68,8 @@ ActiveRecord::Schema.define(:version => 20130415122726) do
   add_index "ta_tests", ["course_id"], :name => "index_ta_tests_on_course_id"
 
   create_table "test_results", :force => true do |t|
+    t.string   "selected"
+    t.string   "correctness"
     t.integer  "teaching_assistant_id"
     t.integer  "ta_test_id"
     t.datetime "created_at",            :null => false

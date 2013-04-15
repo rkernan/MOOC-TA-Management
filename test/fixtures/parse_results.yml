@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fog: 1
+  pending: false
+  professor_id: 1
+  ta_id: 1
+  activity: 1
+
+two:
+  fog: 1
+  pending: false
+  professor_id: 1
+  ta_id: 1
+  activity: 1

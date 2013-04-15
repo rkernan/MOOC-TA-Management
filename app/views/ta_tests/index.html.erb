@@ -9,6 +9,7 @@
     <th></th>
   </tr>
  
+
   <% @ta_tests.each do |ta_test| %>
     <tr>
       <td><%= ta_test.course.name %></td>
@@ -17,11 +18,13 @@
       <td><%= link_to 'Show', ta_test %></td>
       <td><%= link_to 'Edit', edit_ta_test_path(ta_test) %></td>
       <td><%= link_to 'Destroy', ta_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Results', ta_test_test_results_path(ta_test) %> </td>
       <% else %>
       <td><%= link_to 'Take', new_ta_test_test_result_path(ta_test) %></td>
       <% end %>
     </tr>
   <% end %>
+
 </table>
  
 <br />
