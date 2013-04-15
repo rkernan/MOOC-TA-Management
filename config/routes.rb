@@ -13,5 +13,4 @@ MoocTaManager::Application.routes.draw do
     end
   end
   resources :teaching_assistants, :controller => 'users', :shallow => true
-  match "/ta_tests/:ta_test_id/take(.:format)" => "ta_tests#take", :as => :take_ta_test
 end
