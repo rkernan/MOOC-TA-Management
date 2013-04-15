@@ -17,7 +17,7 @@ class Question < ActiveRecord::Base
       end
     end
     if not has_correct
-      errors.add(:answers, "")
+      errors.add(:answers, "Each question must have at least one correct answer.")
     end
   end
 end

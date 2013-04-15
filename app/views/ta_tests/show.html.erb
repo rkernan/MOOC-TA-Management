@@ -17,3 +17,6 @@
 
 <%= link_to 'Edit', edit_ta_test_path(@ta_test) %>
 <%= link_to 'Back', course_ta_tests_path(@ta_test.course) %>
+<% if current_user.type == "Professor" %>
+<%= link_to 'Results', ta_test_test_results_path(@ta_test) %>
+<% end %>

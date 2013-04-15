@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130410221036) do
+ActiveRecord::Schema.define(:version => 20130415122726) do
+
+  create_table "answer_results", :force => true do |t|
+    t.boolean  "correct"
+    t.boolean  "selected"
+    t.integer  "question_result_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  add_index "answer_results", ["question_result_id"], :name => "index_answer_results_on_question_result_id"
 
   create_table "answers", :force => true do |t|
     t.integer  "question_id", :null => false
@@ -29,6 +39,15 @@ ActiveRecord::Schema.define(:version => 20130410221036) do
     t.datetime "updated_at",   :null => false
     t.integer  "professor_id", :null => false
   end
+
+  create_table "question_results", :force => true do |t|
+    t.boolean  "correct"
+    t.integer  "test_result_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "question_results", ["test_result_id"], :name => "index_question_results_on_test_result_id"
 
   create_table "questions", :force => true do |t|
     t.integer  "ta_test_id", :null => false
