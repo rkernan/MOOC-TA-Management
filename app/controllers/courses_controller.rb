@@ -1,4 +1,6 @@
 class CoursesController < ApplicationController
+  before_filter :require_professor, :only => [:new, :create, :edit, :update]
+
   # GET /courses
   # GET /courses.json
   def index

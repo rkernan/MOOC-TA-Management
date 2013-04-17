@@ -17,24 +17,54 @@ class ApplicationController < ActionController::Base
 
   def require_user
     unless current_user
-      store_location
       flash[:notice] = "You must be logged in to view this page."
+      store_location
       redirect_to :login
       return false
     end
   end
 
-  def require_specific_user(user_id)
+  def require_user_id(user_id)
     unless current_user && current_user.id == user_id
-      flash[:notice] = "You are not authorized to view this page."
-      redirect_to users_url
+      flash[:notice] = "You must be logged in as a specific user to change this page."
+      if current_user
+        redirect_to users_url
+      else
+        store_location
+        redirect_to :login
+      end
+      return false
+    end
+  end
+
+  def require_professor
+    unless current_user && current_user.type == "Professor"
+      flash[:notice] = "You must be logged in as a Professor to view this page."
+      if current_user
+        redirect_to users_url
+      else
+        store_location
+        redirect_to :login
+      end
+      return false
+    end
+  end
+
+  def require_teaching_assistant
+    unless current_user && current_user.type == "TeachingAssistant"
+      flash[:notice] = "You must be logged in as a Teaching Assistant to view this page."
+      if current_user
+        redirect_to users_url
+      else
+        store_location
+        redirect_to :login
+      end
       return false
     end
   end
 
   def require_no_user
     if current_user
-      store_location
       flash[:notice] = "You must not be logged in to view this page."
       redirect_to users_url
       return false
@@ -42,11 +72,22 @@ class ApplicationController < ActionController::Base
   end
 
   def store_location
-    session[:return_to] = request.request_uri
+    session[:return_to] =
+      if request.get?
+        request.url
+      else
+        request.referer
+      end
   end
 
-  def redirect_back_or_default(default)
-    redirect_to(session[:return_to] || default)
+  def url_back_or_default(default)
+    url =
+      if session[:return_to]
+        session[:return_to]
+      else
+        default
+      end
     session[:return_to] = nil
+    return url
   end
 end

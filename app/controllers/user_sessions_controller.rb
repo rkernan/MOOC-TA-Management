@@ -17,7 +17,7 @@ class UserSessionsController < ApplicationController
 
     respond_to do |format|
       if @user_session.save
-        format.html { redirect_to user_url(current_user), notice: 'Login successful! Welcome ' + current_user.email + '.' }
+        format.html { redirect_to url_back_or_default(user_url(current_user)), notice: 'Login successful! Welcome ' + current_user.email + '.' }
         format.json { render json: user_url(current_user), status: :created, location: @user_session }
       else
         format.html { render action: "new" }

@@ -1,4 +1,7 @@
 class TaTestsController < ApplicationController
+  before_filter :require_professor, :only => [:new, :create, :edit, :update, :show]
+  before_filter :require_teaching_assistant, :only => [:take]
+
   # GET /ta_tests
   # GET /ta_tests.json
   def index

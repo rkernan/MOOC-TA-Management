@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <% if @user.type == "Professor" %>
 <%= link_to 'Courses', professor_courses_path(@user) %>
 <% else %>

@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_filter :require_no_user, :only => [:new, :create]
+  before_filter :require_user, :only => [:edit, :update, :destroy]
+
   # GET /users
   # GET /users.json
   def index
@@ -74,6 +77,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
+
     respond_to do |format|
       format.html { redirect_to users_url }
       format.json { head :no_content }
