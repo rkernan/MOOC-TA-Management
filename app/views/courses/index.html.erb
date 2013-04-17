@@ -7,8 +7,6 @@
       <%= submit_tag "Search", :name => nil %>
     </p>
   <% end %>
-<% end %>
-
 
 <table>
   <tr>
@@ -29,6 +27,29 @@
     </tr>
   <% end %>
 </table>
+<% end %>
+
+<% if @professor %>
+
+<table>
+  <tr>
+    <th>Name of course</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @courses.each do |course| %>
+    <tr>
+      <td><%= course.name %></td>
+      <td><%= link_to 'Show', course %></td>
+      <td><%= link_to 'Edit', edit_course_path(course) %></td>
+      <td><%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<% end %>
 
 <br />
 

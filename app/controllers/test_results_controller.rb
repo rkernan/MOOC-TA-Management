@@ -9,9 +9,14 @@ class TestResultsController < ApplicationController
   end
 
   def index
-    @ta_test = TaTest.find(params[:ta_test_id])
+   # @ta_test = TaTest.find(params[:ta_test_id])
    # @ta = TeachingAssistant.find(params[:teaching_assistant_id])
+   # @test_results = @ta.test_results.all
+    @professor = Professor.find(params[:professor_id])
+    @course = Course.find(params[:course_id])
+    @ta_test = TaTest.find(params[:ta_test_id])
     @test_results = @ta_test.test_results.all
+
     respond_to do |format|
       format.html
       format.json { render json: @test_results }

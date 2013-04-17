@@ -1,9 +1,11 @@
 <%= link_to 'Tests', course_ta_tests_path(@course) %>
 
-<p><b>Professor:</b> <%= @course.professor.email %></p>
-<p><b>Name:</b> <%= @course.name %></p>
+<p><b><font size="+2"><center><%= @course.name %></center></font></b></p>
 
+<% if @professor %>
 <%= link_to 'Edit', edit_course_path(@course) %>
+<% end %>
+
 <% if params[:professor_id] %>
   <%= link_to 'Back', professor_courses_path(@course.professor) %>
 <% else %>
