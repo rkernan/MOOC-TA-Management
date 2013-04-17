@@ -13,8 +13,10 @@
     <th>Professor</th>
     <th>Name</th>
     <th></th>
-    <th></th>
-    <th></th>
+    <% if session[:professor_id] %>
+      <th></th>
+      <th></th>
+    <% end %>
   </tr>
 
   <% @courses.each do |course| %>
@@ -22,8 +24,10 @@
       <td><%= course.professor.email %></td>
       <td><%= course.name %></td>
       <td><%= link_to 'Show', course %></td>
-      <td><%= link_to 'Edit', edit_course_path(course) %></td>
-      <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% if session[:professor_id] %>
+        <td><%= link_to 'Edit', edit_course_path(course) %></td>
+        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>
