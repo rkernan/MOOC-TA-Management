@@ -28,13 +28,14 @@ class TestResultsController < ApplicationController
     @ta = TeachingAssistant.find(current_user.id)
     @test_result = @ta_test.test_results.new
 
-    #@ta_test.questions.each do |question|
-    #  question_result = @test_result.question_results.build
-    #  question.answers.each do
-    #    question_result.answer_results.build
-    #  end
-    #end
-
+   # @ta_test.questions.each do |question|
+   #   question_result = @test_result.question_results.build
+   #   question_result.question = question
+   #   question.answers.each do |answer|
+   #     answer_result = question_result.answer_results.build
+   #     answer_result.answer = answer
+   #   end
+   # end
 
     respond_to do |format|
       format.html

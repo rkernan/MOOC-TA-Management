@@ -1,8 +1,10 @@
 class Question < ActiveRecord::Base
   belongs_to :ta_test
   has_many :answers, :dependent => :destroy
+  has_many :question_results
   attr_accessible :content, :answers_attributes
   accepts_nested_attributes_for :answers, :reject_if => lambda { |a| a[:content].blank? }, :allow_destroy => true
+  accepts_nested_attributes_for :question_results
   # validate :validate_correct_answer, :message => "A question must have at least one correct answer."
   validates :content, :presence => true
   validate :validate_correct_answer
