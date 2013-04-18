@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <%= link_to 'Tests', course_ta_tests_path(@course) %>
-
+<%= link_to 'TA Test Requests', course_ta_test_requests_path(@course) %>
+<%= link_to 'Request TAs', new_course_ta_test_request_path(@course) %>
 <p><b>Professor:</b> <%= @course.professor.email %></p>
 <p><b>Name:</b> <%= @course.name %></p>
 

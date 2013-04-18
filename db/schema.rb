@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415122726) do
+ActiveRecord::Schema.define(:version => 20130418035247) do
 
   create_table "answer_results", :force => true do |t|
     t.boolean  "correct"
@@ -58,6 +58,13 @@ ActiveRecord::Schema.define(:version => 20130415122726) do
 
   add_index "questions", ["ta_test_id"], :name => "index_questions_on_ta_test_id"
 
+  create_table "ta_test_requests", :force => true do |t|
+    t.string   "ta_email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "course_id"
+  end
+
   create_table "ta_tests", :force => true do |t|
     t.integer  "course_id",  :null => false
     t.string   "name",       :null => false
@@ -68,8 +75,6 @@ ActiveRecord::Schema.define(:version => 20130415122726) do
   add_index "ta_tests", ["course_id"], :name => "index_ta_tests_on_course_id"
 
   create_table "test_results", :force => true do |t|
-    t.string   "selected"
-    t.string   "correctness"
     t.integer  "teaching_assistant_id"
     t.integer  "ta_test_id"
     t.datetime "created_at",            :null => false
