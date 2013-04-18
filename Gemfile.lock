@@ -45,7 +45,6 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.2)
-    hirb (0.7.1)
     i18n (0.6.4)
     journey (1.0.4)
     jquery-rails (2.2.1)
@@ -118,7 +117,6 @@ DEPENDENCIES
   authlogic
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
-  hirb
   jquery-rails
   nested_form
   rails (= 3.2.11)

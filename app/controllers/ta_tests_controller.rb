@@ -1,4 +1,16 @@
 class TaTestsController < ApplicationController
+  before_filter :require_teaching_assistant, :only => [:take]
+  before_filter :require_professor, :only => [:new, :create, :edit, :update, :show]
+  before_filter :only => [:new, :create, :edit, :update, :show] {
+    require_specific_user(
+      if params[:course_id]
+        Course.find(params[:course_id]).professor
+      else
+        TaTest.find(params[:id]).course.professor
+      end
+    )
+  }
+
   # GET /ta_tests
   # GET /ta_tests.json
   def index

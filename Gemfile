@@ -13,11 +13,6 @@ group :assets do
 end
 
 group :development do
-  # better rails console output
-  # gem 'pry'
-  # gem 'pry-doc'
-  # gem 'pry-rails'
-  gem 'hirb'
 end
 
 gem 'jquery-rails'

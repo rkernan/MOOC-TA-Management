@@ -40,6 +40,16 @@ ActiveRecord::Schema.define(:version => 20130418035247) do
     t.integer  "professor_id", :null => false
   end
 
+  create_table "parse_results", :force => true do |t|
+    t.integer  "fog"
+    t.boolean  "pending"
+    t.integer  "professor_id"
+    t.integer  "ta_id"
+    t.integer  "activity"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "question_results", :force => true do |t|
     t.boolean  "correct"
     t.integer  "test_result_id"
