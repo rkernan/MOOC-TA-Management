@@ -11,16 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130418035247) do
+ActiveRecord::Schema.define(:version => 20130415144659) do
 
   create_table "answer_results", :force => true do |t|
-    t.boolean  "correct"
     t.boolean  "selected"
     t.integer  "question_result_id"
+    t.integer  "answer_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
 
+  add_index "answer_results", ["answer_id"], :name => "index_answer_results_on_answer_id"
   add_index "answer_results", ["question_result_id"], :name => "index_answer_results_on_question_result_id"
 
   create_table "answers", :force => true do |t|
@@ -53,10 +54,12 @@ ActiveRecord::Schema.define(:version => 20130418035247) do
   create_table "question_results", :force => true do |t|
     t.boolean  "correct"
     t.integer  "test_result_id"
+    t.integer  "question_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
 
+  add_index "question_results", ["question_id"], :name => "index_question_results_on_question_id"
   add_index "question_results", ["test_result_id"], :name => "index_question_results_on_test_result_id"
 
   create_table "questions", :force => true do |t|
@@ -67,13 +70,6 @@ ActiveRecord::Schema.define(:version => 20130418035247) do
   end
 
   add_index "questions", ["ta_test_id"], :name => "index_questions_on_ta_test_id"
-
-  create_table "ta_test_requests", :force => true do |t|
-    t.string   "ta_email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "course_id"
-  end
 
   create_table "ta_tests", :force => true do |t|
     t.integer  "course_id",  :null => false
