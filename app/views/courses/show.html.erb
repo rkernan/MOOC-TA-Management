@@ -1,12 +1,18 @@
 <%= link_to 'Tests', course_ta_tests_path(@course) %>
 
-<p><b><font size="+2"><center><%= @course.name %></center></font></b></p>
+<p><b>Professor:</b> <%= @course.professor.email %></p>
 
-<% if @professor %>
-<%= link_to 'Edit', edit_course_path(@course) %>
+
+<p><b>Name:</b> <%= @course.name %></p>
+
+<% if session[:professor_id] %>
+  <%= link_to 'Edit', edit_course_path(@course) %>
+  <%= link_to 'TA Test Requests', course_ta_test_requests_path(@course) %>
+  <%= link_to 'Request TAs', new_course_ta_test_request_path(@course) %>
 <% end %>
 
-<% if params[:professor_id] %>
+<% if session[:professor_id] %>
+  <% session[:professor_id] = nil %>
   <%= link_to 'Back', professor_courses_path(@course.professor) %>
 <% else %>
   <%= link_to 'Back', courses_path %>

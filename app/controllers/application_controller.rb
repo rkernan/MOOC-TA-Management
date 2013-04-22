@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  force_ssl
   
   helper_method :current_user
 
@@ -24,8 +25,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def require_user_id(user_id)
-    unless current_user && current_user.id == user_id
+  def require_specific_user(user)
+    unless current_user && current_user == user
       flash[:notice] = "You must be logged in as a specific user to change this page."
       if current_user
         redirect_to users_url
