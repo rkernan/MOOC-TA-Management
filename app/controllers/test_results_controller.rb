@@ -2,10 +2,17 @@ class TestResultsController < ApplicationController
 
   def create
     @ta_test = TaTest.find(params[:ta_test_id])
-    @ta = TeachingAssistant.find(params[:teaching_assistant_id])
-    @result = @ta_test.test_results.create(params[:test_result])
-    @result = @ta.test_results.update(params[:test_result])
-    redirect_to teaching_assistant_test_result_path(@result)
+    @test_result = @ta_test.test_results.new(params[:test_result])
+
+    respond_to do |format|
+      if @test_result.save
+        format.html { redirect_to @test_result, notice: 'Test was successfully taken.' }
+        format.json { render json: @test_result, status: :created, location: @test_result }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @test_result.errros, status: :unprocessable_entity }
+      end
+    end
   end
 
   def index
