@@ -13,9 +13,14 @@
   <p><b>Course:</b> <%= @ta_test.course.name %></p>
   <p><b>Name:</b> <%= @ta_test.name %></p>
 
+  <% @i = 0 %>
   <%= f.fields_for :question_results do |qr_builder| %>
+    <%= @qs_and_as[@i] %>
+    <% @i = @i + 1 %>
     <%= qr_builder.fields_for :answer_results do |ar_builder| %>
       <div class="fields">
+        <%= @qs_and_as[@i] %>
+        <% @i = @i + 1 %>
         <%= ar_builder.check_box :selected %>
       </div>
     <% end %>

@@ -1,0 +1,22 @@
+<h1>Test Result</h1>
+
+<p><b>Course:</b><%= @test_result.ta_test.course.name %></p>
+<p><b>Test:</b><%= @test_result.ta_test.name %></p>
+<p><b>TA:</b><%= @test_result.teaching_assistant.email %></p>
+<ol>
+  <% @test_result.question_results.each do |question_result| %>
+    <li><%= question_result.question.content %><br /></li>
+    <ul>
+      <% question_result.answer_results.each do |answer_result| %>
+        <li><%= answer_result.answer.content %> (<%= answer_result.answer.correct %>) Selected(<% answer_result.selected %>)</li>
+      <% end %>
+    </ul>
+  <% end %>
+</ol>
+
+<% if current_user.type == "Professor" %>
+<!-- <%= link_to 'Results', ta_test_test_results_path(@ta_test) %> -->
+<% else %>
+<%= link_to 'TaTests', course_ta_tests_path(@test_result.ta_test.course) %>
+<% end %>
+
