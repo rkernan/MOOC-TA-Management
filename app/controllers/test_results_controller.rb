@@ -54,12 +54,17 @@ class TestResultsController < ApplicationController
     end
     @i = 0
     @test_result.question_results.each do |question_result|
+      @correctness = true
       question_result.question = @qs_and_as[@i]
       @i = @i + 1
       question_result.answer_results.each do |answer_result|
         answer_result.answer = @qs_and_as[@i]
         @i = @i + 1
+        if answer_result.selected != answer_result.answer.correct
+          @correctness = false
+        end 
       end
+      question_result.correct = @correctness
     end
 
     @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
