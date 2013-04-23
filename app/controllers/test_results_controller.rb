@@ -44,6 +44,24 @@ class TestResultsController < ApplicationController
     @ta_test = TaTest.find(params[:ta_test_id])
     @course = @ta_test.course
     @test_result = @ta_test.test_results.new(params[:test_result])
+
+    @qs_and_as = Array.new
+    @ta_test.questions.each do |question|
+      @qs_and_as.push(question)
+      question.answers.each do |answer|
+        @qs_and_as.push(answer)
+      end
+    end
+    @i = 0
+    @test_result.question_results.each do |question_result|
+      question_result.question = @qs_and_as[@i]
+      @i = @i + 1
+      question_result.answer_results.each do |answer_result|
+        answer_result.answer = @qs_and_as[@i]
+        @i = @i + 1
+      end
+    end
+
     @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
 
     respond_to do |format|
@@ -55,6 +73,15 @@ class TestResultsController < ApplicationController
         format.html { render json: @test_result.errors, status: :unprocessable_entity }
         format.json { render json: @test_result.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  def show
+    @test_result = TestResult.find(params[:id])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @test_result }
     end
   end
 
