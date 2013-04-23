@@ -3,7 +3,7 @@ class TestResultsController < ApplicationController
   def create
     @ta_test = TaTest.find(params[:ta_test_id])
     @test_result = @ta_test.test_results.new(params[:test_result])
-
+    @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
     respond_to do |format|
       if @test_result.save
         format.html { redirect_to @test_result, notice: 'Test was successfully taken.' }
