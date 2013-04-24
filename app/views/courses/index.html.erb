@@ -2,6 +2,16 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
+
+<% if not @professor %>
+  <%= form_tag courses_path, :method => 'get' do %>
+    <p>
+    <%= text_field_tag :search, params[:search], :class => 'text_field' %><br />
+    <%= submit_tag "Search", :name => nil, :class => 'btn' %>
+    </p>
+  <% end %>
+<% end %>
+
 <table class="table table-striped">
   <thead>
     <tr>
