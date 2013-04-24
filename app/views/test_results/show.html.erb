@@ -1,8 +1,15 @@
-<h1>Test Result</h1>
+<%- model_class = TestResult -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
 
-<p><b>Course:</b><%= @test_result.ta_test.course.name %></p>
-<p><b>Test:</b><%= @test_result.ta_test.name %></p>
-<p><b>TA:</b><%= @test_result.teaching_assistant.email %></p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:teaching_assistant_id) %>:</strong></dt>
+  <dd><%= @test_result.teaching_assistant.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:ta_test_id) %>:</strong></dt>
+  <dd><%= @test_result.ta_test.name %></dd>
+</dl>
+
 <ol>
   <% @test_result.question_results.each do |question_result| %>
     <li><%= question_result.question.content %> Correct(<%= question_result.correct %>)<br /></li>
@@ -14,9 +21,14 @@
   <% end %>
 </ol>
 
-<% if current_user.type == "Professor" %>
-<!-- <%= link_to 'Results', ta_test_test_results_path(@ta_test) %> -->
-<% else %>
-<%= link_to 'TaTests', course_ta_tests_path(@test_result.ta_test.course) %>
-<% end %>
-
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              ta_test_test_results_path(@test_result.ta_test), :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_test_result_path(@test_result), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              test_result_path(@test_result),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

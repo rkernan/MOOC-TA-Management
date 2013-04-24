@@ -1,62 +1,44 @@
-<h1>Listing courses</h1>
-
-<% if not @professor %>
-  <%= form_tag courses_path, :method => 'get' do %>
-    <p>
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil %>
-    </p>
-  <% end %>
-
-<table>
-  <tr>
-    <th>Professor</th>
-    <th>Name</th>
-    <th></th>
-    <% if session[:professor_id] %>
-      <th></th>
-      <th></th>
-    <% end %>
-  </tr>
-
-  <% @courses.each do |course| %>
+<%- model_class = Course -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
     <tr>
-      <td><%= course.professor.email %></td>
-      <td><%= course.name %></td>
-      <td><%= link_to 'Show', course %></td>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:professor_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <% if session[:professor_id] %>
-        <td><%= link_to 'Edit', edit_course_path(course) %></td>
-        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th><%=t '.actions', :default => t("helpers.actions") %></th>
       <% end %>
     </tr>
-  <% end %>
+  </thead>
+  <tbody>
+    <% @courses.each do |course| %>
+      <tr>
+        <td><%= link_to course.id, course_path(course) %></td>
+        <td><%= course.name %></td>
+        <td><%= course.professor.email %></td>
+        <td><%=l course.created_at %></td>
+        <% if session[:professor_id] %>
+          <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_course_path(course), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      course_path(course),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
-<% end %>
 
-<% if @professor %>
-
-<table>
-  <tr>
-    <th>Name of course</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-  <% @courses.each do |course| %>
-    <tr>
-      <td><%= course.name %></td>
-      <td><%= link_to 'Show', course %></td>
-      <td><%= link_to 'Edit', edit_course_path(course) %></td>
-      <td><%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</table>
-
-<% end %>
-
-<br />
-
-<% if @professor %>
-  <%= link_to 'New Course', new_professor_course_path(@professor) %>
+<% if session[:professor_id] %>
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_professor_course_path(@professor),
+              :class => 'btn btn-primary' %>
 <% end %>

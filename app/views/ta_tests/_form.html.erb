@@ -1,27 +1,36 @@
-<%= nested_form_for([@course, @ta_test]) do |f| %>
-  <% if @ta_test.errors.any? %>
-    <div id="error_explaination">
-      <h2><%= pluralize(@ta_test.errors.count, "error") %> prohibited this test from being saved:</h2>
-      <ul>
-        <% @ta_test.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
+<%= nested_form_for [@course, @ta_test], :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
   </div>
-  <%= f.fields_for :questions do |builder| %>
-    <% render "question_fields", :f => builder %>
+  <%= f.fields_for :questions do |q_builder| %>
+    <div class="fields">
+      <p>
+      <%= q_builder.label :content, "Question" %>
+      <%= q_builder.text_area :content, :rows => 3 %>
+      <%= q_builder.link_to_remove "Remove Question" %>
+      </p>
+      <%= q_builder.fields_for :answers do |a_builder| %>
+        <div class="fields">
+          <p>
+          <%= a_builder.label :content, "Answer" %>
+          <%= a_builder.check_box :correct %>
+          <%= a_builder.text_area :content, :rows => 1 %>
+          <%= a_builder.link_to_remove "Remove Answer" %>
+          </p>
+        </div>
+      <% end %>
+      <%= q_builder.link_to_add "Add Answer", :answers %>
+    </div>
+
   <% end %>
   <%= f.link_to_add "Add Question", :questions %>
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                course_ta_tests_path(@ta_test.course), :class => 'btn' %>
   </div>
 <% end %>
-<div class="actions">
-  <%= button_to 'Cancel', course_ta_tests_path(@ta_test.course), :method => :get %>
-</div>

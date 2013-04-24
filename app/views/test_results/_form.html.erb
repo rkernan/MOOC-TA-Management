@@ -1,32 +1,30 @@
-<%= form_for([@ta_test, @test_result]) do |f| %>
-  <% if @test_result.errors.any? %>
-    <div id="error_explaination">
-      <h2><%= pluralize(@test_result.errors.count, "error") %> prohibited this test_result from being saved:</h2>
-      <ul>
-        <% @test_result.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for [@ta_test, @test_result], :html => { :class => 'form-horizontal' } do |f| %>
 
   <p><b>Course:</b> <%= @ta_test.course.name %></p>
   <p><b>Name:</b> <%= @ta_test.name %></p>
 
-  <% @i = 0 %>
-  <%= f.fields_for :question_results do |qr_builder| %>
-    <%= @qs_and_as[@i] %>
-    <% @i = @i + 1 %>
-    <%= qr_builder.fields_for :answer_results do |ar_builder| %>
-      <div class="fields">
-        <%= @qs_and_as[@i] %>
-        <% @i = @i + 1 %>
-        <%= ar_builder.check_box :selected %>
-      </div>
+  <ol>
+    <% @i = 0 %>
+    <%= f.fields_for :question_results do |qr_builder| %>
+      <li><%= @qs_and_as[@i] %></li>
+      <% @i = @i + 1 %>
+      <ul>
+        <%= qr_builder.fields_for :answer_results do |ar_builder| %>
+          <div class="fields">
+            <li>
+            <%= ar_builder.check_box :selected %>
+            <%= @qs_and_as[@i] %>
+            </li>
+            <% @i = @i + 1 %>
+          </div>
+        <% end %>
+      </ul>
     <% end %>
-  <% end %>
-  
-  <div class="actions">
-    <%= f.submit %>
+  </ol>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                ta_test_test_results_path(@ta_test), :class => 'btn' %>
   </div>
 <% end %>

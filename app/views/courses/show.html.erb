@@ -1,19 +1,31 @@
-<%= link_to 'Tests', course_ta_tests_path(@course) %>
+<%- model_class = Course -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
 
-<p><b>Professor:</b> <%= @course.professor.email %></p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @course.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:professor_id) %>:</strong></dt>
+  <dd><%= @course.professor.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:tests) %>:</strong></dt>
+  <dd><%= link_to :tests, course_ta_tests_path(@course) %></dd>
+</dl>
 
-
-<p><b>Name:</b> <%= @course.name %></p>
-
-<% if session[:professor_id] %>
-  <%= link_to 'Edit', edit_course_path(@course) %>
-  <%= link_to 'TA Test Requests', course_ta_test_requests_path(@course) %>
-  <%= link_to 'Request TAs', new_course_ta_test_request_path(@course) %>
-<% end %>
-
-<% if session[:professor_id] %>
-  <% session[:professor_id] = nil %>
-  <%= link_to 'Back', professor_courses_path(@course.professor) %>
-<% else %>
-  <%= link_to 'Back', courses_path %>
-<% end %>
+<div class="form-actions">
+  <% if session[:professor_id] %>
+    <% session[:professor_id] = nil %>
+    <%= link_to t('.back', :default => t("helpers.links.back")),
+                professor_courses_path(@course.professor), :class => 'btn'  %>
+    <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                edit_course_path(@course), :class => 'btn' %>
+    <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                course_path(@course),
+                :method => 'delete',
+                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                :class => 'btn btn-danger' %>
+  <% else %>
+    <%= link_to t('.back', :default => t("helpers.links.back")),
+                courses_path, :class => 'btn'  %>
+  <% end %>
+</div>
