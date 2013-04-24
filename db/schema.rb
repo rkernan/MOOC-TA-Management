@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415144659) do
+ActiveRecord::Schema.define(:version => 20130424221919) do
 
   create_table "answer_results", :force => true do |t|
     t.boolean  "selected"
@@ -96,8 +96,6 @@ ActiveRecord::Schema.define(:version => 20130415144659) do
     t.datetime "updated_at",        :null => false
     t.string   "password_hash",     :null => false
     t.string   "password_salt",     :null => false
-    t.datetime "first_login_at"
-    t.datetime "last_login_at"
     t.string   "type"
     t.string   "persistence_token"
   end
