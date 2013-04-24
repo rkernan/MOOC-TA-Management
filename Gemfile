@@ -13,6 +13,7 @@ group :assets do
 end
 
 group :development do
+  gem 'hirb'
 end
 
 gem 'jquery-rails'

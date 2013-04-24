@@ -5,4 +5,5 @@ class TaTest < ActiveRecord::Base
   has_many :teaching_assistants, :through => :test_results
   attr_accessible :name, :questions_attributes
   accepts_nested_attributes_for :questions, :reject_if => lambda { |a| a[:content].blank? }, :allow_destroy => true
+  validates :name, :presence => true
 end
