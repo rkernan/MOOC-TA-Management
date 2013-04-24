@@ -17,6 +17,12 @@
       <%= f.password_field :password_confirmation, :class => 'password_field' %>
     </div>
   </div>
+  <div class="control-group">
+    <%= f.label :type, :class => 'control-label' %>
+    <div cass="controls">
+      <%= f.select :type, [["Teaching Assistant", "TeachingAssistant"], ["Professor", "Professor"]], :class => 'btn dropdown-menu' %>
+    </div>
+  </div>
 
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
