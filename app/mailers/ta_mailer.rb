@@ -8,4 +8,13 @@ class TaMailer < ActionMailer::Base
 	mail(:to => ta_test_request.ta_email, :subject => "Hello! We are interested in having you mentor our students")
   end
 
+  def ta_class_request_email(professor_name, course, ta_email, ta_name, site_name)
+	@professor_name = professor_name
+	@course = course
+	@ta_email
+	@ta_name
+	@site_name
+	mail(:to => ta_email, :subject => "Hello! We are interested in having you mentor our students")
+  end
+
 end

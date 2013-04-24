@@ -4,16 +4,14 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h1>Welcome to <%= @site_name %></h1>
+    <h1> Dear <%= @ta_name %> <h1>
+    <p>Welcome to <%= @site_name %></p>
+
     <p>
-      We are a Massive Open Online Course. We are constantly looking to find teaching assistants for our students. We have seen your helpful posts in various forums.
-    </p>
-    <p>
-       We invite you to register an account with our site and take a competency test. Based on your results, we may select you as a teaching assistant.
-    </p>
-    <p>
-      Please register on our site at: <%= @url %>.
+      We are a Massive Open Online Course. We are constantly looking to find teaching assistants for our students. Professor <%= @professor_name %> is looking for teaching assistants for his course: <%= @course %>. We think that you would be a qualified candidate for this course.
     </p>
 
   </body>
 </html>
+
+
