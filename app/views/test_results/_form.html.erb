@@ -1,8 +1,3 @@
-<h1>TA Test</h1>
-
-<p><b>Course:</b><%= @ta_test.course.name %></p>
-<p><b>Name:</b><%= @ta_test.name %></p>
-
 <%= form_for([@ta_test, @test_result]) do |f| %>
   <% if @test_result.errors.any? %>
     <div id="error_explaination">
@@ -15,24 +10,23 @@
     </div>
   <% end %>
 
-  <% @ta_test.questions.each do |question| %>
-    <% @question_result = @test_result.question_results.build(:question => question) %>
-    <%= question.content %>
-    <%= f.fields_for @question_result do |qr_builder| %>
-      <% question.answers.each do |answer| %>
-        <% @answer_result = @question_result.answer_results.build(:answer => answer) %>
-        <%= qr_builder.fields_for @answer_result do |ar_builder| %>
-          <div class="field">
-            <%= answer.content %>
-            <%= ar_builder.check_box :selected %>
-          </div>
-        <% end %>
-      <% end %>
+  <p><b>Course:</b> <%= @ta_test.course.name %></p>
+  <p><b>Name:</b> <%= @ta_test.name %></p>
+
+  <% @i = 0 %>
+  <%= f.fields_for :question_results do |qr_builder| %>
+    <%= @qs_and_as[@i] %>
+    <% @i = @i + 1 %>
+    <%= qr_builder.fields_for :answer_results do |ar_builder| %>
+      <div class="fields">
+        <%= @qs_and_as[@i] %>
+        <% @i = @i + 1 %>
+        <%= ar_builder.check_box :selected %>
+      </div>
     <% end %>
   <% end %>
-
+  
   <div class="actions">
     <%= f.submit %>
   </div>
-
 <% end %>
