@@ -29,7 +29,11 @@
                         :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                         :class => 'btn btn-mini btn-danger' %>
          <% else %>
-           <%= link_to 'Take', new_ta_test_test_result_path(ta_test), :class => 'btn btn-mini' %>
+           <% if TestResult.exists?(:teaching_assistant_id => current_user, :ta_test_id => ta_test) %>
+             <%= link_to 'Result', test_result_path(TestResult.where(:teaching_assistant_id => current_user, :ta_test_id => ta_test).first), :class => 'btn btn-mini' %>
+           <% else %>
+             <%= link_to 'Take', new_ta_test_test_result_path(ta_test), :class => 'btn btn-mini' %>
+           <% end %>
          <% end %>
         </td>
       </tr>
