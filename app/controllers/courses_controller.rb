@@ -1,5 +1,4 @@
 class CoursesController < ApplicationController
-  # before_filter :require_professor, :only => [:new, :create, :edit, :update, :destroy]
   before_filter :only => [:new, :create, :edit, :update, :destroy] {
     require_specific_user(
       if params[:professor_id]

@@ -8,18 +8,34 @@
   <dd><%= @test_result.teaching_assistant.email %></dd>
   <dt><strong><%= model_class.human_attribute_name(:ta_test_id) %>:</strong></dt>
   <dd><%= @test_result.ta_test.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:grade) %>:</strong></dt>
+  <dd><%= @test_result.grade %></dd>
 </dl>
 
-<ol>
-  <% @test_result.question_results.each do |question_result| %>
-    <li><%= question_result.question.content %> Correct(<%= question_result.correct %>)<br /></li>
-    <ul>
-      <% question_result.answer_results.each do |answer_result| %>
-        <li><%= answer_result.answer.content %> (<%= answer_result.answer.correct %>) Selected(<%= answer_result.selected %>)</li>
+<% if current_user_is_professor? %>
+  <ol>
+    <% @test_result.question_results.each do |question_result| %>
+      <li>
+      <% if question_result.correct? %>
+        <i class="icon-ok"></i>
+      <% else %>
+        <i class="icon-remove"></i>
       <% end %>
-    </ul>
-  <% end %>
-</ol>
+      <%= question_result.question.content %></li>
+      <ul>
+        <% question_result.answer_results.each do |answer_result| %>
+          <li>
+          <% if answer_result.correct? %>
+            <i class="icon-ok"></i>
+          <% else %>
+            <i class="icon-remove"></i>
+          <% end %>
+          <%= answer_result.answer.content %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </ol>
+<% end %>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),

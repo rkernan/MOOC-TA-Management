@@ -1,4 +1,6 @@
 class TestResultsController < ApplicationController
+  before_filter :require_teaching_assistant, :only => [:new, :create]
+  before_filter :require_professor, :only => [:index]
 
   # GET /test_results
   # GET /test_results.json
@@ -60,11 +62,11 @@ class TestResultsController < ApplicationController
       question_result.answer_results.each do |answer_result|
         answer_result.answer = @qs_and_as[@i]
         @i = @i + 1
-        if answer_result.selected != answer_result.answer.correct
-          @correctness = false
-        end 
+        # if answer_result.selected != answer_result.answer.correct
+        #   @correctness = false
+        # end 
       end
-      question_result.correct = @correctness
+      # question_result.correct = @correctness
     end
 
     @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
