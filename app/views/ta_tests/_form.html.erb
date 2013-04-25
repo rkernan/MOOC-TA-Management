@@ -1,4 +1,16 @@
 <%= nested_form_for [@course, @ta_test], :html => { :class => 'form-horizontal' } do |f| %>
+  <% if @ta_test.errors.any? %>
+    <div id="error_explaination" class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4><%= pluralize(@ta_test.errors.count, "Error") %></h4>
+      <ul>
+        <% @ta_test.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="control-group">
     <%= f.label :name, :class => 'control-label' %>
     <div class="controls">
