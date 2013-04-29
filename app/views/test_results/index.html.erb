@@ -14,6 +14,10 @@
       <% end %>
       <th><%= model_class.human_attribute_name(:grade) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <% if current_user_is_professor? %>
+     	 <th><%= model_class.human_attribute_name("Request TA?") %></th>
+      <% end %>
+
     </tr>
   </thead>
   <tbody>
@@ -22,12 +26,19 @@
         <td><%= link_to test_result.id, test_result_path(test_result) %></td>
         <% if current_user_is_professor? %>
           <td><%= test_result.teaching_assistant.email %></td>
+
         <% elsif current_user_is_teaching_assistant? %>
           <td><%= test_result.ta_test.course.name %></td>
           <td><%= test_result.ta_test.name %></td>
         <% end %>
         <td><%= test_result.grade %></td>
         <td><%=l test_result.created_at %></td>
+
+	<% if current_user_is_professor? %>
+        <td><%= link_to t('.Request TA', :default => t("helpers.links.request TA")),
+                       :class => 'btn btn-mini' %></td>
+        <% end %>
+
       </td>
     <% end %>
   </tbody>
