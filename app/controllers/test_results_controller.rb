@@ -1,12 +1,36 @@
 class TestResultsController < ApplicationController
+  before_filter :require_teaching_assistant, :only => [:ta_index]
   before_filter :require_teaching_assistant, :only => [:new, :create]
-  before_filter :require_professor, :only => [:index]
+  before_filter :only => [:index] {
+    require_specific_user(
+      if params[:teaching_assistant_id]
+        User.find(params[:teaching_assistant_id])
+      else
+        TaTest.find(params[:ta_test_id]).course.professor
+      end
+    )
+  }
 
   # GET /test_results
   # GET /test_results.json
   def index
-    @ta_test = TaTest.find(params[:ta_test_id])
-    @test_results = @ta_test.test_results.all
+    if params[:teaching_assistant_id]
+      @teaching_assistant = TeachingAssistant.find(params[:teaching_assistant_id])
+      @test_results = TestResult.where(:teaching_assistant_id => @teaching_assistant)
+    else
+      @ta_test = TaTest.find(params[:ta_test_id])
+      @test_results = @ta_test.test_results.all
+    end
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @test_results }
+    end
+  end
+
+  def ta_index
+    @teaching_assistant = TeachingAssistant.find(params[:teaching_assistant_id])
+    @test_results = TestResults.findByTeachingAssistant(@teaching_assistant)
 
     respond_to do |format|
       format.html
@@ -62,11 +86,7 @@ class TestResultsController < ApplicationController
       question_result.answer_results.each do |answer_result|
         answer_result.answer = @qs_and_as[@i]
         @i = @i + 1
-        # if answer_result.selected != answer_result.answer.correct
-        #   @correctness = false
-        # end 
       end
-      # question_result.correct = @correctness
     end
     
     @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
@@ -76,8 +96,7 @@ class TestResultsController < ApplicationController
         format.html { redirect_to @test_result, notice: 'Test was successfully taken.' }
         format.json { render json: @test_result, status: :created, location: @test_result }
       else
-        # format.html { redirect_to course_ta_tests_path(@course), notice: 'Test could not be taken.' }
-        format.html { render json: @test_result.errors, status: :unprocessable_entity }
+        format.html { redirect_to course_ta_tests_path(@course), notice: 'Test could not be taken.' }
         format.json { render json: @test_result.errors, status: :unprocessable_entity }
       end
     end
