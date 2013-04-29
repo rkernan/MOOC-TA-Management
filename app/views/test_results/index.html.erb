@@ -6,22 +6,29 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:course_id) %></th>
-      <th><%= model_class.human_attribute_name(:percentace_correct) %></th>
+      <% if current_user_is_professor? %>
+        <th><%= model_class.human_attribute_name(:teaching_assistant) %></th>
+      <% elsif current_user_is_teaching_assistant? %>
+        <th>Course</th>
+        <th><%= model_class.human_attribute_name(:ta_test) %></th>
+      <% end %>
+      <th><%= model_class.human_attribute_name(:grade) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
     </tr>
   </thead>
   <tbody>
-    <% @teaching_assistant.ta_test.each do |ta_test| %>
+    <% @test_results.each do |test_result| %>
       <tr>
-        <td><%= link_to ta_test.id, ta_test_path(ta_test) %></td>
-        <td><%= ta_test.name %></td>
-        <td><%= ta_test.course.name %></td>
-        <td><%= ta_test.test_result.grade %>
-        </td>
-
-      </tr>
+        <td><%= link_to test_result.id, test_result_path(test_result) %></td>
+        <% if current_user_is_professor? %>
+          <td><%= test_result.teaching_assistant.email %></td>
+        <% elsif current_user_is_teaching_assistant? %>
+          <td><%= test_result.ta_test.course.name %></td>
+          <td><%= test_result.ta_test.name %></td>
+        <% end %>
+        <td><%= test_result.grade %></td>
+        <td><%=l test_result.created_at %></td>
+      </td>
     <% end %>
   </tbody>
 </table>
-<%end>

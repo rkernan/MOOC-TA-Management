@@ -1,12 +1,36 @@
 class TestResultsController < ApplicationController
+  before_filter :require_teaching_assistant, :only => [:ta_index]
   before_filter :require_teaching_assistant, :only => [:new, :create]
-  before_filter :require_professor, :only => [:index]
+  before_filter :only => [:index] {
+    require_specific_user(
+      if params[:teaching_assistant_id]
+        User.find(params[:teaching_assistant_id])
+      else
+        TaTest.find(params[:ta_test_id]).course.professor
+      end
+    )
+  }
 
   # GET /test_results
   # GET /test_results.json
   def index
-    @ta_test = TaTest.find(params[:ta_test_id])
-    @test_results = @ta_test.test_results.all
+    if params[:teaching_assistant_id]
+      @teaching_assistant = TeachingAssistant.find(params[:teaching_assistant_id])
+      @test_results = TestResult.where(:teaching_assistant_id => @teaching_assistant)
+    else
+      @ta_test = TaTest.find(params[:ta_test_id])
+      @test_results = @ta_test.test_results.all
+    end
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @test_results }
+    end
+  end
+
+  def ta_index
+    @teaching_assistant = TeachingAssistant.find(params[:teaching_assistant_id])
+    @test_results = TestResults.findByTeachingAssistant(@teaching_assistant)
 
     respond_to do |format|
       format.html
