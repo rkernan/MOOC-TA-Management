@@ -62,19 +62,9 @@ class TestResultsController < ApplicationController
       question_result.answer_results.each do |answer_result|
         answer_result.answer = @qs_and_as[@i]
         @i = @i + 1
-        # if answer_result.selected != answer_result.answer.correct
-        #   @correctness = false
-        # end 
       end
-      # question_result.correct = @correctness
     end
 
-    @j = 0
-    @ta_test.questions.each do |question|
-    @j = @j + 1
-    end
-    num_questions = @j
-    
     @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
 
     respond_to do |format|
@@ -82,8 +72,7 @@ class TestResultsController < ApplicationController
         format.html { redirect_to @test_result, notice: 'Test was successfully taken.' }
         format.json { render json: @test_result, status: :created, location: @test_result }
       else
-        # format.html { redirect_to course_ta_tests_path(@course), notice: 'Test could not be taken.' }
-        format.html { render json: @test_result.errors, status: :unprocessable_entity }
+        format.html { redirect_to course_ta_tests_path(@course), notice: 'Test could not be taken.' }
         format.json { render json: @test_result.errors, status: :unprocessable_entity }
       end
     end

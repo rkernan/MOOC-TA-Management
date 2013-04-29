@@ -11,7 +11,7 @@ MoocTaManager::Application.routes.draw do
     resources :courses, :shallow => true do
       resources :ta_test_requests 
       resources :ta_tests, :shallow => true do
-        resources :test_results, :except => [:index], :shallow => true
+        resources :test_results, :shallow => true
       end
     end
   end
