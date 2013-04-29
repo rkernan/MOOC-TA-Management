@@ -1,0 +1,23 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:course_id) %></th>
+      <th><%= model_class.human_attribute_name(:percentace_correct) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @teaching_assistant.ta_test.each do |ta_test| %>
+      <tr>
+        <td><%= link_to ta_test.id, ta_test_path(ta_test) %></td>
+        <td><%= ta_test.name %></td>
+        <td><%= ta_test.course.name %></td>
+        <td><%= ta_test.test_result.grade %>
+        </td>
+	
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%end>
