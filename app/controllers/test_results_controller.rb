@@ -64,7 +64,7 @@ class TestResultsController < ApplicationController
         @i = @i + 1
       end
     end
-
+    
     @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
 
     respond_to do |format|
