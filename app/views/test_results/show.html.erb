@@ -10,6 +10,7 @@
   <dd><%= @test_result.ta_test.name %></dd>
 </dl>
 
+<% if session[:professor_id] %>
 <ol>
   <% @test_result.question_results.each do |question_result| %>
     <li><%= question_result.question.content %> Correct(<%= question_result.correct %>)<br /></li>
@@ -20,6 +21,7 @@
     </ul>
   <% end %>
 </ol>
+<% end %>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
