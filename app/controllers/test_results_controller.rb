@@ -69,6 +69,12 @@ class TestResultsController < ApplicationController
       # question_result.correct = @correctness
     end
 
+    @j = 0
+    @ta_test.questions.each do |question|
+    @j = @j + 1
+    end
+    num_questions = @j
+    
     @test_result.teaching_assistant = TeachingAssistant.find(current_user.id)
 
     respond_to do |format|
