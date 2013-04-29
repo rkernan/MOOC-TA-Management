@@ -8,6 +8,13 @@
   <dd><%= @test_result.teaching_assistant.email %></dd>
   <dt><strong><%= model_class.human_attribute_name(:ta_test_id) %>:</strong></dt>
   <dd><%= @test_result.ta_test.name %></dd>
+
+<dt><strong><%= model_class.human_attribute_name(:num_questions) %>:</strong></dt>
+  <dd><%= @test_result.num_questions %></dd>
+
+<dt><strong><%= model_class.human_attribute_name(:ta_test_id) %>:</strong></dt>
+  <dd><%= @test_result.ta_test.name %></dd>
+
 </dl>
 
 <% if session[:professor_id] %>
