@@ -16,21 +16,13 @@ class TestResultsController < ApplicationController
   def index
     if params[:teaching_assistant_id]
       @teaching_assistant = TeachingAssistant.find(params[:teaching_assistant_id])
+      session[:ta_index] = @teaching_assistant
       @test_results = TestResult.where(:teaching_assistant_id => @teaching_assistant)
     else
+      session[:ta_index] = nil
       @ta_test = TaTest.find(params[:ta_test_id])
       @test_results = @ta_test.test_results.all
     end
-
-    respond_to do |format|
-      format.html
-      format.json { render json: @test_results }
-    end
-  end
-
-  def ta_index
-    @teaching_assistant = TeachingAssistant.find(params[:teaching_assistant_id])
-    @test_results = TestResults.findByTeachingAssistant(@teaching_assistant)
 
     respond_to do |format|
       format.html
