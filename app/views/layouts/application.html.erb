@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,7 +71,7 @@
                 <li><%= link_to "Courses", professor_courses_path(current_user) %></li>
               <% elsif current_user_is_teaching_assistant? %>
                 <li><%= link_to "Courses", courses_path %></li>
-                <li><%= link_to "Test Results", "TODO" %></li>
+                <li><%= link_to "Test Results", teaching_assistant_test_results_path(current_user) %></li>
               <% else %>
                 <!-- nothing to link to (yet) -->
               <% end %>
