@@ -9,8 +9,6 @@ require 'headless'
 require 'io/console'
 require 'rubygems'
 require 'active_record'
-require 'cgi'
-require 'uri'
 
 ActiveRecord::Base.establish_connection(
   :adapter => 'sqlite3',
@@ -19,6 +17,7 @@ ActiveRecord::Base.establish_connection(
 class ParseResult < ActiveRecord::Base
   attr_accessible :activity, :fog, :pending, :professor_id, :ta_id
 end
+
 
 headless = Headless.new
 headless.start
@@ -30,10 +29,6 @@ CLASS_PATH = 'proglang-2012-001'
 SIGNIN_URL = 'https://www.coursera.org/account/signin'
 FORUM_HOME_URL = "https://class.coursera.org/#{CLASS_PATH}/forum/index"
 AUTH_URL = "https://class.coursera.org/#{CLASS_PATH}/auth/auth_redirector?type=login&subtype=normal"
-
-activity = 0
-fog = 0
-pending = true
 
 def signin(email, password)
   p = ParseResult.new
@@ -47,6 +42,7 @@ def signin(email, password)
   browser = Watir::Browser.new(:phantomjs)
 
   # Navigate to Sign In page
+  puts "Signing in."
   browser.goto(SIGNIN_URL)
   sleep(BROWSER_SLEEP)
 
@@ -60,96 +56,65 @@ def signin(email, password)
   # Navigate to auth page
   browser.goto(AUTH_URL)
   sleep(BROWSER_SLEEP)
+  puts "Done signing in."
 
   return browser
 end
 
 def get_threads(browser)
+  puts "Getting threads."
   # Get links of each sub forum
   forum_links = get_links_from_page(browser, FORUM_HOME_URL, 'forum_id')
+  puts "Links " + forum_links.to_s
 
   # Get links of every thread
   threads = []
   forum_links.each do |link|
     threads << get_links_from_page(browser, link, 'thread_id') 
-    sleep(BROWSER_SLEEP / 4)
   end
 
   return threads
 end
 
 def get_links_from_page(browser, page, link_frag)
-  puts "Indexing " << page.to_s
+  puts "Getting links from " << page.to_s
   browser.goto(page)
-  sleep(BROWSER_SLEEP / 4)
   browser.links.each do |link|
     link.href.to_s
   end
-  #matching_links = browser.links.select{|link| link.href.include? link_frag}.collect{|link| link.href}
-  matching_links = browser.links.collect{|link| link.href}.select{|href| href.include? link_frag}
+  matching_links = browser.links.select{|link| link.href.include? link_frag}.collect{|link| link.href}
 end
 
 def rank_users(browser, threads)
   users = {}
   threads.flatten!
+  puts threads.inspect
   total_threads = threads.size
   threads.each_with_index do |thread, index|
-    puts "[" << index.to_s << "/" << total_threads.to_s << "] Analyzing " << thread.to_s
+    puts "[" << index.to_s << "/" << total_threads.to_s << "] Getting " << thread.to_s
     browser.goto(thread)
-
-    posts = browser.divs(:class => "course-forum-post-view-container")
-    posts.each do |post|
-      student_link = post.links.select{|link| link.href.include? "user_id"}[0]
-      if student_link
-        post_text_div = post.divs(:class => "course-forum-post-text")[0]
-        post_text = ""
-        if post_text_div.ps.length > 0
-          post_text_div.ps.each do |p|
-            post_text << p.text 
-          end
-        else
-          post_text = post_text_div.text
-        end
-        report = Lingua::EN::Readability.new(post_text.to_s)
-        report.inspect
-        username = student_link.text.titleize
-        if users.has_key?(username)
-          user = users[username]
-        else
-          user = {}
-          user["name"] = username
-          user["activity"] = 0
-          user["fog"] = 0
-          user["kincaid"] = 0
-          user["flesch"] = 0
-          user["id"] = CGI::parse(URI.parse(student_link.href).query)["user_id"]
-        end
-        user["fog"] = user["fog"] + report.fog
-        user["kincaid"] = user["kincaid"] + report.kincaid
-        user["flesch"] = user["flesch"] + report.flesch
-        user["activity"] = user["activity"] + 1
-        users[username] = user
+    students = browser.links.select{|link| link.href.include? "user_id"}
+    students.each do |student|
+      user = student.text
+      if users.has_key?(user)
+        users[user] = users[user] + 1
+      else
+        users[user] = 0
       end
-
-
     end
-
-
     sleep(BROWSER_SLEEP / 4)
   end
 
-  users.each do |user|
-    puts user.inspect
-  end
+  users = users.sort_by {|_key, value| value}
+  puts users.inspect
 
 end
 
-#print "Coursera email: "
-#email = gets.chomp
-#print "Coursera password: "
-#password = STDIN.noecho(&:gets).chomp
-email = "EMAIL"
-password = "PASSWORD"
+print "Coursera email: "
+email = gets.chomp
+print "Coursera password: "
+password = STDIN.noecho(&:gets).chomp
+puts
 
 browser = signin(email, password)
 threads = get_threads(browser)

@@ -1,0 +1,532 @@
+Indexing https://class.coursera.org/proglang-2012-001/forum/index
+Indexing https://class.coursera.org/proglang-2012-001/forum/list?forum_id=2
+Indexing https://class.coursera.org/proglang-2012-001/forum/list?forum_id=4
+Indexing https://class.coursera.org/proglang-2012-001/forum/list?forum_id=8
+Indexing https://class.coursera.org/proglang-2012-001/forum/list?forum_id=3
+Indexing https://class.coursera.org/proglang-2012-001/forum/list?forum_id=7
+Indexing https://class.coursera.org/proglang-2012-001/forum/list?forum_id=9
+[0/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=229
+[1/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3626
+[2/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=8
+[3/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3604
+[4/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3694
+[5/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=2941
+[6/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3681
+[7/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3686
+[8/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3690
+[9/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3688
+[10/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3677
+[11/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3646
+[12/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3682
+[13/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3689
+[14/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3671
+[15/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3664
+[16/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3679
+[17/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3670
+[18/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3662
+[19/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3586
+[20/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=2994
+[21/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3653
+[22/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3684
+[23/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3638
+[24/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3680
+[25/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=70
+[26/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=318
+[27/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=71
+[28/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=104
+[29/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3533
+[30/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3619
+[31/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=73
+[32/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=111
+[33/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=698
+[34/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=2399
+[35/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=14
+[36/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=169
+[37/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=48
+[38/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=144
+[39/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=681
+[40/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=147
+[41/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=72
+[42/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=78
+[43/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=31
+[44/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=191
+[45/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=190
+[46/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=24
+[47/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=68
+[48/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=239
+[49/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=189
+[50/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3696
+[51/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3272
+[52/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3685
+[53/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3658
+[54/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3495
+[55/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3645
+[56/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3652
+[57/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3651
+[58/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3627
+[59/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3616
+[60/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3607
+[61/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=2591
+[62/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3587
+[63/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3564
+[64/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3441
+[65/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3388
+[66/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3437
+[67/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3500
+[68/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3487
+[69/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3464
+[70/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3202
+[71/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3407
+[72/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3374
+[73/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3426
+[74/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3289
+[75/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3695
+[76/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=2063
+[77/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3693
+[78/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3692
+[79/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3691
+[80/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3678
+[81/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3668
+[82/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3683
+[83/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3666
+[84/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3641
+[85/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3661
+[86/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3674
+[87/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3672
+[88/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3665
+[89/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3660
+[90/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3650
+[91/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3617
+[92/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3643
+[93/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3654
+[94/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3644
+[95/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3640
+[96/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3629
+[97/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3639
+[98/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3479
+[99/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3628
+[100/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=2553
+[101/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3663
+[102/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3545
+[103/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3649
+[104/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3622
+[105/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3642
+[106/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3606
+[107/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3632
+[108/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3624
+[109/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3620
+[110/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3592
+[111/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3613
+[112/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3593
+[113/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3601
+[114/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3563
+[115/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=266
+[116/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3569
+[117/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3517
+[118/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3556
+[119/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3542
+[120/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3530
+[121/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3512
+[122/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3489
+[123/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3340
+[124/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3347
+[125/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3687
+[126/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3673
+[127/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3432
+[128/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3675
+[129/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3676
+[130/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3667
+[131/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3659
+[132/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3635
+[133/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3625
+[134/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3633
+[135/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=333
+[136/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3554
+[137/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3551
+[138/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3581
+[139/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3597
+[140/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3596
+[141/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3578
+[142/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3570
+[143/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3560
+[144/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3568
+[145/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3571
+[146/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3572
+[147/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3547
+[148/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3539
+[149/150] Analyzing https://class.coursera.org/proglang-2012-001/forum/thread?thread_id=3514
+["Alin Soare", {"name"=>"Alin Soare", "activity"=>6, "fog"=>65.52846444920749, "kincaid"=>42.638902781085434, "flesch"=>434.771722433913, "id"=>["280900"]}]
+["Mahdi Hasheminejad", {"name"=>"Mahdi Hasheminejad", "activity"=>4, "fog"=>25.91528822055138, "kincaid"=>15.647130325814537, "flesch"=>348.8118170426066, "id"=>["123654"]}]
+["Huy Minh Le", {"name"=>"Huy Minh Le", "activity"=>7, "fog"=>54.40848063363277, "kincaid"=>32.32372162658167, "flesch"=>595.477145513378, "id"=>["74057"]}]
+["Kasi", {"name"=>"Kasi", "activity"=>1, "fog"=>2.4000000000000004, "kincaid"=>2.4833333333333343, "flesch"=>87.94500000000002, "id"=>["84330"]}]
+["Roman Pekar", {"name"=>"Roman Pekar", "activity"=>1, "fog"=>9.562162162162162, "kincaid"=>6.295270270270269, "flesch"=>82.87912162162164, "id"=>["34729"]}]
+["Tu, Do", {"name"=>"Tu, Do", "activity"=>8, "fog"=>94.45820581462038, "kincaid"=>63.313311016087894, "flesch"=>556.703775776949, "id"=>["2866"]}]
+["Shidai Liu", {"name"=>"Shidai Liu", "activity"=>1, "fog"=>12.247619047619047, "kincaid"=>7.396326530612246, "flesch"=>71.12605442176874, "id"=>["1404842"]}]
+["Eric B. Wertz", {"name"=>"Eric B. Wertz", "activity"=>5, "fog"=>44.493506493506494, "kincaid"=>32.75920995670997, "flesch"=>338.4068506493507, "id"=>["2028406"]}]
+["Victor Valmont", {"name"=>"Victor Valmont", "activity"=>1, "fog"=>9.472727272727274, "kincaid"=>4.791363636363638, "flesch"=>70.50704545454548, "id"=>["219062"]}]
+["Dru Nelson", {"name"=>"Dru Nelson", "activity"=>1, "fog"=>9.88139534883721, "kincaid"=>5.342034883720931, "flesch"=>75.90979651162792, "id"=>["211415"]}]
+["Rose Ames", {"name"=>"Rose Ames", "activity"=>1, "fog"=>0.8, "kincaid"=>-3.01, "flesch"=>120.20500000000001, "id"=>["100653"]}]
+["Misho Krastev", {"name"=>"Misho Krastev", "activity"=>2, "fog"=>27.474346182917614, "kincaid"=>18.4771776266062, "flesch"=>114.2923197278912, "id"=>["2209154"]}]
+["Yi Dai", {"name"=>"Yi Dai", "activity"=>1, "fog"=>9.854545454545454, "kincaid"=>7.472727272727273, "flesch"=>61.07909090909095, "id"=>["751641"]}]
+["Russell Dunphy", {"name"=>"Russell Dunphy", "activity"=>2, "fog"=>10.666666666666666, "kincaid"=>0.2533333333333374, "flesch"=>206.12000000000006, "id"=>["1244969"]}]
+["Alexander Kanavin", {"name"=>"Alexander Kanavin", "activity"=>2, "fog"=>14.537662337662338, "kincaid"=>7.641695526695528, "flesch"=>173.75909090909096, "id"=>["1887569"]}]
+["Shannon R. Severance", {"name"=>"Shannon R. Severance", "activity"=>7, "fog"=>51.67794165204686, "kincaid"=>32.488927549208114, "flesch"=>546.546618577016, "id"=>["1684344"]}]
+["Bhrgunatha", {"name"=>"Bhrgunatha", "activity"=>4, "fog"=>28.465800865800865, "kincaid"=>21.481385281385283, "flesch"=>319.4508874458876, "id"=>["103471"]}]
+["Dan Segal", {"name"=>"Dan Segal", "activity"=>18, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["414886"]}]
+["Rahul Batra", {"name"=>"Rahul Batra", "activity"=>2, "fog"=>17.303030303030305, "kincaid"=>10.92845454545455, "flesch"=>153.62968181818184, "id"=>["126131"]}]
+["Ihe Onwuka", {"name"=>"Ihe Onwuka", "activity"=>18, "fog"=>173.22050660288937, "kincaid"=>134.26806496039688, "flesch"=>1230.591886218706, "id"=>["162752"]}]
+["Nemanja Zunjanin", {"name"=>"Nemanja Zunjanin", "activity"=>1, "fog"=>1.6, "kincaid"=>0.7199999999999989, "flesch"=>97.025, "id"=>["2166240"]}]
+["Ewelina Bobrowska", {"name"=>"Ewelina Bobrowska", "activity"=>2, "fog"=>16.742857142857144, "kincaid"=>12.484285714285718, "flesch"=>143.3657142857143, "id"=>["1992538"]}]
+["Carlos Cárcamo", {"name"=>"Carlos Cárcamo", "activity"=>2, "fog"=>14.224242424242426, "kincaid"=>5.4704545454545475, "flesch"=>173.76234848484853, "id"=>["694179"]}]
+["Ahmad Albaqsami", {"name"=>"Ahmad Albaqsami", "activity"=>1, "fog"=>18.20740740740741, "kincaid"=>14.169629629629632, "flesch"=>41.56333333333336, "id"=>["122569"]}]
+["Dan Grossman", {"name"=>"Dan Grossman", "activity"=>11, "fog"=>116.61926072584139, "kincaid"=>85.70411237077417, "flesch"=>727.5584243829001, "id"=>["873260"]}]
+["Chen Pu", {"name"=>"Chen Pu", "activity"=>2, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["69958"]}]
+["Jorge Morales", {"name"=>"Jorge Morales", "activity"=>1, "fog"=>11.600000000000001, "kincaid"=>6.620000000000001, "flesch"=>54.72500000000002, "id"=>["2234657"]}]
+["Qin Li", {"name"=>"Qin Li", "activity"=>3, "fog"=>60.232718894009224, "kincaid"=>33.19081797235024, "flesch"=>93.98051267281114, "id"=>["1581860"]}]
+["Frederick Ofosu Darko", {"name"=>"Frederick Ofosu Darko", "activity"=>1, "fog"=>10.15768115942029, "kincaid"=>7.2354782608695665, "flesch"=>67.76713043478263, "id"=>["1366822"]}]
+["Amanda Andonian", {"name"=>"Amanda Andonian", "activity"=>1, "fog"=>9.620512820512822, "kincaid"=>3.674615384615386, "flesch"=>84.15371794871797, "id"=>["1282811"]}]
+["Maxim Mogilevsky", {"name"=>"Maxim Mogilevsky", "activity"=>2, "fog"=>23.333333333333336, "kincaid"=>16.72333333333334, "flesch"=>114.75500000000002, "id"=>["916658"]}]
+["Xiaoxi Yang", {"name"=>"Xiaoxi Yang", "activity"=>1, "fog"=>2.4000000000000004, "kincaid"=>1.5, "flesch"=>94.995, "id"=>["2272975"]}]
+["Alessandro Corsico", {"name"=>"Alessandro Corsico", "activity"=>1, "fog"=>0.2, "kincaid"=>-3.594999999999999, "flesch"=>121.72750000000002, "id"=>["1812036"]}]
+["Samanyu Chopra", {"name"=>"Samanyu Chopra", "activity"=>7, "fog"=>65.39288537549407, "kincaid"=>39.37261601522472, "flesch"=>502.4905665349146, "id"=>["1111408"]}]
+["Moid Qureshi", {"name"=>"Moid Qureshi", "activity"=>1, "fog"=>1.6, "kincaid"=>-2.2299999999999986, "flesch"=>118.17500000000001, "id"=>["2123597"]}]
+["Steven L Frey", {"name"=>"Steven L Frey", "activity"=>1, "fog"=>14.8, "kincaid"=>8.756666666666668, "flesch"=>53.655, "id"=>["2165479"]}]
+["Ken", {"name"=>"Ken", "activity"=>1, "fog"=>13.723809523809525, "kincaid"=>7.609761904761903, "flesch"=>59.20607142857145, "id"=>["2296402"]}]
+["Javier Quintero Meza", {"name"=>"Javier Quintero Meza", "activity"=>1, "fog"=>6.6000000000000005, "kincaid"=>3.9170000000000016, "flesch"=>89.24350000000001, "id"=>["1090048"]}]
+["Anonymous", {"name"=>"Anonymous", "activity"=>20, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["357701"]}]
+["Jeffrey Alexander Kyllo", {"name"=>"Jeffrey Alexander Kyllo", "activity"=>2, "fog"=>29.755555555555556, "kincaid"=>22.282777777777778, "flesch"=>116.75250000000007, "id"=>["1523700"]}]
+["Jacob Moen", {"name"=>"Jacob Moen", "activity"=>3, "fog"=>31.61167133520075, "kincaid"=>23.0111741363212, "flesch"=>205.2570693277312, "id"=>["711480"]}]
+["Fendula Ratsq", {"name"=>"Fendula Ratsq", "activity"=>1, "fog"=>6.6000000000000005, "kincaid"=>2.9730000000000025, "flesch"=>96.01150000000003, "id"=>["2245063"]}]
+["Hamish Mc Clelland Cavaye", {"name"=>"Hamish Mc Clelland Cavaye", "activity"=>2, "fog"=>19.644895199459096, "kincaid"=>11.640304259634892, "flesch"=>171.38355307640302, "id"=>["2214087"]}]
+["Mateus Fonseca", {"name"=>"Mateus Fonseca", "activity"=>4, "fog"=>44.098980835271966, "kincaid"=>34.338284313725495, "flesch"=>198.62740653040888, "id"=>["2172899"]}]
+["Bartlomiej Bartosik", {"name"=>"Bartlomiej Bartosik", "activity"=>1, "fog"=>20.8, "kincaid"=>14.690000000000001, "flesch"=>-6.694999999999993, "id"=>["2196096"]}]
+["Lei Zhao", {"name"=>"Lei Zhao", "activity"=>1, "fog"=>17.0, "kincaid"=>11.345000000000006, "flesch"=>18.17750000000001, "id"=>["910885"]}]
+["Edgar Francisco Valencia Montiel", {"name"=>"Edgar Francisco Valencia Montiel", "activity"=>1, "fog"=>12.281481481481482, "kincaid"=>10.236296296296299, "flesch"=>69.76333333333335, "id"=>["2200851"]}]
+["Sebastian Olewczynski", {"name"=>"Sebastian Olewczynski", "activity"=>1, "fog"=>12.0, "kincaid"=>8.15666666666667, "flesch"=>63.30000000000004, "id"=>["1471474"]}]
+["Gustavo F. Paredes", {"name"=>"Gustavo F. Paredes", "activity"=>1, "fog"=>7.866666666666666, "kincaid"=>3.2800000000000047, "flesch"=>76.89000000000003, "id"=>["397273"]}]
+["Umar Bastra", {"name"=>"Umar Bastra", "activity"=>1, "fog"=>11.752380952380953, "kincaid"=>8.96857142857143, "flesch"=>64.00976190476193, "id"=>["2275255"]}]
+["Fadunsin Sijuade Adesola", {"name"=>"Fadunsin Sijuade Adesola", "activity"=>1, "fog"=>20.8, "kincaid"=>8.790000000000003, "flesch"=>35.60500000000002, "id"=>["2324889"]}]
+["Joseph Anglada", {"name"=>"Joseph Anglada", "activity"=>3, "fog"=>10.505882352941178, "kincaid"=>1.688921568627455, "flesch"=>298.90514705882356, "id"=>["1989121"]}]
+["Lili Pu", {"name"=>"Lili Pu", "activity"=>1, "fog"=>3.2, "kincaid"=>0.8049999999999997, "flesch"=>103.54, "id"=>["1004638"]}]
+["Marco Barbara", {"name"=>"Marco Barbara", "activity"=>1, "fog"=>9.611594202898551, "kincaid"=>6.807391304347828, "flesch"=>73.56731884057973, "id"=>["2312547"]}]
+["Justin Joseph Machin", {"name"=>"Justin Joseph Machin", "activity"=>1, "fog"=>12.4, "kincaid"=>10.583870967741937, "flesch"=>74.39580645161291, "id"=>["2193817"]}]
+["Jaime Moreno", {"name"=>"Jaime Moreno", "activity"=>1, "fog"=>11.672727272727274, "kincaid"=>8.009090909090911, "flesch"=>57.23363636363638, "id"=>["126553"]}]
+["Wang Qunfeng", {"name"=>"Wang Qunfeng", "activity"=>3, "fog"=>21.322841656988, "kincaid"=>10.44262517744225, "flesch"=>248.54964430894316, "id"=>["108360"]}]
+["Ben Pottier", {"name"=>"Ben Pottier", "activity"=>1, "fog"=>12.436363636363637, "kincaid"=>7.471818181818183, "flesch"=>80.67772727272727, "id"=>["2293071"]}]
+["Krzysztof Kozioł", {"name"=>"Krzysztof Kozioł", "activity"=>3, "fog"=>19.96666666666667, "kincaid"=>12.346477272727274, "flesch"=>256.6336742424243, "id"=>["1618583"]}]
+["Ali Almustafa", {"name"=>"Ali Almustafa", "activity"=>2, "fog"=>18.419047619047618, "kincaid"=>11.074761904761907, "flesch"=>141.0035714285715, "id"=>["1722542"]}]
+["Haidong Ji", {"name"=>"Haidong Ji", "activity"=>1, "fog"=>6.6000000000000005, "kincaid"=>5.145, "flesch"=>65.30000000000001, "id"=>["1539329"]}]
+["Cesar Cano De Oliveira", {"name"=>"Cesar Cano De Oliveira", "activity"=>1, "fog"=>2.0, "kincaid"=>0.5199999999999996, "flesch"=>100.24000000000002, "id"=>["2121951"]}]
+["Alavoor Vasudevan", {"name"=>"Alavoor Vasudevan", "activity"=>2, "fog"=>7.4, "kincaid"=>2.8066666666666684, "flesch"=>189.59500000000003, "id"=>["1255440"]}]
+["Maurício Collares Neto", {"name"=>"Maurício Collares Neto", "activity"=>1, "fog"=>2.4000000000000004, "kincaid"=>0.5166666666666693, "flesch"=>102.045, "id"=>["619042"]}]
+["Raymond Phan", {"name"=>"Raymond Phan", "activity"=>1, "fog"=>16.97083333333333, "kincaid"=>12.5503125, "flesch"=>43.08010416666667, "id"=>["486347"]}]
+["Djam Saidmuradov", {"name"=>"Djam Saidmuradov", "activity"=>1, "fog"=>7.872463768115942, "kincaid"=>4.7552173913043525, "flesch"=>88.28036231884059, "id"=>["542585"]}]
+["Aniket Bhat", {"name"=>"Aniket Bhat", "activity"=>2, "fog"=>26.271888741180078, "kincaid"=>20.279746736203435, "flesch"=>116.22829277022196, "id"=>["7878"]}]
+["Sean Corfield", {"name"=>"Sean Corfield", "activity"=>8, "fog"=>89.0587105905249, "kincaid"=>73.99121200151077, "flesch"=>501.2982801982083, "id"=>["2298555"]}]
+["Richard S Sandmeyer", {"name"=>"Richard S Sandmeyer", "activity"=>1, "fog"=>16.683333333333334, "kincaid"=>12.2075, "flesch"=>50.28750000000002, "id"=>["226346"]}]
+["Alina Soboleva", {"name"=>"Alina Soboleva", "activity"=>1, "fog"=>9.822222222222223, "kincaid"=>7.324444444444445, "flesch"=>58.58000000000004, "id"=>["2324197"]}]
+["Chris Webster", {"name"=>"Chris Webster", "activity"=>7, "fog"=>72.13791698497582, "kincaid"=>45.7240583354554, "flesch"=>526.2896991978611, "id"=>["588676"]}]
+["Hong Wei", {"name"=>"Hong Wei", "activity"=>8, "fog"=>51.13068500127324, "kincaid"=>20.633563789152042, "flesch"=>713.2011019862491, "id"=>["293419"]}]
+["Leandro Rabindranath León", {"name"=>"Leandro Rabindranath León", "activity"=>1, "fog"=>8.010526315789475, "kincaid"=>4.883421052631579, "flesch"=>76.97144736842105, "id"=>["17531"]}]
+["Agum Onkey", {"name"=>"Agum Onkey", "activity"=>7, "fog"=>53.39703925523174, "kincaid"=>42.930833007176616, "flesch"=>492.0905388903383, "id"=>["137860"]}]
+["Paul Mollet Padier", {"name"=>"Paul Mollet Padier", "activity"=>2, "fog"=>19.05860805860806, "kincaid"=>13.777967032967034, "flesch"=>140.324532967033, "id"=>["337519"]}]
+["Roman Yankovsky", {"name"=>"Roman Yankovsky", "activity"=>1, "fog"=>0.5333333333333333, "kincaid"=>-0.3200000000000003, "flesch"=>99.73166666666668, "id"=>["10061"]}]
+["Sukanya Dasgupta", {"name"=>"Sukanya Dasgupta", "activity"=>1, "fog"=>7.236923076923077, "kincaid"=>5.031384615384617, "flesch"=>77.51361538461539, "id"=>["2244310"]}]
+["Eric Lau", {"name"=>"Eric Lau", "activity"=>2, "fog"=>23.654901960784315, "kincaid"=>15.69764705882353, "flesch"=>117.95274509803929, "id"=>["100133"]}]
+["Maricris Villareal", {"name"=>"Maricris Villareal", "activity"=>3, "fog"=>15.28888888888889, "kincaid"=>7.325555555555564, "flesch"=>261.1650000000001, "id"=>["1457828"]}]
+["Wan Kong Yew", {"name"=>"Wan Kong Yew", "activity"=>2, "fog"=>26.679661016949154, "kincaid"=>18.452500000000004, "flesch"=>119.72349576271193, "id"=>["538892"]}]
+["Raul Carlos De Almeida Junior", {"name"=>"Raul Carlos De Almeida Junior", "activity"=>1, "fog"=>1.6, "kincaid"=>-2.2299999999999986, "flesch"=>118.17500000000001, "id"=>["433746"]}]
+["Xuanchong Li", {"name"=>"Xuanchong Li", "activity"=>1, "fog"=>1.2000000000000002, "kincaid"=>-0.6533333333333324, "flesch"=>105.09000000000002, "id"=>["121269"]}]
+["Rich Wheadon", {"name"=>"Rich Wheadon", "activity"=>1, "fog"=>10.0, "kincaid"=>4.830000000000002, "flesch"=>78.24500000000002, "id"=>["1342643"]}]
+["Toan Nguyen", {"name"=>"Toan Nguyen", "activity"=>2, "fog"=>18.93793103448276, "kincaid"=>12.30396551724138, "flesch"=>163.3600862068966, "id"=>["2295443"]}]
+["Joe Francis", {"name"=>"Joe Francis", "activity"=>1, "fog"=>2.4000000000000004, "kincaid"=>-0.4666666666666668, "flesch"=>109.09500000000001, "id"=>["2308391"]}]
+["Hairong Zhu", {"name"=>"Hairong Zhu", "activity"=>1, "fog"=>1.2000000000000002, "kincaid"=>0.002222222222224346, "flesch"=>100.39000000000001, "id"=>["688380"]}]
+["Evgeny Kriukov", {"name"=>"Evgeny Kriukov", "activity"=>1, "fog"=>15.309090909090907, "kincaid"=>10.154545454545456, "flesch"=>41.8518181818182, "id"=>["1584084"]}]
+["Theo Reyes", {"name"=>"Theo Reyes", "activity"=>3, "fog"=>14.454545454545457, "kincaid"=>10.277727272727276, "flesch"=>251.57659090909095, "id"=>["698007"]}]
+["Marko Burjek", {"name"=>"Marko Burjek", "activity"=>1, "fog"=>10.53872053872054, "kincaid"=>9.56228956228956, "flesch"=>48.364848484848494, "id"=>["987150"]}]
+["Zhang Jiaqiang", {"name"=>"Zhang Jiaqiang", "activity"=>1, "fog"=>8.16530612244898, "kincaid"=>4.599744897959184, "flesch"=>83.90329081632655, "id"=>["1364364"]}]
+["Alexander Vishnyakov", {"name"=>"Alexander Vishnyakov", "activity"=>1, "fog"=>8.514285714285714, "kincaid"=>3.4352380952380983, "flesch"=>82.9014285714286, "id"=>["1998715"]}]
+["Alexander Ozerov", {"name"=>"Alexander Ozerov", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["714376"]}]
+["Olga Dagaeva", {"name"=>"Olga Dagaeva", "activity"=>1, "fog"=>2.4000000000000004, "kincaid"=>0.5166666666666693, "flesch"=>102.045, "id"=>["39734"]}]
+["Ilya Rodin", {"name"=>"Ilya Rodin", "activity"=>1, "fog"=>0.8, "kincaid"=>-3.01, "flesch"=>120.20500000000001, "id"=>["1168994"]}]
+["Aleksey Panov", {"name"=>"Aleksey Panov", "activity"=>2, "fog"=>18.133333333333333, "kincaid"=>3.940000000000003, "flesch"=>171.3766666666667, "id"=>["2163734"]}]
+["Maxim Lipnin", {"name"=>"Maxim Lipnin", "activity"=>2, "fog"=>21.555555555555557, "kincaid"=>15.314444444444447, "flesch"=>107.04500000000004, "id"=>["883225"]}]
+["Jevgenijs Sokolovs", {"name"=>"Jevgenijs Sokolovs", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1772290"]}]
+["Dmitriy Kuzikov", {"name"=>"Dmitriy Kuzikov", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["110264"]}]
+["Tatyana Milovanova", {"name"=>"Tatyana Milovanova", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1868461"]}]
+["Sobolev Aleksandr", {"name"=>"Sobolev Aleksandr", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["670321"]}]
+["Alexander Yashkin", {"name"=>"Alexander Yashkin", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2268226"]}]
+["Aleksandr Marchenko", {"name"=>"Aleksandr Marchenko", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2260730"]}]
+["Katya Gorskaya", {"name"=>"Katya Gorskaya", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2006621"]}]
+["Pavel", {"name"=>"Pavel", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["886506"]}]
+["Roman Ganchenko", {"name"=>"Roman Ganchenko", "activity"=>2, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["61098"]}]
+["Valentin Bryukhanov", {"name"=>"Valentin Bryukhanov", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1696070"]}]
+["Alexander Malyshev", {"name"=>"Alexander Malyshev", "activity"=>1, "fog"=>6.6000000000000005, "kincaid"=>3.6700000000000017, "flesch"=>75.87500000000001, "id"=>["1334471"]}]
+["Loshkomoev Nikita", {"name"=>"Loshkomoev Nikita", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2170235"]}]
+["Derli Marcochi", {"name"=>"Derli Marcochi", "activity"=>10, "fog"=>154.41978761978763, "kincaid"=>119.18922170422174, "flesch"=>277.7725291375293, "id"=>["2018976"]}]
+["Flavio Augusto Coelho Regueira Costa", {"name"=>"Flavio Augusto Coelho Regueira Costa", "activity"=>1, "fog"=>12.0, "kincaid"=>9.55, "flesch"=>44.405, "id"=>["2307670"]}]
+["Bruno Jorge", {"name"=>"Bruno Jorge", "activity"=>2, "fog"=>31.16190476190476, "kincaid"=>21.88539682539683, "flesch"=>61.71571428571434, "id"=>["397852"]}]
+["Maria Cristina Viana Ferreira Dominguez", {"name"=>"Maria Cristina Viana Ferreira Dominguez", "activity"=>1, "fog"=>10.95438596491228, "kincaid"=>6.753684210526316, "flesch"=>57.9224561403509, "id"=>["2023305"]}]
+["Diogo De Oliveira Biazus", {"name"=>"Diogo De Oliveira Biazus", "activity"=>1, "fog"=>15.309090909090907, "kincaid"=>11.22727272727273, "flesch"=>34.160909090909115, "id"=>["2320559"]}]
+["Carmem Paiva Azambuja", {"name"=>"Carmem Paiva Azambuja", "activity"=>1, "fog"=>15.733333333333333, "kincaid"=>12.316666666666666, "flesch"=>17.44500000000002, "id"=>["2014660"]}]
+["Jose Fonseca", {"name"=>"Jose Fonseca", "activity"=>3, "fog"=>42.283660130718964, "kincaid"=>36.29513071895425, "flesch"=>83.44975490196086, "id"=>["1272483"]}]
+["Ricardo Lamaro Da Cruz", {"name"=>"Ricardo Lamaro Da Cruz", "activity"=>2, "fog"=>28.01144164759726, "kincaid"=>23.132528604119003, "flesch"=>82.1625915331808, "id"=>["423634"]}]
+["Gustavo Daitx Osório", {"name"=>"Gustavo Daitx Osório", "activity"=>1, "fog"=>15.035294117647059, "kincaid"=>13.251764705882355, "flesch"=>30.332941176470626, "id"=>["1429281"]}]
+["Victor Pierre Alves", {"name"=>"Victor Pierre Alves", "activity"=>1, "fog"=>11.672727272727274, "kincaid"=>9.081818181818182, "flesch"=>49.54272727272729, "id"=>["2203555"]}]
+["José Carlos Lisboa Júnior", {"name"=>"José Carlos Lisboa Júnior", "activity"=>1, "fog"=>6.066666666666666, "kincaid"=>9.05, "flesch"=>34.92833333333334, "id"=>["1887829"]}]
+["Moisés Bernardino", {"name"=>"Moisés Bernardino", "activity"=>1, "fog"=>14.533333333333331, "kincaid"=>11.146666666666665, "flesch"=>20.490000000000038, "id"=>["1004841"]}]
+["Ariane Rodrigues De Almeida", {"name"=>"Ariane Rodrigues De Almeida", "activity"=>2, "fog"=>14.782558139534887, "kincaid"=>13.458575581395355, "flesch"=>113.8941424418605, "id"=>["2351344"]}]
+["Augusto Dias Horta Pirfo De Noronha", {"name"=>"Augusto Dias Horta Pirfo De Noronha", "activity"=>3, "fog"=>22.705882352941178, "kincaid"=>18.972156862745102, "flesch"=>193.69470588235302, "id"=>["154921"]}]
+["Rafael Jerônimo De Lima E Silva", {"name"=>"Rafael Jerônimo De Lima E Silva", "activity"=>4, "fog"=>36.98368794326241, "kincaid"=>34.77058510638298, "flesch"=>199.3870833333334, "id"=>["1476250"]}]
+["Fabricio Henrique G. De Oliveira", {"name"=>"Fabricio Henrique G. De Oliveira", "activity"=>1, "fog"=>19.63478260869565, "kincaid"=>16.98, "flesch"=>14.29000000000002, "id"=>["2059532"]}]
+["Victor Lelis Braga De Almeida", {"name"=>"Victor Lelis Braga De Almeida", "activity"=>1, "fog"=>16.933333333333334, "kincaid"=>10.208888888888893, "flesch"=>37.900000000000034, "id"=>["2003018"]}]
+["Josenilma Carla De Souza", {"name"=>"Josenilma Carla De Souza", "activity"=>1, "fog"=>20.0, "kincaid"=>16.105, "flesch"=>15.220000000000056, "id"=>["1858016"]}]
+["Sonia Jurema Da Silva", {"name"=>"Sonia Jurema Da Silva", "activity"=>1, "fog"=>18.73725490196078, "kincaid"=>10.914117647058823, "flesch"=>26.906862745098067, "id"=>["440882"]}]
+["Dev Rana", {"name"=>"Dev Rana", "activity"=>19, "fog"=>141.69967081317927, "kincaid"=>85.04083436346858, "flesch"=>1565.324774082986, "id"=>["2015770"]}]
+["Fabio Fonseca", {"name"=>"Fabio Fonseca", "activity"=>3, "fog"=>9.733333333333333, "kincaid"=>1.339000000000004, "flesch"=>311.8036666666667, "id"=>["10548"]}]
+["Rafał Mleczko", {"name"=>"Rafał Mleczko", "activity"=>2, "fog"=>13.205405405405408, "kincaid"=>6.8817567567567615, "flesch"=>175.51804054054057, "id"=>["2270027"]}]
+["Moritz Weglage", {"name"=>"Moritz Weglage", "activity"=>1, "fog"=>4.4, "kincaid"=>2.109090909090913, "flesch"=>99.53363636363638, "id"=>["238892"]}]
+["Sharov Anton", {"name"=>"Sharov Anton", "activity"=>4, "fog"=>30.82539682539683, "kincaid"=>21.013015873015878, "flesch"=>291.9364285714287, "id"=>["27632"]}]
+["Brady Ouren", {"name"=>"Brady Ouren", "activity"=>4, "fog"=>29.683646723646724, "kincaid"=>21.99805429864254, "flesch"=>317.6464751131222, "id"=>["192998"]}]
+["Nathan Bouscal", {"name"=>"Nathan Bouscal", "activity"=>3, "fog"=>27.37106918238994, "kincaid"=>14.665603773584905, "flesch"=>240.89726729559752, "id"=>["620043"]}]
+["Nicholas Coleman", {"name"=>"Nicholas Coleman", "activity"=>1, "fog"=>4.800000000000001, "kincaid"=>2.8566666666666656, "flesch"=>95.955, "id"=>["2292010"]}]
+["Morgan Creighton", {"name"=>"Morgan Creighton", "activity"=>9, "fog"=>84.3848837625875, "kincaid"=>64.8432552658382, "flesch"=>621.2086450553347, "id"=>["352509"]}]
+["Ashish Tajane", {"name"=>"Ashish Tajane", "activity"=>1, "fog"=>1.4000000000000001, "kincaid"=>-0.7392857142857139, "flesch"=>106.59678571428573, "id"=>["150377"]}]
+["Simon D Montford", {"name"=>"Simon D Montford", "activity"=>2, "fog"=>18.35294117647059, "kincaid"=>11.822557544757036, "flesch"=>176.60759590792844, "id"=>["1477729"]}]
+["Carl Dougan", {"name"=>"Carl Dougan", "activity"=>1, "fog"=>10.734117647058824, "kincaid"=>7.066941176470589, "flesch"=>68.61923529411766, "id"=>["173094"]}]
+["Li Chenbo", {"name"=>"Li Chenbo", "activity"=>1, "fog"=>5.6571428571428575, "kincaid"=>0.6257142857142846, "flesch"=>103.04428571428575, "id"=>["116169"]}]
+["Jun Wong", {"name"=>"Jun Wong", "activity"=>1, "fog"=>9.844444444444445, "kincaid"=>8.030555555555559, "flesch"=>61.53250000000003, "id"=>["1739240"]}]
+["Homer Thompson", {"name"=>"Homer Thompson", "activity"=>5, "fog"=>52.92953485104033, "kincaid"=>41.13105672559083, "flesch"=>356.9484230962086, "id"=>["1966714"]}]
+["Guanwen Zhong", {"name"=>"Guanwen Zhong", "activity"=>1, "fog"=>3.2, "kincaid"=>2.280000000000001, "flesch"=>92.965, "id"=>["240968"]}]
+["Karimi Mohammad Ali", {"name"=>"Karimi Mohammad Ali", "activity"=>1, "fog"=>14.666666666666666, "kincaid"=>12.236666666666668, "flesch"=>60.76500000000003, "id"=>["2018819"]}]
+["Connor Andrew Clark Lindh", {"name"=>"Connor Andrew Clark Lindh", "activity"=>1, "fog"=>5.752941176470589, "kincaid"=>2.301470588235297, "flesch"=>93.70161764705884, "id"=>["2154538"]}]
+["Qian Kun", {"name"=>"Qian Kun", "activity"=>1, "fog"=>18.0, "kincaid"=>11.68, "flesch"=>46.94500000000005, "id"=>["2100991"]}]
+["Ong Jia Rui", {"name"=>"Ong Jia Rui", "activity"=>1, "fog"=>10.266666666666666, "kincaid"=>4.308888888888891, "flesch"=>80.20000000000003, "id"=>["2212779"]}]
+["Ah Jung Jeon", {"name"=>"Ah Jung Jeon", "activity"=>1, "fog"=>8.0, "kincaid"=>4.830000000000002, "flesch"=>78.24500000000002, "id"=>["2093106"]}]
+["Oleksandra Sopova", {"name"=>"Oleksandra Sopova", "activity"=>1, "fog"=>4.619607843137255, "kincaid"=>1.1964705882352966, "flesch"=>96.57745098039217, "id"=>["623563"]}]
+["Oleg Kosiak", {"name"=>"Oleg Kosiak", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2160210"]}]
+["Val L", {"name"=>"Val L", "activity"=>1, "fog"=>10.0, "kincaid"=>5.240000000000002, "flesch"=>66.40000000000003, "id"=>["157544"]}]
+["Pavlo Oleshkevych", {"name"=>"Pavlo Oleshkevych", "activity"=>1, "fog"=>2.0, "kincaid"=>0.5199999999999996, "flesch"=>100.24000000000002, "id"=>["2058133"]}]
+["Yana Buchatskaya", {"name"=>"Yana Buchatskaya", "activity"=>1, "fog"=>6.2444444444444445, "kincaid"=>5.831666666666667, "flesch"=>61.26750000000001, "id"=>["1597438"]}]
+["Volodymyr Vasylyk", {"name"=>"Volodymyr Vasylyk", "activity"=>1, "fog"=>0.2, "kincaid"=>8.205000000000002, "flesch"=>37.127500000000026, "id"=>["1481712"]}]
+["Marianna Tomashpolska", {"name"=>"Marianna Tomashpolska", "activity"=>1, "fog"=>9.066666666666666, "kincaid"=>2.4833333333333343, "flesch"=>87.94500000000002, "id"=>["888170"]}]
+["Dmitriy Kostiuchenko", {"name"=>"Dmitriy Kostiuchenko", "activity"=>1, "fog"=>13.200000000000001, "kincaid"=>8.180000000000003, "flesch"=>50.66500000000002, "id"=>["117436"]}]
+["Natalia Moskovchuk", {"name"=>"Natalia Moskovchuk", "activity"=>1, "fog"=>10.0, "kincaid"=>5.240000000000002, "flesch"=>66.40000000000003, "id"=>["158663"]}]
+["Katerina", {"name"=>"Katerina", "activity"=>1, "fog"=>2.0, "kincaid"=>2.879999999999999, "flesch"=>83.32000000000004, "id"=>["994775"]}]
+["Taras Petrytsyn", {"name"=>"Taras Petrytsyn", "activity"=>1, "fog"=>3.2, "kincaid"=>0.8049999999999997, "flesch"=>103.54, "id"=>["865279"]}]
+["Iryna Hladun", {"name"=>"Iryna Hladun", "activity"=>1, "fog"=>10.0, "kincaid"=>12.320000000000004, "flesch"=>15.640000000000015, "id"=>["1556792"]}]
+["Iaroslava", {"name"=>"Iaroslava", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["918828"]}]
+["Igor Shenderchuk", {"name"=>"Igor Shenderchuk", "activity"=>1, "fog"=>6.2444444444444445, "kincaid"=>0.5872222222222234, "flesch"=>98.8675, "id"=>["1161900"]}]
+["Maksym Kucherenko", {"name"=>"Maksym Kucherenko", "activity"=>1, "fog"=>0.4, "kincaid"=>-3.3999999999999986, "flesch"=>121.22000000000003, "id"=>["1183201"]}]
+["Yuliya Galperina", {"name"=>"Yuliya Galperina", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2003830"]}]
+["Ivan Masich", {"name"=>"Ivan Masich", "activity"=>1, "fog"=>11.600000000000001, "kincaid"=>3.6700000000000017, "flesch"=>75.87500000000001, "id"=>["26812"]}]
+["Andriy Bas", {"name"=>"Andriy Bas", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1590929"]}]
+["Oleksa Mahula", {"name"=>"Oleksa Mahula", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["545370"]}]
+["Borys Zibrov", {"name"=>"Borys Zibrov", "activity"=>1, "fog"=>2.4000000000000004, "kincaid"=>0.5166666666666693, "flesch"=>102.045, "id"=>["108703"]}]
+["Dmytro Velychko", {"name"=>"Dmytro Velychko", "activity"=>1, "fog"=>20.266666666666666, "kincaid"=>8.270000000000003, "flesch"=>36.95833333333334, "id"=>["901696"]}]
+["Nitin", {"name"=>"Nitin", "activity"=>1, "fog"=>8.0, "kincaid"=>9.55, "flesch"=>44.405, "id"=>["2120289"]}]
+["Juzer Ali", {"name"=>"Juzer Ali", "activity"=>7, "fog"=>56.908282828282836, "kincaid"=>36.02808231382144, "flesch"=>529.7938957274611, "id"=>["2154633"]}]
+["Euriclene António Fonseca Gabriel", {"name"=>"Euriclene António Fonseca Gabriel", "activity"=>11, "fog"=>120.86883531062637, "kincaid"=>86.63924748965796, "flesch"=>814.590818845334, "id"=>["1887487"]}]
+["Jame William", {"name"=>"Jame William", "activity"=>1, "fog"=>11.938461538461539, "kincaid"=>9.98076923076923, "flesch"=>69.8142307692308, "id"=>["1909665"]}]
+["Carlos Roberto Arèvalo Orellana", {"name"=>"Carlos Roberto Arèvalo Orellana", "activity"=>1, "fog"=>12.20952380952381, "kincaid"=>10.019047619047623, "flesch"=>60.634285714285724, "id"=>["2196450"]}]
+["Nelson Pascoal", {"name"=>"Nelson Pascoal", "activity"=>1, "fog"=>11.333333333333336, "kincaid"=>7.566666666666666, "flesch"=>67.53000000000003, "id"=>["1580057"]}]
+["Paulo Jorge Alves Pereira", {"name"=>"Paulo Jorge Alves Pereira", "activity"=>1, "fog"=>8.753846153846155, "kincaid"=>6.006538461538462, "flesch"=>63.57596153846157, "id"=>["2218227"]}]
+["Rafael Fernandes Ramalho", {"name"=>"Rafael Fernandes Ramalho", "activity"=>1, "fog"=>5.733333333333333, "kincaid"=>2.4833333333333343, "flesch"=>87.94500000000002, "id"=>["1791040"]}]
+["Tiago André Mestre Teixeira", {"name"=>"Tiago André Mestre Teixeira", "activity"=>1, "fog"=>11.556521739130435, "kincaid"=>6.3384782608695645, "flesch"=>70.10163043478265, "id"=>["111461"]}]
+["Matheus Teruel Pratta", {"name"=>"Matheus Teruel Pratta", "activity"=>2, "fog"=>26.28405797101449, "kincaid"=>19.473478260869566, "flesch"=>99.78746376811601, "id"=>["2204834"]}]
+["Lorenzo Picoli", {"name"=>"Lorenzo Picoli", "activity"=>4, "fog"=>56.70476190476191, "kincaid"=>50.356952380952386, "flesch"=>70.86871428571436, "id"=>["2175874"]}]
+["Bruno Barbosa Amorim Parga", {"name"=>"Bruno Barbosa Amorim Parga", "activity"=>4, "fog"=>61.5231884057971, "kincaid"=>45.205905797101465, "flesch"=>124.71956521739142, "id"=>["2168501"]}]
+["Wolflan Camilo Penha De Freitas", {"name"=>"Wolflan Camilo Penha De Freitas", "activity"=>1, "fog"=>0.4, "kincaid"=>-3.3999999999999986, "flesch"=>121.22000000000003, "id"=>["2091109"]}]
+["Sef Zamel", {"name"=>"Sef Zamel", "activity"=>1, "fog"=>12.436363636363637, "kincaid"=>9.080909090909092, "flesch"=>69.14136363636365, "id"=>["1649427"]}]
+["Amjad Ibraheem", {"name"=>"Amjad Ibraheem", "activity"=>2, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2017216"]}]
+["Fernando Manuel Aragao Xavier", {"name"=>"Fernando Manuel Aragao Xavier", "activity"=>1, "fog"=>8.016666666666666, "kincaid"=>4.795000000000002, "flesch"=>79.68333333333337, "id"=>["2238209"]}]
+["Karl Arnold Prieb Cardoso", {"name"=>"Karl Arnold Prieb Cardoso", "activity"=>1, "fog"=>12.323809523809523, "kincaid"=>5.682857142857145, "flesch"=>66.7871428571429, "id"=>["1857720"]}]
+["Gaelan D'costa", {"name"=>"Gaelan D'costa", "activity"=>9, "fog"=>75.44970623220725, "kincaid"=>49.65779754010068, "flesch"=>727.5235023819903, "id"=>["361358"]}]
+["Stephen Peringer", {"name"=>"Stephen Peringer", "activity"=>18, "fog"=>90.75251474668286, "kincaid"=>61.056794119714624, "flesch"=>1582.8178545880348, "id"=>["2169760"]}]
+["Sean Charles Meagher", {"name"=>"Sean Charles Meagher", "activity"=>1, "fog"=>5.6000000000000005, "kincaid"=>3.7771428571428594, "flesch"=>92.91785714285714, "id"=>["2220758"]}]
+["Karan Kochhar", {"name"=>"Karan Kochhar", "activity"=>2, "fog"=>1.6, "kincaid"=>-6.02, "flesch"=>240.41000000000003, "id"=>["2284868"]}]
+["David Walker", {"name"=>"David Walker", "activity"=>6, "fog"=>43.169105691056906, "kincaid"=>27.217601626016272, "flesch"=>529.3046951219513, "id"=>["103221"]}]
+["Venkata Chintaluri", {"name"=>"Venkata Chintaluri", "activity"=>2, "fog"=>31.827956989247312, "kincaid"=>24.813010752688175, "flesch"=>116.12618279569895, "id"=>["2113761"]}]
+["Nebiyu Embibel Tadesse", {"name"=>"Nebiyu Embibel Tadesse", "activity"=>1, "fog"=>11.672727272727274, "kincaid"=>8.009090909090911, "flesch"=>57.23363636363638, "id"=>["1696081"]}]
+["Mathias Tawiah Anim", {"name"=>"Mathias Tawiah Anim", "activity"=>1, "fog"=>11.353846153846156, "kincaid"=>7.633846153846157, "flesch"=>63.486153846153854, "id"=>["1549753"]}]
+["Mihaela Dumitriu", {"name"=>"Mihaela Dumitriu", "activity"=>4, "fog"=>48.91717171717172, "kincaid"=>28.37603535353536, "flesch"=>253.39613636363643, "id"=>["1876467"]}]
+["Barry Mamadou", {"name"=>"Barry Mamadou", "activity"=>1, "fog"=>2.0, "kincaid"=>0.5199999999999996, "flesch"=>100.24000000000002, "id"=>["2307709"]}]
+["Chamila Prasanga Jayawardana", {"name"=>"Chamila Prasanga Jayawardana", "activity"=>1, "fog"=>8.044444444444444, "kincaid"=>3.653333333333336, "flesch"=>84.90000000000003, "id"=>["2245560"]}]
+["Adam Draper", {"name"=>"Adam Draper", "activity"=>1, "fog"=>1.8, "kincaid"=>0.5872222222222234, "flesch"=>98.8675, "id"=>["1320271"]}]
+["Jaime Tapia", {"name"=>"Jaime Tapia", "activity"=>1, "fog"=>10.0, "kincaid"=>7.600000000000001, "flesch"=>49.48000000000002, "id"=>["2330568"]}]
+["Arun.P", {"name"=>"Arun.P", "activity"=>1, "fog"=>2.8000000000000003, "kincaid"=>-1.0599999999999987, "flesch"=>115.13000000000002, "id"=>["1695340"]}]
+["Thais Lasso Terense", {"name"=>"Thais Lasso Terense", "activity"=>1, "fog"=>0.4, "kincaid"=>-3.3999999999999986, "flesch"=>121.22000000000003, "id"=>["2344671"]}]
+["Alex Kazan", {"name"=>"Alex Kazan", "activity"=>1, "fog"=>27.866666666666664, "kincaid"=>20.980000000000008, "flesch"=>-50.00999999999996, "id"=>["1929393"]}]
+["Yuliani Castilla", {"name"=>"Yuliani Castilla", "activity"=>1, "fog"=>16.0, "kincaid"=>10.73, "flesch"=>35.94500000000002, "id"=>["1203442"]}]
+["Claudio Reis Rodrigues", {"name"=>"Claudio Reis Rodrigues", "activity"=>1, "fog"=>8.044444444444444, "kincaid"=>6.2755555555555596, "flesch"=>66.10000000000002, "id"=>["317677"]}]
+["Nameyka", {"name"=>"Nameyka", "activity"=>1, "fog"=>7.866666666666666, "kincaid"=>1.3133333333333361, "flesch"=>90.99000000000004, "id"=>["1957221"]}]
+["Farhang Farrokhshahi", {"name"=>"Farhang Farrokhshahi", "activity"=>1, "fog"=>2.0, "kincaid"=>0.5199999999999996, "flesch"=>100.24000000000002, "id"=>["2163554"]}]
+["Mohammed Douaou", {"name"=>"Mohammed Douaou", "activity"=>2, "fog"=>9.663157894736843, "kincaid"=>10.1121052631579, "flesch"=>155.0297368421053, "id"=>["2111295"]}]
+["Saad Kattan", {"name"=>"Saad Kattan", "activity"=>1, "fog"=>0.4, "kincaid"=>-3.3999999999999986, "flesch"=>121.22000000000003, "id"=>["2141959"]}]
+["Mai Hoang Dinh", {"name"=>"Mai Hoang Dinh", "activity"=>1, "fog"=>0.8, "kincaid"=>-3.01, "flesch"=>120.20500000000001, "id"=>["75577"]}]
+["Ahmad Fadli Basyari", {"name"=>"Ahmad Fadli Basyari", "activity"=>1, "fog"=>7.300000000000001, "kincaid"=>2.4235000000000007, "flesch"=>88.81925000000001, "id"=>["2243721"]}]
+["Sadamoudou Doumbouya", {"name"=>"Sadamoudou Doumbouya", "activity"=>1, "fog"=>10.0, "kincaid"=>2.879999999999999, "flesch"=>83.32000000000004, "id"=>["2112703"]}]
+["Felix Eyahanyo", {"name"=>"Felix Eyahanyo", "activity"=>1, "fog"=>10.68888888888889, "kincaid"=>7.142777777777777, "flesch"=>51.867500000000035, "id"=>["2110654"]}]
+["Mohammad Murtaza Rahimi", {"name"=>"Mohammad Murtaza Rahimi", "activity"=>1, "fog"=>20.8, "kincaid"=>8.790000000000003, "flesch"=>35.60500000000002, "id"=>["2229335"]}]
+["Gianluca De Souza Giuliani", {"name"=>"Gianluca De Souza Giuliani", "activity"=>1, "fog"=>14.121568627450982, "kincaid"=>10.319705882352945, "flesch"=>66.49367647058826, "id"=>["2223856"]}]
+["Rudrik Gandhi", {"name"=>"Rudrik Gandhi", "activity"=>2, "fog"=>20.219047619047622, "kincaid"=>12.852619047619047, "flesch"=>154.08321428571432, "id"=>["2156998"]}]
+["Jay Cantebrigge", {"name"=>"Jay Cantebrigge", "activity"=>1, "fog"=>1.6, "kincaid"=>0.7199999999999989, "flesch"=>97.025, "id"=>["2163414"]}]
+["Denis Lukichev", {"name"=>"Denis Lukichev", "activity"=>1, "fog"=>0.8, "kincaid"=>-3.01, "flesch"=>120.20500000000001, "id"=>["111986"]}]
+["Gloria Kimbwala", {"name"=>"Gloria Kimbwala", "activity"=>1, "fog"=>14.358620689655172, "kincaid"=>10.775172413793104, "flesch"=>69.46206896551725, "id"=>["2152625"]}]
+["Erik Abreu Hurtado", {"name"=>"Erik Abreu Hurtado", "activity"=>1, "fog"=>2.8000000000000003, "kincaid"=>-1.0599999999999987, "flesch"=>115.13000000000002, "id"=>["438208"]}]
+["Shimul Chowdhury", {"name"=>"Shimul Chowdhury", "activity"=>1, "fog"=>1.2000000000000002, "kincaid"=>1.3133333333333361, "flesch"=>90.99000000000004, "id"=>["1946171"]}]
+["Sanjay Kamble", {"name"=>"Sanjay Kamble", "activity"=>2, "fog"=>19.25649717514124, "kincaid"=>14.130000000000006, "flesch"=>141.65968926553674, "id"=>["1489913"]}]
+["Jack Kubiesa", {"name"=>"Jack Kubiesa", "activity"=>1, "fog"=>6.800000000000001, "kincaid"=>4.228235294117649, "flesch"=>95.02705882352943, "id"=>["619529"]}]
+["Josh Rose", {"name"=>"Josh Rose", "activity"=>1, "fog"=>6.7438596491228076, "kincaid"=>3.027368421052632, "flesch"=>84.63824561403509, "id"=>["1984018"]}]
+["Charlie Harvey", {"name"=>"Charlie Harvey", "activity"=>2, "fog"=>14.444444444444446, "kincaid"=>6.800555555555558, "flesch"=>163.63250000000002, "id"=>["2012455"]}]
+["Daniele Pestilli", {"name"=>"Daniele Pestilli", "activity"=>5, "fog"=>24.500698611733092, "kincaid"=>19.656682415285868, "flesch"=>404.82728963278123, "id"=>["124407"]}]
+["Katherine Steiner", {"name"=>"Katherine Steiner", "activity"=>1, "fog"=>5.911111111111111, "kincaid"=>3.512222222222224, "flesch"=>91.255, "id"=>["1906750"]}]
+["Andrew Black", {"name"=>"Andrew Black", "activity"=>2, "fog"=>16.358620689655172, "kincaid"=>10.522068965517246, "flesch"=>175.24482758620692, "id"=>["1841361"]}]
+["Warren Tyler", {"name"=>"Warren Tyler", "activity"=>1, "fog"=>6.466666666666666, "kincaid"=>4.823333333333334, "flesch"=>81.85500000000002, "id"=>["88466"]}]
+["Jan Grant", {"name"=>"Jan Grant", "activity"=>1, "fog"=>1.4000000000000001, "kincaid"=>-0.7392857142857139, "flesch"=>106.59678571428573, "id"=>["68354"]}]
+["Ceri Watling", {"name"=>"Ceri Watling", "activity"=>1, "fog"=>9.633333333333333, "kincaid"=>5.665000000000003, "flesch"=>63.94666666666669, "id"=>["1528355"]}]
+["Benjamin Smith", {"name"=>"Benjamin Smith", "activity"=>1, "fog"=>6.766666666666666, "kincaid"=>4.057500000000001, "flesch"=>84.97083333333336, "id"=>["2373926"]}]
+["Nguyen Cong Hao", {"name"=>"Nguyen Cong Hao", "activity"=>1, "fog"=>0.4, "kincaid"=>8.400000000000002, "flesch"=>36.62000000000003, "id"=>["1901890"]}]
+["Popescu Adina", {"name"=>"Popescu Adina", "activity"=>4, "fog"=>65.53333333333333, "kincaid"=>51.39666666666668, "flesch"=>177.4050000000001, "id"=>["1540994"]}]
+["Razvan Ionescu", {"name"=>"Razvan Ionescu", "activity"=>1, "fog"=>0.4, "kincaid"=>8.400000000000002, "flesch"=>36.62000000000003, "id"=>["163990"]}]
+["Eugen Neagoe", {"name"=>"Eugen Neagoe", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["3649"]}]
+["Ana Trolinger", {"name"=>"Ana Trolinger", "activity"=>1, "fog"=>0.4, "kincaid"=>-3.3999999999999986, "flesch"=>121.22000000000003, "id"=>["2255379"]}]
+["Oana Sipos", {"name"=>"Oana Sipos", "activity"=>2, "fog"=>3.0, "kincaid"=>1.9005555555555596, "flesch"=>189.85750000000004, "id"=>["1262004"]}]
+["Sima Cristian", {"name"=>"Sima Cristian", "activity"=>3, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2228226"]}]
+["Ana Maria Iancu", {"name"=>"Ana Maria Iancu", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1954835"]}]
+["Alexandru Gorceag", {"name"=>"Alexandru Gorceag", "activity"=>4, "fog"=>44.40952380952381, "kincaid"=>32.780952380952385, "flesch"=>214.69071428571436, "id"=>["787950"]}]
+["Croitoru Radu", {"name"=>"Croitoru Radu", "activity"=>1, "fog"=>11.0, "kincaid"=>5.428333333333338, "flesch"=>69.5025, "id"=>["1975011"]}]
+["Andritoiu Alexandru", {"name"=>"Andritoiu Alexandru", "activity"=>2, "fog"=>42.400000000000006, "kincaid"=>33.11000000000001, "flesch"=>-36.569999999999965, "id"=>["2299360"]}]
+["Swathi.Sutrave", {"name"=>"Swathi.Sutrave", "activity"=>2, "fog"=>8.804597701149426, "kincaid"=>8.973448275862072, "flesch"=>146.5697126436782, "id"=>["2160132"]}]
+["Charanya Hariharan", {"name"=>"Charanya Hariharan", "activity"=>1, "fog"=>14.0, "kincaid"=>9.140000000000004, "flesch"=>56.25000000000003, "id"=>["2204909"]}]
+["Muhammad Hassan Munawar Tarar", {"name"=>"Muhammad Hassan Munawar Tarar", "activity"=>1, "fog"=>2.8000000000000003, "kincaid"=>-1.0599999999999987, "flesch"=>115.13000000000002, "id"=>["2077366"]}]
+["Manish Bajaj", {"name"=>"Manish Bajaj", "activity"=>1, "fog"=>9.705263157894738, "kincaid"=>6.104210526315793, "flesch"=>85.13947368421054, "id"=>["2153552"]}]
+["Aditya Mangal", {"name"=>"Aditya Mangal", "activity"=>1, "fog"=>11.325128205128205, "kincaid"=>6.210974358974358, "flesch"=>64.42569230769234, "id"=>["1755865"]}]
+["Thiruvikraman", {"name"=>"Thiruvikraman", "activity"=>1, "fog"=>16.266666666666666, "kincaid"=>12.945, "flesch"=>45.00000000000003, "id"=>["2347647"]}]
+["Libin Babu", {"name"=>"Libin Babu", "activity"=>1, "fog"=>11.938461538461539, "kincaid"=>8.619230769230771, "flesch"=>79.57576923076925, "id"=>["1935467"]}]
+["Karan Thakkar", {"name"=>"Karan Thakkar", "activity"=>1, "fog"=>11.325128205128205, "kincaid"=>7.118666666666666, "flesch"=>57.918000000000006, "id"=>["1247421"]}]
+["Pankaj Agarwal", {"name"=>"Pankaj Agarwal", "activity"=>1, "fog"=>10.304761904761905, "kincaid"=>8.333333333333332, "flesch"=>72.72000000000003, "id"=>["2566933"]}]
+["Shilkumar Laxman Nagalgave", {"name"=>"Shilkumar Laxman Nagalgave", "activity"=>1, "fog"=>12.500900900900902, "kincaid"=>9.63081081081081, "flesch"=>47.981531531531516, "id"=>["2226581"]}]
+["Ravi Prabhat Dubey", {"name"=>"Ravi Prabhat Dubey", "activity"=>1, "fog"=>9.266666666666666, "kincaid"=>6.638750000000002, "flesch"=>66.46458333333337, "id"=>["2170519"]}]
+["N. Praveen Chandra Bose", {"name"=>"N. Praveen Chandra Bose", "activity"=>1, "fog"=>5.752941176470589, "kincaid"=>4.383823529411767, "flesch"=>78.77220588235295, "id"=>["911332"]}]
+["Kshitij Palkar", {"name"=>"Kshitij Palkar", "activity"=>1, "fog"=>4.0, "kincaid"=>3.650000000000002, "flesch"=>86.70500000000001, "id"=>["619485"]}]
+["Vinutha", {"name"=>"Vinutha", "activity"=>1, "fog"=>12.933333333333332, "kincaid"=>9.011666666666667, "flesch"=>73.20000000000002, "id"=>["2008565"]}]
+["Abhishek Singh Chouhan", {"name"=>"Abhishek Singh Chouhan", "activity"=>1, "fog"=>9.472727272727274, "kincaid"=>5.864090909090912, "flesch"=>62.81613636363636, "id"=>["2099260"]}]
+["Roshan Nagekar", {"name"=>"Roshan Nagekar", "activity"=>3, "fog"=>29.415044858523117, "kincaid"=>23.452035886818496, "flesch"=>201.77826086956532, "id"=>["415062"]}]
+["Kannan Ramaswamy", {"name"=>"Kannan Ramaswamy", "activity"=>1, "fog"=>8.036363636363637, "kincaid"=>6.2212121212121225, "flesch"=>70.0518181818182, "id"=>["2265270"]}]
+["Omkar", {"name"=>"Omkar", "activity"=>1, "fog"=>8.095238095238095, "kincaid"=>5.8171428571428585, "flesch"=>74.13619047619049, "id"=>["506909"]}]
+["Siddhartha Sahai", {"name"=>"Siddhartha Sahai", "activity"=>1, "fog"=>13.200000000000001, "kincaid"=>8.180000000000003, "flesch"=>50.66500000000002, "id"=>["2136673"]}]
+["Chintan Rajani", {"name"=>"Chintan Rajani", "activity"=>1, "fog"=>7.517829457364342, "kincaid"=>5.042209302325585, "flesch"=>71.67711240310078, "id"=>["2118194"]}]
+["Lavanya Koushik M N", {"name"=>"Lavanya Koushik M N", "activity"=>1, "fog"=>8.095238095238095, "kincaid"=>3.7942857142857136, "flesch"=>88.63904761904763, "id"=>["1280686"]}]
+["Senthil Kumar Vaithiyanathan", {"name"=>"Senthil Kumar Vaithiyanathan", "activity"=>1, "fog"=>8.062745098039215, "kincaid"=>4.794705882352943, "flesch"=>80.87284313725492, "id"=>["106860"]}]
+["Manjunath K.S", {"name"=>"Manjunath K.S", "activity"=>1, "fog"=>11.0, "kincaid"=>3.8550000000000004, "flesch"=>80.78250000000001, "id"=>["1365878"]}]
+["Ayyanarmurugan", {"name"=>"Ayyanarmurugan", "activity"=>2, "fog"=>32.800000000000004, "kincaid"=>25.550000000000004, "flesch"=>63.94, "id"=>["2150177"]}]
+["Fabrizio Gonzalez Castellanos", {"name"=>"Fabrizio Gonzalez Castellanos", "activity"=>1, "fog"=>14.533333333333331, "kincaid"=>5.246666666666666, "flesch"=>62.79000000000002, "id"=>["2294016"]}]
+["Modesto Figuereo Fernández", {"name"=>"Modesto Figuereo Fernández", "activity"=>1, "fog"=>14.228571428571428, "kincaid"=>9.054285714285715, "flesch"=>42.61571428571432, "id"=>["311912"]}]
+["Luis Fernando Álvarez", {"name"=>"Luis Fernando Álvarez", "activity"=>1, "fog"=>14.533333333333331, "kincaid"=>13.113333333333333, "flesch"=>6.390000000000015, "id"=>["2175625"]}]
+["Rafael Guzman Granados", {"name"=>"Rafael Guzman Granados", "activity"=>3, "fog"=>57.672727272727286, "kincaid"=>41.104090909090914, "flesch"=>81.32863636363638, "id"=>["1656044"]}]
+["Jordi Mesa Gonzalez", {"name"=>"Jordi Mesa Gonzalez", "activity"=>1, "fog"=>16.072727272727274, "kincaid"=>14.444545454545459, "flesch"=>30.686818181818182, "id"=>["1825327"]}]
+["Facundo Oscar Precentado", {"name"=>"Facundo Oscar Precentado", "activity"=>1, "fog"=>1.2000000000000002, "kincaid"=>5.246666666666666, "flesch"=>62.79000000000002, "id"=>["2298661"]}]
+["Juan Manuel Anera Marín", {"name"=>"Juan Manuel Anera Marín", "activity"=>1, "fog"=>6.6000000000000005, "kincaid"=>6.620000000000001, "flesch"=>54.72500000000002, "id"=>["1929016"]}]
+["Julio Beltrán Ortega", {"name"=>"Julio Beltrán Ortega", "activity"=>1, "fog"=>9.472727272727274, "kincaid"=>8.009545454545457, "flesch"=>47.434318181818185, "id"=>["385698"]}]
+["Ignasi", {"name"=>"Ignasi", "activity"=>2, "fog"=>27.84444444444445, "kincaid"=>21.260000000000005, "flesch"=>75.10500000000005, "id"=>["809707"]}]
+["Reyes Ruiz", {"name"=>"Reyes Ruiz", "activity"=>2, "fog"=>19.490909090909092, "kincaid"=>19.72363636363637, "flesch"=>95.02545454545456, "id"=>["408050"]}]
+["Felipe Chacón Prieto", {"name"=>"Felipe Chacón Prieto", "activity"=>1, "fog"=>11.600000000000001, "kincaid"=>9.57, "flesch"=>33.57500000000002, "id"=>["142320"]}]
+["David Leonardo Sirit Manzo", {"name"=>"David Leonardo Sirit Manzo", "activity"=>1, "fog"=>19.942857142857143, "kincaid"=>15.797142857142859, "flesch"=>-5.727142857142809, "id"=>["2157032"]}]
+["Christopher Picón Carles", {"name"=>"Christopher Picón Carles", "activity"=>2, "fog"=>24.16190476190476, "kincaid"=>19.347380952380952, "flesch"=>119.98678571428576, "id"=>["2313673"]}]
+["Pablo J Ramos Gonzalez", {"name"=>"Pablo J Ramos Gonzalez", "activity"=>1, "fog"=>1.0, "kincaid"=>6.6250000000000036, "flesch"=>52.01750000000001, "id"=>["1831205"]}]
+["Mohammad J. Zamani", {"name"=>"Mohammad J. Zamani", "activity"=>11, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["22858"]}]
+["Mahsa Shahshahani", {"name"=>"Mahsa Shahshahani", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["218689"]}]
+["Rasoul Pashaie", {"name"=>"Rasoul Pashaie", "activity"=>1, "fog"=>8.200000000000001, "kincaid"=>5.598750000000003, "flesch"=>69.17125000000001, "id"=>["1922881"]}]
+["Behzad Ahmadzadeh", {"name"=>"Behzad Ahmadzadeh", "activity"=>1, "fog"=>19.124324324324323, "kincaid"=>16.699459459459465, "flesch"=>41.23675675675676, "id"=>["1445838"]}]
+["Negar Bahramsari", {"name"=>"Negar Bahramsari", "activity"=>2, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["23188"]}]
+["Saman", {"name"=>"Saman", "activity"=>2, "fog"=>11.4, "kincaid"=>7.535000000000002, "flesch"=>151.24250000000004, "id"=>["778602"]}]
+["Seyed Mohsen Zayeni Langroudi", {"name"=>"Seyed Mohsen Zayeni Langroudi", "activity"=>1, "fog"=>2.0, "kincaid"=>2.879999999999999, "flesch"=>83.32000000000004, "id"=>["2100567"]}]
+["Amin", {"name"=>"Amin", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2415718"]}]
+["Rex Fatahi", {"name"=>"Rex Fatahi", "activity"=>7, "fog"=>158.29925974154497, "kincaid"=>138.30771858093337, "flesch"=>221.79831000449502, "id"=>["2524505"]}]
+["Asghar Bekmohammadi", {"name"=>"Asghar Bekmohammadi", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2833765"]}]
+["Mohammed Abdul Kareem Modhaffer", {"name"=>"Mohammed Abdul Kareem Modhaffer", "activity"=>7, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1210761"]}]
+["Mohamed El Shaer", {"name"=>"Mohamed El Shaer", "activity"=>1, "fog"=>11.672727272727274, "kincaid"=>8.009090909090911, "flesch"=>57.23363636363638, "id"=>["1291063"]}]
+["Zeineb Safi", {"name"=>"Zeineb Safi", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2072478"]}]
+["Mostafa El Said Khamis", {"name"=>"Mostafa El Said Khamis", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1692164"]}]
+["Nouredine Sghir", {"name"=>"Nouredine Sghir", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1777158"]}]
+["Taouririt Salah Eddine", {"name"=>"Taouririt Salah Eddine", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["108879"]}]
+["Amjad Shehada", {"name"=>"Amjad Shehada", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["1755299"]}]
+["Haysam", {"name"=>"Haysam", "activity"=>1, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2388385"]}]
+["Ahmad Abutalib", {"name"=>"Ahmad Abutalib", "activity"=>3, "fog"=>NaN, "kincaid"=>NaN, "flesch"=>NaN, "id"=>["2365914"]}]
+["A Liyu Abdullahi", {"name"=>"A Liyu Abdullahi", "activity"=>1, "fog"=>1.4000000000000001, "kincaid"=>-2.424999999999999, "flesch"=>118.6825, "id"=>["2522852"]}]
+["Amani Hussein", {"name"=>"Amani Hussein", "activity"=>2, "fog"=>22.21818181818182, "kincaid"=>17.56266457680251, "flesch"=>155.04606583072103, "id"=>["2580296"]}]
+["Nathan Glass", {"name"=>"Nathan Glass", "activity"=>2, "fog"=>18.54103343465046, "kincaid"=>16.934741641337386, "flesch"=>87.79500000000004, "id"=>["946895"]}]
+["Dinko Srkoč", {"name"=>"Dinko Srkoč", "activity"=>6, "fog"=>59.67950089126559, "kincaid"=>47.78167359873244, "flesch"=>442.42821301247784, "id"=>["170038"]}]
+["Ricardo Wurmus", {"name"=>"Ricardo Wurmus", "activity"=>1, "fog"=>15.455172413793106, "kincaid"=>10.409827586206898, "flesch"=>46.2554310344828, "id"=>["99465"]}]
+["Roelf Veldhuis", {"name"=>"Roelf Veldhuis", "activity"=>1, "fog"=>8.362962962962962, "kincaid"=>5.845370370370372, "flesch"=>77.19916666666668, "id"=>["1396960"]}]
+["Yuval Hager", {"name"=>"Yuval Hager", "activity"=>5, "fog"=>42.98461538461538, "kincaid"=>36.82519230769232, "flesch"=>352.7443910256411, "id"=>["1320046"]}]
+["Andrés García García", {"name"=>"Andrés García García", "activity"=>1, "fog"=>8.044444444444444, "kincaid"=>4.964444444444446, "flesch"=>75.50000000000003, "id"=>["1300906"]}]
+["Oleksii Kovura", {"name"=>"Oleksii Kovura", "activity"=>1, "fog"=>16.0, "kincaid"=>14.040000000000003, "flesch"=>30.025000000000034, "id"=>["1712518"]}]
+["Jaume Valls Altadill", {"name"=>"Jaume Valls Altadill", "activity"=>1, "fog"=>9.282352941176471, "kincaid"=>6.466176470588238, "flesch"=>63.84279411764709, "id"=>["1753383"]}]
+["Sheldon Warkentin", {"name"=>"Sheldon Warkentin", "activity"=>2, "fog"=>25.358620689655172, "kincaid"=>18.997528735632187, "flesch"=>118.93284482758621, "id"=>["1502446"]}]
+["Andrea Richiardi", {"name"=>"Andrea Richiardi", "activity"=>2, "fog"=>18.985981308411215, "kincaid"=>16.58430767338908, "flesch"=>135.7891373585834, "id"=>["945861"]}]
+["James Holland", {"name"=>"James Holland", "activity"=>1, "fog"=>5.0814814814814815, "kincaid"=>2.7792592592592626, "flesch"=>91.16666666666669, "id"=>["2314669"]}]
+["Xi Junhua", {"name"=>"Xi Junhua", "activity"=>7, "fog"=>44.02310291016174, "kincaid"=>29.1156727782022, "flesch"=>558.816960568843, "id"=>["2094378"]}]
+["Joe Cancilla", {"name"=>"Joe Cancilla", "activity"=>1, "fog"=>6.713978494623657, "kincaid"=>3.856129032258064, "flesch"=>85.82086021505377, "id"=>["1345743"]}]
+["Jeffrey Merrick", {"name"=>"Jeffrey Merrick", "activity"=>9, "fog"=>91.0570580743098, "kincaid"=>71.4544467169325, "flesch"=>598.0182900303307, "id"=>["198959"]}]
+["Hussain Parsaiyan", {"name"=>"Hussain Parsaiyan", "activity"=>1, "fog"=>8.00156862745098, "kincaid"=>5.972313725490199, "flesch"=>70.41141176470589, "id"=>["688212"]}]
+["Kyle Mahan", {"name"=>"Kyle Mahan", "activity"=>2, "fog"=>20.606506364922208, "kincaid"=>12.422630834512024, "flesch"=>136.1744554455446, "id"=>["1331399"]}]
+["Aleksandar Gjorgievski", {"name"=>"Aleksandar Gjorgievski", "activity"=>2, "fog"=>17.830921985815603, "kincaid"=>11.694085106382982, "flesch"=>158.64900000000006, "id"=>["994688"]}]
+["Charles Zhu", {"name"=>"Charles Zhu", "activity"=>1, "fog"=>10.614965986394559, "kincaid"=>8.600408163265307, "flesch"=>62.493401360544254, "id"=>["1706450"]}]
+["Shawn Mc Bride", {"name"=>"Shawn Mc Bride", "activity"=>3, "fog"=>24.122125219422202, "kincaid"=>16.116796557146778, "flesch"=>244.9608702713467, "id"=>["2241720"]}]
+["Ed Mc Cardell", {"name"=>"Ed Mc Cardell", "activity"=>3, "fog"=>63.039603075272666, "kincaid"=>52.66370358781811, "flesch"=>123.5744852941177, "id"=>["2290297"]}]
+["Neal Koss", {"name"=>"Neal Koss", "activity"=>3, "fog"=>37.66555555555556, "kincaid"=>25.870333333333335, "flesch"=>193.48575000000005, "id"=>["1618827"]}]
+["James Fisher", {"name"=>"James Fisher", "activity"=>4, "fog"=>45.51869866470886, "kincaid"=>34.245933990017186, "flesch"=>261.8754459510445, "id"=>["179862"]}]
+["Sajjad Hassany Pazoky", {"name"=>"Sajjad Hassany Pazoky", "activity"=>6, "fog"=>32.15335231033935, "kincaid"=>12.093265257050035, "flesch"=>544.251303166215, "id"=>["1247658"]}]
+["Masa Roller", {"name"=>"Masa Roller", "activity"=>1, "fog"=>23.642696629213486, "kincaid"=>18.47061797752809, "flesch"=>41.8967134831461, "id"=>["115195"]}]
+["Vicente Alencar", {"name"=>"Vicente Alencar", "activity"=>1, "fog"=>5.836363636363637, "kincaid"=>2.6459090909090897, "flesch"=>85.88886363636365, "id"=>["20598"]}]
+["Mnru", {"name"=>"Mnru", "activity"=>1, "fog"=>5.698461538461539, "kincaid"=>3.8967692307692303, "flesch"=>85.64823076923078, "id"=>["717319"]}]
+["Ruslan Bayburin", {"name"=>"Ruslan Bayburin", "activity"=>1, "fog"=>1.7333333333333334, "kincaid"=>2.4384615384615422, "flesch"=>85.29820512820514, "id"=>["71776"]}]
+["Martin Bourbonnais", {"name"=>"Martin Bourbonnais", "activity"=>2, "fog"=>25.15880149812734, "kincaid"=>18.845711610486894, "flesch"=>124.17720037453188, "id"=>["2286754"]}]
+["Caroline Elliott", {"name"=>"Caroline Elliott", "activity"=>1, "fog"=>14.533333333333331, "kincaid"=>17.04666666666667, "flesch"=>-21.809999999999945, "id"=>["621664"]}]
+["Jens Ruzicka", {"name"=>"Jens Ruzicka", "activity"=>1, "fog"=>8.9, "kincaid"=>5.645833333333332, "flesch"=>83.08250000000001, "id"=>["12848"]}]
+["Robert Myers", {"name"=>"Robert Myers", "activity"=>2, "fog"=>13.736974789915969, "kincaid"=>6.9540732959850615, "flesch"=>168.9565441176471, "id"=>["1402509"]}]
+["Kirill Grishin", {"name"=>"Kirill Grishin", "activity"=>1, "fog"=>12.488888888888889, "kincaid"=>10.208888888888893, "flesch"=>37.900000000000034, "id"=>["54237"]}]
+["Sean Chen", {"name"=>"Sean Chen", "activity"=>1, "fog"=>3.578181818181818, "kincaid"=>-0.4649090909090887, "flesch"=>106.23263636363636, "id"=>["999920"]}]
+["Jeremy Fairbank", {"name"=>"Jeremy Fairbank", "activity"=>1, "fog"=>6.114285714285714, "kincaid"=>2.9404761904761934, "flesch"=>90.60452380952383, "id"=>["1060105"]}]
+["Laurent Poulain", {"name"=>"Laurent Poulain", "activity"=>5, "fog"=>44.716912604211196, "kincaid"=>32.51286590292607, "flesch"=>327.50442425988064, "id"=>["1523328"]}]
+["Ivan Youroff", {"name"=>"Ivan Youroff", "activity"=>3, "fog"=>31.304370486442295, "kincaid"=>21.225313479356863, "flesch"=>199.693170944611, "id"=>["1290554"]}]
+["David Reyes Imbernón", {"name"=>"David Reyes Imbernón", "activity"=>1, "fog"=>11.677313007943434, "kincaid"=>8.173276321226869, "flesch"=>59.52658788282292, "id"=>["3538"]}]
+["Scott K Brown", {"name"=>"Scott K Brown", "activity"=>1, "fog"=>2.0, "kincaid"=>-1.8399999999999999, "flesch"=>117.16000000000003, "id"=>["2079803"]}]
+["Philip Costa", {"name"=>"Philip Costa", "activity"=>1, "fog"=>13.111111111111112, "kincaid"=>9.516666666666666, "flesch"=>62.45500000000004, "id"=>["2025846"]}]
+["Pandurangan R S", {"name"=>"Pandurangan R S", "activity"=>4, "fog"=>32.0792088595593, "kincaid"=>20.59657403193386, "flesch"=>310.5067446524065, "id"=>["1042508"]}]
+["Roy Main", {"name"=>"Roy Main", "activity"=>2, "fog"=>7.4941176470588236, "kincaid"=>0.26323529411764746, "flesch"=>206.93955882352944, "id"=>["2182297"]}]
+["Karachun Viktor", {"name"=>"Karachun Viktor", "activity"=>1, "fog"=>11.600000000000001, "kincaid"=>9.736, "flesch"=>69.78800000000001, "id"=>["2221034"]}]
+["Jordan Sitkin", {"name"=>"Jordan Sitkin", "activity"=>1, "fog"=>16.266666666666666, "kincaid"=>10.978333333333332, "flesch"=>59.10000000000004, "id"=>["1634055"]}]
+["Jorge Gajon", {"name"=>"Jorge Gajon", "activity"=>1, "fog"=>3.2, "kincaid"=>3.7550000000000026, "flesch"=>82.39000000000001, "id"=>["1137049"]}]
+["Joaquin Seijó", {"name"=>"Joaquin Seijó", "activity"=>1, "fog"=>13.769876583527235, "kincaid"=>9.642545889972922, "flesch"=>64.06780626199128, "id"=>["1759471"]}]
+["Alexei Gvozdev", {"name"=>"Alexei Gvozdev", "activity"=>2, "fog"=>18.691359842906234, "kincaid"=>16.411184339715266, "flesch"=>134.358691089838, "id"=>["99500"]}]
+["Richard Nolan", {"name"=>"Richard Nolan", "activity"=>1, "fog"=>10.666666666666668, "kincaid"=>8.374000000000002, "flesch"=>64.71033333333337, "id"=>["1974615"]}]
+["Konstantin Milyutin", {"name"=>"Konstantin Milyutin", "activity"=>1, "fog"=>1.2000000000000002, "kincaid"=>-2.619999999999999, "flesch"=>119.19000000000003, "id"=>["95081"]}]
+["Fei Du", {"name"=>"Fei Du", "activity"=>1, "fog"=>8.200000000000001, "kincaid"=>5.230000000000004, "flesch"=>71.81500000000001, "id"=>["1310151"]}]
+["Ian Barland", {"name"=>"Ian Barland", "activity"=>2, "fog"=>25.878787878787882, "kincaid"=>20.56490909090909, "flesch"=>131.14669696969702, "id"=>["2282123"]}]
+["Marina Shimchuk", {"name"=>"Marina Shimchuk", "activity"=>2, "fog"=>8.523655913978494, "kincaid"=>4.801532258064519, "flesch"=>187.90896505376344, "id"=>["22592"]}]
+["Radoslaw Piliszek", {"name"=>"Radoslaw Piliszek", "activity"=>2, "fog"=>12.755555555555556, "kincaid"=>9.63888888888889, "flesch"=>167.92166666666668, "id"=>["1920528"]}]
+["Mk Li", {"name"=>"Mk Li", "activity"=>1, "fog"=>5.802686202686203, "kincaid"=>4.043443223443223, "flesch"=>84.08211233211235, "id"=>["37265"]}]
+["Seth Tager", {"name"=>"Seth Tager", "activity"=>1, "fog"=>16.400000000000002, "kincaid"=>12.096, "flesch"=>52.86800000000002, "id"=>["1620945"]}]
+["Martin Kess", {"name"=>"Martin Kess", "activity"=>1, "fog"=>8.036363636363637, "kincaid"=>3.7181818181818187, "flesch"=>87.99727272727276, "id"=>["497985"]}]
+["Peter Cox", {"name"=>"Peter Cox", "activity"=>1, "fog"=>18.42535211267606, "kincaid"=>15.871901408450707, "flesch"=>44.49827464788734, "id"=>["2299263"]}]
+["Alexey Makarov", {"name"=>"Alexey Makarov", "activity"=>1, "fog"=>3.1682539682539685, "kincaid"=>2.476825396825401, "flesch"=>86.46500000000002, "id"=>["75329"]}]
+["Christopher G. Van Hasselt", {"name"=>"Christopher G. Van Hasselt", "activity"=>1, "fog"=>10.349820788530467, "kincaid"=>6.817204301075272, "flesch"=>70.72636200716846, "id"=>["1388111"]}]
+["Gabriele Renzi", {"name"=>"Gabriele Renzi", "activity"=>1, "fog"=>14.235460992907802, "kincaid"=>12.070425531914896, "flesch"=>64.33166666666669, "id"=>["23820"]}]
+["Keith Drescher", {"name"=>"Keith Drescher", "activity"=>1, "fog"=>8.002564102564103, "kincaid"=>4.853525641025644, "flesch"=>77.63105769230769, "id"=>["1683127"]}]
+["Bob Ippolito", {"name"=>"Bob Ippolito", "activity"=>2, "fog"=>21.145454545454548, "kincaid"=>14.409545454545455, "flesch"=>116.20431818181822, "id"=>["1922282"]}]
+["Adrien Lamarque", {"name"=>"Adrien Lamarque", "activity"=>1, "fog"=>9.592948717948719, "kincaid"=>5.562099358974361, "flesch"=>76.89237980769232, "id"=>["67839"]}]
+["Martin Scholz", {"name"=>"Martin Scholz", "activity"=>1, "fog"=>10.903101087394282, "kincaid"=>7.870890052356025, "flesch"=>64.8008417237213, "id"=>["2287044"]}]
+["Cody Schroeder", {"name"=>"Cody Schroeder", "activity"=>2, "fog"=>18.409017223910844, "kincaid"=>12.832013677811553, "flesch"=>156.45732142857145, "id"=>["1397622"]}]
+["Johan Elkink", {"name"=>"Johan Elkink", "activity"=>1, "fog"=>7.968794326241135, "kincaid"=>7.592340425531916, "flesch"=>68.53333333333333, "id"=>["1832765"]}]
+["Alexey Romanov", {"name"=>"Alexey Romanov", "activity"=>2, "fog"=>20.8, "kincaid"=>10.08, "flesch"=>139.23000000000002, "id"=>["67993"]}]
+["Leslie Hill", {"name"=>"Leslie Hill", "activity"=>1, "fog"=>14.228571428571428, "kincaid"=>5.682857142857145, "flesch"=>66.7871428571429, "id"=>["2269667"]}]
+["Dávid Róbert", {"name"=>"Dávid Róbert", "activity"=>4, "fog"=>45.48780240689945, "kincaid"=>33.782421450895384, "flesch"=>277.7157820836936, "id"=>["242765"]}]
+["Pamela Fox", {"name"=>"Pamela Fox", "activity"=>3, "fog"=>14.533333333333335, "kincaid"=>10.433650793650799, "flesch"=>239.47523809523813, "id"=>["2009121"]}]
+["Gautam S Umesh", {"name"=>"Gautam S Umesh", "activity"=>1, "fog"=>8.645771144278607, "kincaid"=>4.791865671641791, "flesch"=>80.59635572139305, "id"=>["82504"]}]
+["Jeffrey Rosenbluth", {"name"=>"Jeffrey Rosenbluth", "activity"=>2, "fog"=>14.087179487179489, "kincaid"=>5.782692307692313, "flesch"=>183.9914743589744, "id"=>["504720"]}]
+["Stefan Holzmüller", {"name"=>"Stefan Holzmüller", "activity"=>1, "fog"=>13.915789473684212, "kincaid"=>10.451578947368422, "flesch"=>53.97105263157897, "id"=>["88342"]}]
+["Gaodayue", {"name"=>"Gaodayue", "activity"=>1, "fog"=>30.22325581395349, "kincaid"=>25.328837209302325, "flesch"=>-9.944883720930221, "id"=>["244617"]}]
+["Rohan Nicholls", {"name"=>"Rohan Nicholls", "activity"=>3, "fog"=>25.89581283581284, "kincaid"=>15.753265639765644, "flesch"=>228.34282985257988, "id"=>["1718474"]}]
