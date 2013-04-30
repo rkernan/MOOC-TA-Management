@@ -1,0 +1,43 @@
+<%- model_class = TestResult -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <% if current_user_is_professor? %>
+        <th><%= model_class.human_attribute_name(:teaching_assistant) %></th>
+      <% elsif current_user_is_teaching_assistant? %>
+        <th>Course</th>
+        <th><%= model_class.human_attribute_name(:ta_test) %></th>
+      <% end %>
+      <th><%= model_class.human_attribute_name(:grade) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <% if current_user_is_professor? %>
+        <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @test_results.each do |test_result| %>
+      <tr>
+        <td><%= link_to test_result.id, test_result_path(test_result) %></td>
+        <% if current_user_is_professor? %>
+          <td><%= test_result.teaching_assistant.email %></td>
+
+        <% elsif current_user_is_teaching_assistant? %>
+          <td><%= test_result.ta_test.course.name %></td>
+          <td><%= test_result.ta_test.name %></td>
+        <% end %>
+        <td><%= test_result.grade %></td>
+        <td><%=l test_result.created_at %></td>
+        <% if current_user_is_professor? %>
+          <td>
+            <%= link_to t('Request', :default => t("Request")), '', :class => 'btn btn-mini' %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

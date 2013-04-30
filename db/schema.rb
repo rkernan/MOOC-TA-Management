@@ -11,16 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415144659) do
+ActiveRecord::Schema.define(:version => 20130425053104) do
 
   create_table "answer_results", :force => true do |t|
-    t.boolean  "correct"
     t.boolean  "selected"
     t.integer  "question_result_id"
+    t.integer  "answer_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
 
+  add_index "answer_results", ["answer_id"], :name => "index_answer_results_on_answer_id"
   add_index "answer_results", ["question_result_id"], :name => "index_answer_results_on_question_result_id"
 
   create_table "answers", :force => true do |t|
@@ -51,12 +52,13 @@ ActiveRecord::Schema.define(:version => 20130415144659) do
   end
 
   create_table "question_results", :force => true do |t|
-    t.boolean  "correct"
     t.integer  "test_result_id"
+    t.integer  "question_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
 
+  add_index "question_results", ["question_id"], :name => "index_question_results_on_question_id"
   add_index "question_results", ["test_result_id"], :name => "index_question_results_on_test_result_id"
 
   create_table "questions", :force => true do |t|
@@ -78,12 +80,11 @@ ActiveRecord::Schema.define(:version => 20130415144659) do
   add_index "ta_tests", ["course_id"], :name => "index_ta_tests_on_course_id"
 
   create_table "test_results", :force => true do |t|
-    t.string   "selected"
-    t.string   "correctness"
     t.integer  "teaching_assistant_id"
     t.integer  "ta_test_id"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.decimal  "grade"
   end
 
   add_index "test_results", ["ta_test_id"], :name => "index_test_results_on_ta_test_id"
@@ -95,8 +96,6 @@ ActiveRecord::Schema.define(:version => 20130415144659) do
     t.datetime "updated_at",        :null => false
     t.string   "password_hash",     :null => false
     t.string   "password_salt",     :null => false
-    t.datetime "first_login_at"
-    t.datetime "last_login_at"
     t.string   "type"
     t.string   "persistence_token"
   end

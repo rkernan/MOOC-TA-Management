@@ -1,0 +1,48 @@
+<%- model_class = TestResult -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:teaching_assistant_id) %>:</strong></dt>
+  <dd><%= @test_result.teaching_assistant.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:ta_test_id) %>:</strong></dt>
+  <dd><%= @test_result.ta_test.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:grade) %>:</strong></dt>
+  <dd><%= @test_result.grade %></dd>
+</dl>
+
+<% if current_user_is_professor? %>
+  <ol>
+    <% @test_result.question_results.each do |question_result| %>
+      <li>
+      <% if question_result.correct? %>
+        <i class="icon-ok"></i>
+      <% else %>
+        <i class="icon-remove"></i>
+      <% end %>
+      <%= question_result.question.content %></li>
+      <ul>
+        <% question_result.answer_results.each do |answer_result| %>
+          <li>
+          <% if answer_result.correct? %>
+            <i class="icon-ok"></i>
+          <% else %>
+            <i class="icon-remove"></i>
+          <% end %>
+          <%= answer_result.answer.content %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </ol>
+<% end %>
+<div class="form-actions">
+  <% if session[:ta_index] %>
+    <%= link_to t('.back', :default => t("helpers.links.back")),
+                teaching_assistant_test_results_path(session[:ta_index]), :class => 'btn'  %>
+    <%= session[:ta_index] = nil %>
+  <% else %>
+    <%= link_to t('.back', :default => t("helpers.links.back")),
+                ta_test_test_results_path(@test_result.ta_test), :class => 'btn'  %>
+  <% end %>
+</div>

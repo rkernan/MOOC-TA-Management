@@ -1,13 +1,26 @@
 class CoursesController < ApplicationController
+  before_filter :only => [:new, :create, :edit, :update, :destroy] {
+    require_specific_user(
+      if params[:professor_id]
+        User.find(params[:professor_id])
+      else
+        Course.find(params[:id]).professor
+      end
+    )
+  }
+
   # GET /courses
   # GET /courses.json
   def index
     if params[:search]
+      session[:professor_id] = nil
       @courses = Course.search(params[:search])
     elsif params[:professor_id]
+      session[:professor_id] = params[:professor_id]
       @professor = Professor.find(params[:professor_id])
       @courses = @professor.courses.all
     else
+      session[:professor_id] = nil
       @courses = Course.all
     end
 
@@ -90,4 +103,5 @@ class CoursesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end

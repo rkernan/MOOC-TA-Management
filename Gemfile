@@ -13,14 +13,16 @@ group :assets do
 end
 
 group :development do
-  # better rails console output
-  # gem 'pry'
-  # gem 'pry-doc'
-  # gem 'pry-rails'
   gem 'hirb'
 end
 
 gem 'jquery-rails'
-gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
+# form nesting
 gem 'nested_form'
+# login/authentication
+gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt'
 gem 'authlogic'
+# twitter bootstrap
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'

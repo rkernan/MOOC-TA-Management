@@ -1,4 +1,16 @@
 class TaTestsController < ApplicationController
+  before_filter :require_teaching_assistant, :only => [:take]
+  before_filter :require_professor, :only => [:new, :create, :edit, :update, :show]
+  before_filter :only => [:new, :create, :edit, :update, :show] {
+    require_specific_user(
+      if params[:course_id]
+        Course.find(params[:course_id]).professor
+      else
+        TaTest.find(params[:id]).course.professor
+      end
+    )
+  }
+
   # GET /ta_tests
   # GET /ta_tests.json
   def index
@@ -27,6 +39,7 @@ class TaTestsController < ApplicationController
   def new
     @course = Course.find(params[:course_id])
     @ta_test = @course.ta_tests.new
+
     3.times do
       question = @ta_test.questions.build
       4.times do
@@ -58,7 +71,7 @@ class TaTestsController < ApplicationController
         format.json { render json: @ta_test, status: :created, location: @ta_test }
       else
         format.html { render action: "new" }
-        format.json { render json: @ta_test.errros, status: :unprocessable_entity }
+        format.json { render json: @ta_test.errors, status: :unprocessable_entity }
       end
     end
   end
