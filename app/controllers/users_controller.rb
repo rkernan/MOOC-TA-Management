@@ -85,7 +85,7 @@ class UsersController < ApplicationController
   end
 
   def dashboard
-    @results = ParseResult.order('activity desc').limit(25)
+    @results = ParseResult.order('activity desc')
 
     respond_to do |format|
       format.html { render action: 'dashboard' }

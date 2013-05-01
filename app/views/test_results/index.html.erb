@@ -15,11 +15,11 @@
       <% end %>
       <th><%= model_class.human_attribute_name(:grade) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th>Forum Activity</th>
-      <th>Fog Index</th>
-      <th>Kincaid Index</th>
-      <th>Flesch Index</th>
       <% if current_user_is_professor? %>
+        <th>Forum Activity</th>
+        <th>Fog Index</th>
+        <th>Kincaid Index</th>
+        <th>Flesch Index</th>
         <th><%=t '.actions', :default => t("helpers.actions") %></th>
       <% end %>
     </tr>
@@ -38,18 +38,18 @@
         <% end %>
         <td><%= "%.0f%" % test_result.grade %></td>
         <td><%=l test_result.created_at %></td>
-        <% if p %>
-          <td><%= "%d posts" % p.activity %></td>
-          <td><%= p.fog %></td>
-          <td><%= p.kincaid %></td>
-          <td><%= p.flesch %></td>
-        <% else %>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td>N/A</td>
-        <% end %>
         <% if current_user_is_professor? %>
+          <% if p %>
+            <td><%= "%d posts" % p.activity %></td>
+            <td><%= p.fog %></td>
+            <td><%= p.kincaid %></td>
+            <td><%= p.flesch %></td>
+          <% else %>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          <% end %>
           <td>
             <%= link_to t('Request', :default => t("Request")), new_test_result_ta_test_request_path(test_result) , :class => 'btn btn-mini' %>
           </td>
