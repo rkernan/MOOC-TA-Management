@@ -34,7 +34,7 @@
         <td><%=l test_result.created_at %></td>
         <% if current_user_is_professor? %>
           <td>
-            <%= link_to t('Request', :default => t("Request")), '', :class => 'btn btn-mini' %>
+            <%= link_to t('Request', :default => t("Request")), new_test_result_ta_test_request_path(test_result) , :class => 'btn btn-mini' %>
           </td>
         <% end %>
       </tr>

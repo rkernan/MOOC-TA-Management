@@ -3,6 +3,7 @@ class Course < ActiveRecord::Base
   has_many :teaching_assistants
   has_many :ta_tests
   has_many :ta_test_requests
+
   attr_accessible :name
 
   validates :name, :presence => true

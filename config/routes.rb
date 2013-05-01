@@ -9,13 +9,14 @@ MoocTaManager::Application.routes.draw do
   resources :users
   resources :professors, :controller => 'users', :shallow => true do
     resources :courses, :shallow => true do
-      resources :ta_test_requests
       resources :ta_tests, :shallow => true do
-        resources :test_results, :shallow => true
+        resources :test_results, :shallow => true do
+      	   resources :ta_test_requests
+	end
       end
     end
   end
   resources :teaching_assistants, :controller => 'users', :shallow => true do
-    resources :test_results, :only => [:index]
+    resources :test_results, :only => [:index] 
   end
 end
