@@ -8,6 +8,7 @@ MoocTaManager::Application.routes.draw do
   resources :courses, :only => [:index]
   resources :users
   resources :professors, :controller => 'users', :shallow => true do
+    get 'dashboard', :on => :member
     resources :courses, :shallow => true do
       resources :ta_test_requests
       resources :ta_tests, :shallow => true do

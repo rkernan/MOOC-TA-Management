@@ -11,13 +11,15 @@ require 'rubygems'
 require 'active_record'
 require 'cgi'
 require 'uri'
+require 'bigdecimal'
+require 'bigdecimal/util'
 
 ActiveRecord::Base.establish_connection(
   :adapter => 'sqlite3',
   :database => 'db/development.sqlite3')
 
 class ParseResult < ActiveRecord::Base
-  attr_accessible :activity, :fog, :pending, :professor_id, :ta_id
+  attr_accessible :name, :user_id, :activity, :fog, :kincaid, :flesch, :course_path, :ta_id
 end
 
 headless = Headless.new
@@ -36,13 +38,6 @@ fog = 0
 pending = true
 
 def signin(email, password)
-  p = ParseResult.new
-  p.activity = 10
-  p.fog = 10
-  p.pending = true
-  p.professor_id = 1
-  p.ta_id = 1
-  p.save
   # Open a browser to log user in  
   browser = Watir::Browser.new(:phantomjs)
 
@@ -91,6 +86,7 @@ end
 
 def rank_users(browser, threads)
   users = {}
+  ids = []
   threads.flatten!
   total_threads = threads.size
   threads.each_with_index do |thread, index|
@@ -113,33 +109,62 @@ def rank_users(browser, threads)
         report = Lingua::EN::Readability.new(post_text.to_s)
         report.inspect
         username = student_link.text.titleize
-        if users.has_key?(username)
-          user = users[username]
+        id = CGI::parse(URI.parse(student_link.href).query)["user_id"][0]
+        if users.has_key?(id)
+          user = users[id]
         else
           user = {}
           user["name"] = username
+          ids << id
           user["activity"] = 0
+          user["fogs"] = 0
+          user["kincaids"] = 0
+          user["fleschs"] = 0
           user["fog"] = 0
           user["kincaid"] = 0
           user["flesch"] = 0
-          user["id"] = CGI::parse(URI.parse(student_link.href).query)["user_id"]
+          user["id"] = id
         end
-        user["fog"] = user["fog"] + report.fog
-        user["kincaid"] = user["kincaid"] + report.kincaid
-        user["flesch"] = user["flesch"] + report.flesch
+
+        if !report.fog.nan?
+          user["fog"] = user["fog"] + report.fog
+          user["fogs"] = user["fogs"] + 1
+        end
+
+        if !report.kincaid.nan?
+          user["kincaid"] = user["kincaid"] + report.kincaid
+          user["kincaids"] = user["kincaids"] + 1
+        end
+        
+        if !report.flesch.nan?
+          user["flesch"] = user["flesch"] + report.flesch
+          user["felschs"] = user["fleschs"] + 1
+        end
         user["activity"] = user["activity"] + 1
-        users[username] = user
+        users[id] = user
       end
 
-
     end
-
-
     sleep(BROWSER_SLEEP / 4)
   end
 
-  users.each do |user|
-    puts user.inspect
+  ids.each do |id|
+    user = users[id]
+    p = ParseResult.new
+    p.name = user["name"]
+    p.user_id = id
+    p.activity = user["activity"]
+    if user["fogs"] != 0
+      p.fog = user["fog"].to_i / user["fogs"]
+    end
+    if user["kincaids"] != 0
+      p.kincaid = user["kincaid"].to_i / user["kincaids"]
+    end
+    if user["fleschs"] != 0
+      p.flesch = user["flesch"].to_i / user["fleschs"]
+    end
+    p.course_path = CLASS_PATH
+    p.save
   end
 
 end
@@ -148,8 +173,8 @@ end
 #email = gets.chomp
 #print "Coursera password: "
 #password = STDIN.noecho(&:gets).chomp
-email = "EMAIL"
-password = "PASSWORD"
+email = "email@gatech.edu"
+password = "password"
 
 browser = signin(email, password)
 threads = get_threads(browser)

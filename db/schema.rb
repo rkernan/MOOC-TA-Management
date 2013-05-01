@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130425053104) do
+ActiveRecord::Schema.define(:version => 20130501115424) do
 
   create_table "answer_results", :force => true do |t|
     t.boolean  "selected"
@@ -42,13 +42,14 @@ ActiveRecord::Schema.define(:version => 20130425053104) do
   end
 
   create_table "parse_results", :force => true do |t|
-    t.integer  "fog"
-    t.boolean  "pending"
-    t.integer  "professor_id"
-    t.integer  "ta_id"
-    t.integer  "activity"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.string  "name"
+    t.integer "user_id"
+    t.integer "activity"
+    t.integer "fog"
+    t.integer "kincaid"
+    t.integer "flesch"
+    t.string  "course_path"
+    t.integer "ta_id"
   end
 
   create_table "question_results", :force => true do |t|

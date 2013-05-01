@@ -1,0 +1,45 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+
+<% i = 1 %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>User</th>
+      <th>Activity</th>
+      <th>Fog Index</th>
+      <th>Kincaid Index</th>
+      <th>Flesch Index</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @results.each do |result| %>
+      <tr>
+        <td><%= i.to_s %>
+        <td><%= result.name %></td>
+        <td><%= result.activity %></td>
+        <% if !result.fog %>
+          <td><%= "N/A" %></td>
+        <% else %>
+          <td><%= sprintf("%.2f", result.fog) %></td>
+        <% end %>
+        <% if !result.kincaid %>
+          <td><%= "N/A" %></td>
+        <% else %>
+          <td><%= sprintf("%.2f", result.kincaid) %></td>
+        <% end %>
+        <% if !result.flesch %>
+          <td><%= "N/A" %></td>
+        <% else %>
+          <td><%= sprintf("%.2f", result.flesch) %></td>
+        <% end %>
+        <td>Invite</td> 
+        <% i = i + 1 %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

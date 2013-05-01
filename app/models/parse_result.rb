@@ -1,3 +1,3 @@
 class ParseResult < ActiveRecord::Base
-  attr_accessible :activity, :fog, :pending, :professor_id, :ta_id
+  attr_accessible :name, :user_id, :activity, :fog, :kincaid, :flesch, :course_path, :ta_id
 end

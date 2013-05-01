@@ -83,4 +83,14 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def dashboard
+    @results = ParseResult.order('activity desc').limit(25)
+
+    respond_to do |format|
+      format.html { render action: 'dashboard' }
+      format.json { render json: @user.errors, status: :unprocessable_entity }
+    end
+  end
+
 end

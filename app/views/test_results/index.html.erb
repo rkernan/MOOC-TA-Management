@@ -2,6 +2,7 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -14,6 +15,10 @@
       <% end %>
       <th><%= model_class.human_attribute_name(:grade) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th>Forum Activity</th>
+      <th>Fog Index</th>
+      <th>Kincaid Index</th>
+      <th>Flesch Index</th>
       <% if current_user_is_professor? %>
         <th><%=t '.actions', :default => t("helpers.actions") %></th>
       <% end %>
@@ -21,6 +26,7 @@
   </thead>
   <tbody>
     <% @test_results.each do |test_result| %>
+      <% p = ParseResult.where(:ta_id => test_result.teaching_assistant_id).first %>
       <tr>
         <td><%= link_to test_result.id, test_result_path(test_result) %></td>
         <% if current_user_is_professor? %>
@@ -30,8 +36,19 @@
           <td><%= test_result.ta_test.course.name %></td>
           <td><%= test_result.ta_test.name %></td>
         <% end %>
-        <td><%= test_result.grade %></td>
+        <td><%= "%.0f%" % test_result.grade %></td>
         <td><%=l test_result.created_at %></td>
+        <% if p %>
+          <td><%= "%d posts" % p.activity %></td>
+          <td><%= p.fog %></td>
+          <td><%= p.kincaid %></td>
+          <td><%= p.flesch %></td>
+        <% else %>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        <% end %>
         <% if current_user_is_professor? %>
           <td>
             <%= link_to t('Request', :default => t("Request")), '', :class => 'btn btn-mini' %>
