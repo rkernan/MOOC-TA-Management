@@ -173,8 +173,8 @@ end
 #email = gets.chomp
 #print "Coursera password: "
 #password = STDIN.noecho(&:gets).chomp
-email = "email@gatech.edu"
-password = "password"
+email = ""
+password = ""
 
 browser = signin(email, password)
 threads = get_threads(browser)

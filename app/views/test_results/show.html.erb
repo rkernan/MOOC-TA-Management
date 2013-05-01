@@ -9,7 +9,7 @@
   <dt><strong><%= model_class.human_attribute_name(:ta_test_id) %>:</strong></dt>
   <dd><%= @test_result.ta_test.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:grade) %>:</strong></dt>
-  <dd><%= @test_result.grade %></dd>
+  <dd><%= "%.0f" % @test_result.grade %>%</dd>
 </dl>
 
 <% if current_user_is_professor? %>
@@ -30,7 +30,7 @@
           <% else %>
             <i class="icon-remove"></i>
           <% end %>
-          <%= answer_result.answer.content %></li>
+          <%= answer_result.answer.content %> (<%= answer_result.answer.correct %>)</li>
         <% end %>
       </ul>
     <% end %>
