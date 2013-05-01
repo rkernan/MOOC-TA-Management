@@ -39,7 +39,7 @@ class TaTestRequestsController < ApplicationController
 
     @course = @test_result.ta_test.course
     @professor = @course.professor
-    TaMailer.ta_class_request_email(@professor.email, @course, @test_result.teaching_assistant.email, "MOOC TA Finder").deliver
+    TaMailer.ta_class_request_email(@professor.email, @course, @test_result.teaching_assistant.email,"MOOC TA Finder").deliver
 
     respond_to do |format|
       format.html
